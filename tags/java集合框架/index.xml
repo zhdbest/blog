@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java集合框架 on 虹猫的自留地</title>
+    <link>https://zhdbest.github.io/blog/tags/java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/</link>
+    <description>Recent content in Java集合框架 on 虹猫的自留地</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 21 Jun 2021 17:55:22 +0800</lastBuildDate><atom:link href="https://zhdbest.github.io/blog/tags/java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【Java】Java集合框架图</title>
+      <link>https://zhdbest.github.io/blog/post/007-java-collection-pic/</link>
+      <pubDate>Mon, 21 Jun 2021 17:55:22 +0800</pubDate>
+      
+      <guid>https://zhdbest.github.io/blog/post/007-java-collection-pic/</guid>
+      <description>注意事项： 不是严格的继承与实现关系 不含内部类实现 只包含访问修饰符为 public 的接口或者类 不包含抽象类 仅包含 java.util 包下的类或接口 绿色代表接口，蓝色代表类 有</description>
+    </item>
+    
+    <item>
+      <title>【Java文档】Java集合框架概述</title>
+      <link>https://zhdbest.github.io/blog/post/006-java-doc-collection-overview/</link>
+      <pubDate>Thu, 17 Jun 2021 17:56:29 +0800</pubDate>
+      
+      <guid>https://zhdbest.github.io/blog/post/006-java-doc-collection-overview/</guid>
+      <description>本文档主要是翻译的Collections Framework Overview，基于Java8。 概述 集合框架是表示和操作集合的统一体系结构，使它们能够独立于表示</description>
+    </item>
+    
+  </channel>
+</rss>

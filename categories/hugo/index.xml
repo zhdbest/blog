@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on 虹猫的自留地</title>
+    <link>https://zhdbest.github.io/blog/categories/hugo/</link>
+    <description>Recent content in Hugo on 虹猫的自留地</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 26 Jul 2021 22:38:05 +0800</lastBuildDate><atom:link href="https://zhdbest.github.io/blog/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【Hugo】hugo-book主题使用</title>
+      <link>https://zhdbest.github.io/blog/post/010-hugo-book/</link>
+      <pubDate>Mon, 26 Jul 2021 22:38:05 +0800</pubDate>
+      
+      <guid>https://zhdbest.github.io/blog/post/010-hugo-book/</guid>
+      <description>一、安装 1 2 3 4 5 6 7 # 首先初始化一个站点项目 hugo new site hugo-book cd hugo-book # 下载主题 git clone &amp;lt;https://github.com/alex-shpak/hugo-book.git&amp;gt; themes/book # 指定主题为“book”启动便可以看到效果了 hugo server -t book 二、使用 首先</description>
+    </item>
+    
+    <item>
+      <title>【折腾】寻找Gitbook的替代者</title>
+      <link>https://zhdbest.github.io/blog/post/009-gitbook-replacer/</link>
+      <pubDate>Mon, 19 Jul 2021 23:05:55 +0800</pubDate>
+      
+      <guid>https://zhdbest.github.io/blog/post/009-gitbook-replacer/</guid>
+      <description>大概是在2019年的时候，我折腾过gitbook。 当时分别用它的两种主题做了两个小玩意儿，一个是默认主题“theme-default”，它就</description>
+    </item>
+    
+    <item>
+      <title>【Hugo】使用Hugo&#43;Even主题构建一个博客站点</title>
+      <link>https://zhdbest.github.io/blog/post/008-hugo-even-create/</link>
+      <pubDate>Sat, 10 Jul 2021 15:30:44 +0800</pubDate>
+      
+      <guid>https://zhdbest.github.io/blog/post/008-hugo-even-create/</guid>
+      <description>1. 安装Hugo 1 brew install hugo 2. 新建一个站点项目 1 hugo new site hugo-blog 3. 下载Even主题 1 2 3 4 # 首先进入站点项目根目录 cd hugo-blog # 下载主题 git clone &amp;lt;https://github.com/olOwOlo/hugo-theme-even&amp;gt; themes/even 4. 配置 将hugo-</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>【折腾】寻找Gitbook的替代者 - 虹猫的自留地</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="hongmao" /><meta name="description" content="大概是在2019年的时候，我折腾过gitbook。 当时分别用它的两种主题做了两个小玩意儿，一个是默认主题“theme-default”，它就" /><meta name="keywords" content="gitbook, hugo" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.86.0 with theme even" />
+
+
+<link rel="canonical" href="https://zhdbest.github.io/blog/post/009-gitbook-replacer/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/blog/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/blog/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/blog/favicon-16x16.png">
+<link rel="manifest" href="/blog/manifest.json">
+<link rel="mask-icon" href="/blog/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/blog/sass/main.min.b874a8796a492f0d7c86bb24c33cbf052935783a5778ebaf819a8e514bf49f10.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="【折腾】寻找Gitbook的替代者" />
+<meta property="og:description" content="大概是在2019年的时候，我折腾过gitbook。 当时分别用它的两种主题做了两个小玩意儿，一个是默认主题“theme-default”，它就" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://zhdbest.github.io/blog/post/009-gitbook-replacer/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-07-19T23:05:55+08:00" />
+<meta property="article:modified_time" content="2021-07-19T23:05:55+08:00" />
+
+<meta itemprop="name" content="【折腾】寻找Gitbook的替代者">
+<meta itemprop="description" content="大概是在2019年的时候，我折腾过gitbook。 当时分别用它的两种主题做了两个小玩意儿，一个是默认主题“theme-default”，它就"><meta itemprop="datePublished" content="2021-07-19T23:05:55+08:00" />
+<meta itemprop="dateModified" content="2021-07-19T23:05:55+08:00" />
+<meta itemprop="wordCount" content="1975">
+<meta itemprop="keywords" content="gitbook,hugo," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="【折腾】寻找Gitbook的替代者"/>
+<meta name="twitter:description" content="大概是在2019年的时候，我折腾过gitbook。 当时分别用它的两种主题做了两个小玩意儿，一个是默认主题“theme-default”，它就"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/blog/" class="logo">虹猫的自留地</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/blog/">
+        <li class="mobile-menu-item">首页</li>
+      </a><a href="/blog/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/blog/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/blog/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/blog/" class="logo">虹猫的自留地</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/blog/">首页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/blog/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/blog/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/blog/categories/">分类</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">【折腾】寻找Gitbook的替代者</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2021-07-19 </span>
+        <div class="post-category">
+            <a href="/blog/categories/gitbook/"> gitbook </a>
+            <a href="/blog/categories/hugo/"> hugo </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-最简单之选mdbook">1. 最简单之选：mdBook</a></li>
+    <li><a href="#2-均衡之选hugo--hugo-book">2. 均衡之选：hugo + hugo-book</a></li>
+    <li><a href="#3-高级选项hugo--docsy">3. 高级选项：hugo + Docsy</a></li>
+    <li><a href="#4-意外之喜hugo--geekdoc">4. 意外之喜：hugo + geekdoc</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>大概是在2019年的时候，我折腾过gitbook。</p>
+<p>当时分别用它的两种主题做了两个小玩意儿，一个是默认主题“<code>theme-default</code>”，它就是最基本的“book”样式，我用它来做Spring Boot文档的翻译，而且还针对它的样式做了一些自定义，让它看起来更像Spring官网的样式。另一个用到的主题是：“<code>theme-faq</code>”，用它做了一个快速查询的静态网站，关于这个项目我在“<code>readme.md</code>”中是这么写的：“主要放一些没那么常用、真用的时候又想不起来的一些东西”，内容主要是各种命令：Linux的命令、git命令、nodeJS命令等，页面中间是个大搜索框，搭配gitbook当时优秀的插件生态装上支持汉字搜索的插件，还算用的挺好。</p>
+<p>因为各种原因，这两个项目在后来的一段时间没有维护。今年在折腾完hugo后，又想折腾这一块了，发现从2018年之后本地版的gitbook已经停止更新了，官方不再维护。所以，我才准备要找其替代者来重新实现当年的这两个小玩意儿。</p>
+<p>在写本篇文章的时候，我想重新装上gitbook，然后截几张图放上来。结果发现好麻烦，安装失败，原因好像是我本地的npm版本过高，只能算了，不值得再折腾它了。</p>
+<p>只有契合需求、解决痛点的解决方案才是好的解决方案，所以先明确一下我们的需求：</p>
+<ol>
+<li>要是一款静态网页生成器，支持Markdown</li>
+<li>支持搜索</li>
+<li>尽量简单</li>
+</ol>
+<p>带着这些需求，我开始了寻找gitbook替代者之路。</p>
+<h1 id="1-最简单之选mdbook">1. 最简单之选：mdBook</h1>
+<p><a href="https://rust-lang.github.io/mdBook/">mdBook</a>是采用Rust语言做的，非常的轻量化，配置和使用起来都非常的简单，而且无论是从使用习惯和页面风格上都与gitbook极为类似。</p>
+<p>效果如下：</p>
+<p><img src="https://img.hongmao.run/blog/2021/07/mdbook-view.png" alt=""></p>
+<p>mdBook的优势：</p>
+<ol>
+<li>极容易上手，配置也非常简单</li>
+<li>支持在线编辑、执行Rust代码（必杀技，其他任何“竞争者”都不具备这个特性）</li>
+</ol>
+<p>mdBook的劣势：</p>
+<ol>
+<li>生态太差，很难搜到问题的解决方案，也几乎没有可替换的主题（可能是我不会玩）</li>
+<li>自带的搜索不好用，且不说汉字搜索了，搜索英文也存在问题，例如文章中出现过“Redis”，而使用“edi”就搜索不到。（也同样怀疑是我没玩明白）</li>
+</ol>
+<p>其实，我是非常想用mdBook来做我们上面提到的那个“命令快速查询”项目的，因为我太喜欢这个简介明了的feel了。但是“命令快速查询”核心是搜索，现在搜索玩不明白自然也就被一票否决了。</p>
+<h1 id="2-均衡之选hugo--hugo-book">2. 均衡之选：hugo + hugo-book</h1>
+<p>hugo大家应该清楚，它有一个主题“<a href="https://github.com/alex-shpak/hugo-book">hugo-book</a>”，该主题追求简单、甚至“0配置”，目前在GitHub上的点赞数有1.3k。</p>
+<p>我在折腾它的时候，确实感到配置可以很少，而且与mdBook相比它可配置的内容更多、可定制化更强。最终，我选定使用该主题来做Spring文档的翻译，生成的静态文件托管在GitHub上，使用GitHub Pages对外提供Web服务，可点击查看效果：<a href="https://hongmao.run/spring-doc/">https://hongmao.run/spring-doc/</a>。</p>
+<p><img src="https://img.hongmao.run/blog/2021/07/spring-doc-index.png" alt=""></p>
+<p>hugo + hugo-book的优势：</p>
+<ol>
+<li>均衡，既简单又有一定的定制化空间（论轻量级比不过mdBook）</li>
+</ol>
+<p>hugo + hugo-book的劣势：</p>
+<ol>
+<li>搜索同样不好用</li>
+</ol>
+<h1 id="3-高级选项hugo--docsy">3. 高级选项：hugo + Docsy</h1>
+<p>hugo有一个主题：“<a href="https://github.com/google/docsy">Docsy</a>”，它是谷歌开源的一款主题，目前在GitHub上的点赞数有1.3k。</p>
+<p>来头很大，而且确实很高级，但是我感觉下来，它却不是我那两个项目的优秀解决方案。所以，我也没有很细致的去折腾它，总体来说，水很深，我把握不住。它应该更适合于去介绍一个成熟的产品，既包含了博客模块也包含了文档模块。</p>
+<p><img src="https://img.hongmao.run/blog/2021/07/hugo-docsy-index.png" alt=""></p>
+<p><img src="https://img.hongmao.run/blog/2021/07/hugo-docsy-docs.png" alt=""></p>
+<p>hugo + docsy的优势：</p>
+<ol>
+<li>功能强大，可配置项众多</li>
+<li>文档极为完善，也提供了demo项目（如果没有这两样，真的是很难玩转）</li>
+</ol>
+<p>hugo + docsy的劣势：</p>
+<ol>
+<li>搜索问题同样存在（我真的开始怀疑是我的问题了）</li>
+<li>配置复杂，上手难度高</li>
+</ol>
+<h1 id="4-意外之喜hugo--geekdoc">4. 意外之喜：hugo + geekdoc</h1>
+<p>在浏览hugo的众多主题时，发现了一个意外之喜：“<a href="https://github.com/thegeeklab/hugo-geekdoc">geekdoc</a>”主题。</p>
+<p>但是，其实我并不是用它来实现我的那两个项目的，而是发现它可以用来做我的另一个项目。我之前在阅读jdk中的源码，源码的阅读笔记直接写在博客中。在倒腾这个主题的时候，我突然发现，很适合用它来做一个“源码阅读笔记”啊。这里面有个很重要的原因，它支持在菜单前添加svg图标，因为我之前的此类源码阅读笔记草稿是记录在我的Notion笔记中的，在Notion中的效果如下：</p>
+<p><img src="https://img.hongmao.run/blog/2021/07/hugo-geekdoc-notion.png" alt=""></p>
+<p>图标是用的IDEA中的（他们公司的人说可以使用），用于区分出类、接口、抽象类和包。</p>
+<p>最终，我的JDK8源码源码阅读笔记：<a href="https://hongmao.run/jdk8-src-note/">https://hongmao.run/jdk8-src-note/</a></p>
+<p><img src="https://img.hongmao.run/blog/2021/07/hugo-geekdoc-index.png" alt=""></p>
+<p>hugo + geekdoc的优势：</p>
+<ol>
+<li>文档完善，上手难度不高</li>
+<li>配置丰富，具备可定制化空间</li>
+<li>作者具备极客精神，有问题时响应较快且更新迭代的速度也较快</li>
+</ol>
+<p>hugo + geekdoc的劣势：</p>
+<ol>
+<li>目前尚处于成长期，存在一些问题还需完善</li>
+<li>同样存在搜索的问题（不提一嘴的话，我怕大家会以为它的搜索没有问题）</li>
+</ol>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">hongmao</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2021-07-19
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/blog/tags/gitbook/">gitbook</a>
+          <a href="/blog/tags/hugo/">hugo</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/blog/post/010-hugo-book/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">【Hugo】hugo-book主题使用</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/blog/post/008-hugo-even-create/">
+            <span class="next-text nav-default">【Hugo】使用Hugo&#43;Even主题构建一个博客站点</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:zhd04911@163.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/zhdbest" class="iconfont icon-github" title="github"></a>
+  <a href="https://zhdbest.github.io/blog/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2021<span class="heart"><i class="iconfont icon-heart"></i></span><span>hongmao</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/blog/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

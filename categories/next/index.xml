@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NexT on 虹猫的自留地</title>
+    <link>https://zhdbest.github.io/blog/categories/next/</link>
+    <description>Recent content in NexT on 虹猫的自留地</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 06 Jun 2021 11:04:51 +0800</lastBuildDate><atom:link href="https://zhdbest.github.io/blog/categories/next/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【Hexo】Hexo &#43; NexT 常见问题解决</title>
+      <link>https://zhdbest.github.io/blog/post/005-hexo-question/</link>
+      <pubDate>Sun, 06 Jun 2021 11:04:51 +0800</pubDate>
+      
+      <guid>https://zhdbest.github.io/blog/post/005-hexo-question/</guid>
+      <description>&lt;h1 id=&#34;1-如何设置文章折叠隐藏&#34;&gt;1. 如何设置文章折叠隐藏&lt;/h1&gt;
+&lt;p&gt;该痛点是文章较长，在博客首页展示的时候很不优雅，访客要翻很久才能翻到下一篇文章。&lt;/p&gt;
+&lt;p&gt;解决这个问题就是把文章给折叠起来，同时提供一个“阅读全文”按钮。访问如果想看该文章，就点击这个按钮。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

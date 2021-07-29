@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on 虹猫的自留地</title>
+    <link>https://zhdbest.github.io/blog/tags/</link>
+    <description>Recent content in Tags on 虹猫的自留地</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 26 Jul 2021 22:38:05 +0800</lastBuildDate><atom:link href="https://zhdbest.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo</title>
+      <link>https://zhdbest.github.io/blog/tags/hugo/</link>
+      <pubDate>Mon, 26 Jul 2021 22:38:05 +0800</pubDate>
+      
+      <guid>https://zhdbest.github.io/blog/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo-book</title>
+      <link>https://zhdbest.github.io/blog/tags/hugo-book/</link>
+      <pubDate>Mon, 26 Jul 2021 22:38:05 +0800</pubDate>
+      
+      <guid>https://zhdbest.github.io/blog/tags/hugo-book/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gitbook</title>
+      <link>https://zhdbest.github.io/blog/tags/gitbook/</link>
+      <pubDate>Mon, 19 Jul 2021 23:05:55 +0800</pubDate>
+      
+      <guid>https://zhdbest.github.io/blog/tags/gitbook/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java集合框架</title>
+      <link>https://zhdbest.github.io/blog/tags/java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/</link>
+      <pubDate>Mon, 21 Jun 2021 17:55:22 +0800</pubDate>
+      
+      <guid>https://zhdbest.github.io/blog/tags/java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java文档</title>
+      <link>https://zhdbest.github.io/blog/tags/java%E6%96%87%E6%A1%A3/</link>
+      <pubDate>Thu, 17 Jun 2021 17:56:29 +0800</pubDate>
+      
+      <guid>https://zhdbest.github.io/blog/tags/java%E6%96%87%E6%A1%A3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hexo</title>
+      <link>https://zhdbest.github.io/blog/tags/hexo/</link>
+      <pubDate>Sun, 06 Jun 2021 11:04:51 +0800</pubDate>
+      
+      <guid>https://zhdbest.github.io/blog/tags/hexo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NexT</title>
+      <link>https://zhdbest.github.io/blog/tags/next/</link>
+      <pubDate>Sun, 06 Jun 2021 11:04:51 +0800</pubDate>
+      
+      <guid>https://zhdbest.github.io/blog/tags/next/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java文档 on 虹猫的自留地</title>
+    <link>https://zhdbest.github.io/blog/tags/java%E6%96%87%E6%A1%A3/</link>
+    <description>Recent content in Java文档 on 虹猫的自留地</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 17 Jun 2021 17:56:29 +0800</lastBuildDate><atom:link href="https://zhdbest.github.io/blog/tags/java%E6%96%87%E6%A1%A3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【Java文档】Java集合框架概述</title>
+      <link>https://zhdbest.github.io/blog/post/006-java-doc-collection-overview/</link>
+      <pubDate>Thu, 17 Jun 2021 17:56:29 +0800</pubDate>
+      
+      <guid>https://zhdbest.github.io/blog/post/006-java-doc-collection-overview/</guid>
+      <description>本文档主要是翻译的Collections Framework Overview，基于Java8。 概述 集合框架是表示和操作集合的统一体系结构，使它们能够独立于表示</description>
+    </item>
+    
+  </channel>
+</rss>

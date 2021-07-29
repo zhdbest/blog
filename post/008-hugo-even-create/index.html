@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>【Hugo】使用Hugo&#43;Even主题构建一个博客站点 - 虹猫的自留地</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="hongmao" /><meta name="description" content="1. 安装Hugo 1 brew install hugo 2. 新建一个站点项目 1 hugo new site hugo-blog 3. 下载Even主题 1 2 3 4 # 首先进入站点项目根目录 cd hugo-blog # 下载主题 git clone &amp;lt;https://github.com/olOwOlo/hugo-theme-even&amp;gt; themes/even 4. 配置 将hugo-" /><meta name="keywords" content="Hugo, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.86.0 with theme even" />
+
+
+<link rel="canonical" href="https://zhdbest.github.io/blog/post/008-hugo-even-create/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/blog/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/blog/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/blog/favicon-16x16.png">
+<link rel="manifest" href="/blog/manifest.json">
+<link rel="mask-icon" href="/blog/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/blog/sass/main.min.b874a8796a492f0d7c86bb24c33cbf052935783a5778ebaf819a8e514bf49f10.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="【Hugo】使用Hugo&#43;Even主题构建一个博客站点" />
+<meta property="og:description" content="1. 安装Hugo 1 brew install hugo 2. 新建一个站点项目 1 hugo new site hugo-blog 3. 下载Even主题 1 2 3 4 # 首先进入站点项目根目录 cd hugo-blog # 下载主题 git clone &lt;https://github.com/olOwOlo/hugo-theme-even&gt; themes/even 4. 配置 将hugo-" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://zhdbest.github.io/blog/post/008-hugo-even-create/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-07-10T15:30:44+08:00" />
+<meta property="article:modified_time" content="2021-07-10T15:30:44+08:00" />
+
+<meta itemprop="name" content="【Hugo】使用Hugo&#43;Even主题构建一个博客站点">
+<meta itemprop="description" content="1. 安装Hugo 1 brew install hugo 2. 新建一个站点项目 1 hugo new site hugo-blog 3. 下载Even主题 1 2 3 4 # 首先进入站点项目根目录 cd hugo-blog # 下载主题 git clone &lt;https://github.com/olOwOlo/hugo-theme-even&gt; themes/even 4. 配置 将hugo-"><meta itemprop="datePublished" content="2021-07-10T15:30:44+08:00" />
+<meta itemprop="dateModified" content="2021-07-10T15:30:44+08:00" />
+<meta itemprop="wordCount" content="1381">
+<meta itemprop="keywords" content="Hugo," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="【Hugo】使用Hugo&#43;Even主题构建一个博客站点"/>
+<meta name="twitter:description" content="1. 安装Hugo 1 brew install hugo 2. 新建一个站点项目 1 hugo new site hugo-blog 3. 下载Even主题 1 2 3 4 # 首先进入站点项目根目录 cd hugo-blog # 下载主题 git clone &lt;https://github.com/olOwOlo/hugo-theme-even&gt; themes/even 4. 配置 将hugo-"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/blog/" class="logo">虹猫的自留地</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/blog/">
+        <li class="mobile-menu-item">首页</li>
+      </a><a href="/blog/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/blog/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/blog/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/blog/" class="logo">虹猫的自留地</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/blog/">首页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/blog/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/blog/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/blog/categories/">分类</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">【Hugo】使用Hugo&#43;Even主题构建一个博客站点</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2021-07-10 </span>
+        <div class="post-category">
+            <a href="/blog/categories/hugo/"> Hugo </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-安装hugo">1. 安装Hugo</a></li>
+    <li><a href="#2-新建一个站点项目">2. 新建一个站点项目</a></li>
+    <li><a href="#3-下载even主题">3. 下载Even主题</a></li>
+    <li><a href="#4-配置">4. 配置</a></li>
+    <li><a href="#5-写文章">5. 写文章</a></li>
+    <li><a href="#6-本地预览">6. 本地预览</a></li>
+    <li><a href="#7-生成静态文件">7. 生成静态文件</a></li>
+    <li><a href="#8-部署至github-pages">8. 部署至GitHub Pages</a></li>
+    <li><a href="#9-常见问题解决">9. 常见问题解决</a>
+      <ul>
+        <li><a href="#91-如何让部分内容不进行解析即达到注释的效果">9.1 如何让部分内容不进行解析，即达到“注释”的效果</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="1-安装hugo">1. 安装Hugo</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">brew install hugo
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="2-新建一个站点项目">2. 新建一个站点项目</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">hugo new site hugo-blog
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="3-下载even主题">3. 下载Even主题</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># 首先进入站点项目根目录</span>
+<span class="nb">cd</span> hugo-blog
+<span class="c1"># 下载主题</span>
+git clone &lt;https://github.com/olOwOlo/hugo-theme-even&gt; themes/even
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="4-配置">4. 配置</h1>
+<p>将<code>hugo-blog/themes/even/exampleSite/config.toml</code>复制到站点的根目录下，替换根目录下的配置文件。</p>
+<p>在该配置文件中可以修改自定义的一些内容。</p>
+<p>Even主题共有5种颜色可选，但不是在<code>config.toml</code>中，而是在<code>themes/even/assets/sass/_variables.scss</code>中：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="c1">// ========== Theme Color ========== //
+</span><span class="c1">// Config here to change theme color
+</span><span class="c1">// Default | Mint Green | Cobalt Blue | Hot Pink | Dark Violet
+</span><span class="c1"></span><span class="nv">$theme-color-config</span><span class="o">:</span> <span class="s1">&#39;Default&#39;</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="5-写文章">5. 写文章</h1>
+<p>首先，可参考<code>hugo-blog/themes/even/archetypes/default.md</code>调整站点项目根目录下的<code>archetypes/default.md</code>，这是默认的文章模板。</p>
+<p>针对该模板中可设置的内容，可以进行自定义，例如：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">title: &#34;{{ replace .TranslationBaseName &#34;-&#34; &#34; &#34; | title }}&#34;
+date: {{ .Date }}
+lastmod: {{ .Date }}
+draft: true
+keywords: []
+description: &#34;&#34;
+tags: []
+categories: []
+author: &#34;&#34;
+
+toc: true
+postMetaInFooter: true
+</code></pre></td></tr></table>
+</div>
+</div><p>应用此主题，不可以把文章放在<code>posts</code>，而应该放在<code>post</code>，即：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># 使用如下命令新建一篇文章</span>
+hugo new post/some-content.md
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="6-本地预览">6. 本地预览</h1>
+<p>因为，文章默认都是“草稿”的，所以，使用hugo server启动服务时，无法看到草稿状态的文章，需使用如下命令：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">hugo server -D
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="7-生成静态文件">7. 生成静态文件</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># 当仅使用“hugo”命令时，主题采用配置中的主题，默认不生成草稿文章的静态文件</span>
+hugo
+
+<span class="c1"># 生成静态文件时指定主题even</span>
+hugo --theme<span class="o">=</span>even
+
+<span class="c1"># 生成静态文件时无论是否草稿都生成</span>
+hugo -D
+
+<span class="c1"># 指定生成的静态文件存放目录</span>
+hugo -d &lt;dir&gt;
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="8-部署至github-pages">8. 部署至GitHub Pages</h1>
+<p>之前在讲通过GitHub Pages部署Hexo博客时讲过相关的内容铺垫，此处不再赘述。</p>
+<p>将Hugo博客部署至GitHub Pages时，暂时还没有Hexo部署那么简单。研究了下暂时有两种方案：</p>
+<ol>
+<li>自己写一个部署脚本，执行脚本时重新生成静态文件并将其推送至GitHub</li>
+<li>通过GitHub Actions，这种方案也是Hugo官方文档中提供的方案</li>
+</ol>
+<p>两种方案各有优劣，我采用的是方案一。如下是我的部署脚本：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="cp">#! /bin/bash
+</span><span class="cp"></span><span class="nb">echo</span> <span class="s2">&#34;Deploy start...&#34;</span>
+
+<span class="c1"># 进行配置</span>
+<span class="c1"># 文章输入目录</span>
+<span class="nv">output_dir</span><span class="o">=</span><span class="s1">&#39;public&#39;</span>
+<span class="nv">theme</span><span class="o">=</span><span class="s1">&#39;even&#39;</span>
+
+<span class="c1"># 判断是否存在输出目录</span>
+<span class="k">if</span> <span class="o">[</span> -d <span class="nv">$output_dir</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+    <span class="c1"># 存在，开始删除旧文件</span>
+    <span class="nb">cd</span> <span class="nv">$output_dir</span>
+    <span class="nb">echo</span> <span class="s2">&#34;Deleting files in </span><span class="nv">$output_dir</span><span class="s2">...&#34;</span>
+    <span class="c1"># 删除</span>
+    find . <span class="p">|</span> grep -v -i -w readme.md <span class="p">|</span> grep -v -i -w .gitignore <span class="p">|</span> xargs rm -rf
+    <span class="nb">echo</span> <span class="s2">&#34;Delete done... &#34;</span>
+    <span class="nb">cd</span> ..
+<span class="k">fi</span>
+
+<span class="c1"># 生成文件</span>
+hugo --theme<span class="o">=</span><span class="nv">$theme</span> -d <span class="nv">$output_dir</span>
+
+<span class="nb">cd</span> <span class="nv">$output_dir</span>
+
+<span class="c1"># 执行git相关</span>
+git init
+<span class="c1"># 设置远程主机</span>
+git remote add origin https://github.com/zhdbest/blog.git
+<span class="c1"># 设置git user</span>
+git config user.name zhdbest
+git config user.email zhd94811@163.com
+git add .
+<span class="c1"># 提交至本地仓库</span>
+<span class="c1"># 可以选择使用默认commit message</span>
+<span class="c1"># git commit -m &#34;$(date) commit&#34;</span>
+<span class="c1"># 让用户输入commit message</span>
+<span class="nb">read</span> -p <span class="s2">&#34;Please enter your commit message: &#34;</span> msg
+git commit -m <span class="s2">&#34;</span><span class="nv">$msg</span><span class="s2">&#34;</span>
+<span class="c1"># 将本地的master分支推送至远程的master分支</span>
+git push -u origin +master
+
+<span class="c1"># 用绿色文字提示用户推送成功</span>
+<span class="nv">green</span><span class="o">=</span><span class="s1">&#39;\033[32m&#39;</span>
+<span class="nv">no_color</span><span class="o">=</span><span class="s1">&#39;\033[0m&#39;</span>
+<span class="nb">echo</span> -e <span class="s2">&#34;</span><span class="nv">$green</span><span class="s2">\c&#34;</span>
+<span class="nb">echo</span> <span class="s2">&#34;Congratulations! Your site is pushed to GitHub now.&#34;</span>
+<span class="c1"># 将文字输出颜色调整回无色</span>
+<span class="nb">echo</span> -e <span class="s2">&#34;</span><span class="nv">$no_color</span><span class="s2">\c&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="9-常见问题解决">9. 常见问题解决</h1>
+<h2 id="91-如何让部分内容不进行解析即达到注释的效果">9.1 如何让部分内容不进行解析，即达到“注释”的效果</h2>
+<p>在使用Hugo的过程中发现，即使在代码块内使用某些Shortcode，其也会被Hugo解析，进而可能导致报错。例如：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="s">```
+</span><span class="s"></span>{{&lt; tag &gt;}}
+<span class="s">```</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>如果，在代码块中直接这样写，会导致Hugo尝试将其解析为Shortcode，但有找不到名为<code>tag</code>的Shortcode定义，进而导致报错。</p>
+<p>为了避免这种问题，可以使用<code>/*</code>和<code>*/</code>将不需要解析的内容包裹起来，例如：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="s">```
+</span><span class="s"></span>{{&lt;/* tag */&gt;}}
+<span class="s">```</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">hongmao</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2021-07-10
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/blog/tags/hugo/">Hugo</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/blog/post/009-gitbook-replacer/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">【折腾】寻找Gitbook的替代者</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/blog/post/007-java-collection-pic/">
+            <span class="next-text nav-default">【Java】Java集合框架图</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:zhd04911@163.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/zhdbest" class="iconfont icon-github" title="github"></a>
+  <a href="https://zhdbest.github.io/blog/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2021<span class="heart"><i class="iconfont icon-heart"></i></span><span>hongmao</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/blog/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>【Hexo】Hexo站点配置文件_config.yml详解 - 虹猫的自留地</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="hongmao" /><meta name="description" content="一个原生的站点配置文件如下： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56" /><meta name="keywords" content="Hexo" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.86.0 with theme even" />
+
+
+<link rel="canonical" href="https://zhdbest.github.io/blog/post/001-hexo-config/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/blog/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/blog/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/blog/favicon-16x16.png">
+<link rel="manifest" href="/blog/manifest.json">
+<link rel="mask-icon" href="/blog/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/blog/sass/main.min.b874a8796a492f0d7c86bb24c33cbf052935783a5778ebaf819a8e514bf49f10.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="【Hexo】Hexo站点配置文件_config.yml详解" />
+<meta property="og:description" content="一个原生的站点配置文件如下： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://zhdbest.github.io/blog/post/001-hexo-config/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-05-10T19:39:25+08:00" />
+<meta property="article:modified_time" content="2021-05-10T19:39:25+08:00" />
+
+<meta itemprop="name" content="【Hexo】Hexo站点配置文件_config.yml详解">
+<meta itemprop="description" content="一个原生的站点配置文件如下： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56"><meta itemprop="datePublished" content="2021-05-10T19:39:25+08:00" />
+<meta itemprop="dateModified" content="2021-05-10T19:39:25+08:00" />
+<meta itemprop="wordCount" content="934">
+<meta itemprop="keywords" content="Hexo," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="【Hexo】Hexo站点配置文件_config.yml详解"/>
+<meta name="twitter:description" content="一个原生的站点配置文件如下： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/blog/" class="logo">虹猫的自留地</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/blog/">
+        <li class="mobile-menu-item">首页</li>
+      </a><a href="/blog/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/blog/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/blog/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/blog/" class="logo">虹猫的自留地</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/blog/">首页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/blog/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/blog/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/blog/categories/">分类</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">【Hexo】Hexo站点配置文件_config.yml详解</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2021-05-10 </span>
+        <div class="post-category">
+            <a href="/blog/categories/hexo/"> Hexo </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents"></nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>一个原生的站点配置文件如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">  1
+</span><span class="lnt">  2
+</span><span class="lnt">  3
+</span><span class="lnt">  4
+</span><span class="lnt">  5
+</span><span class="lnt">  6
+</span><span class="lnt">  7
+</span><span class="lnt">  8
+</span><span class="lnt">  9
+</span><span class="lnt"> 10
+</span><span class="lnt"> 11
+</span><span class="lnt"> 12
+</span><span class="lnt"> 13
+</span><span class="lnt"> 14
+</span><span class="lnt"> 15
+</span><span class="lnt"> 16
+</span><span class="lnt"> 17
+</span><span class="lnt"> 18
+</span><span class="lnt"> 19
+</span><span class="lnt"> 20
+</span><span class="lnt"> 21
+</span><span class="lnt"> 22
+</span><span class="lnt"> 23
+</span><span class="lnt"> 24
+</span><span class="lnt"> 25
+</span><span class="lnt"> 26
+</span><span class="lnt"> 27
+</span><span class="lnt"> 28
+</span><span class="lnt"> 29
+</span><span class="lnt"> 30
+</span><span class="lnt"> 31
+</span><span class="lnt"> 32
+</span><span class="lnt"> 33
+</span><span class="lnt"> 34
+</span><span class="lnt"> 35
+</span><span class="lnt"> 36
+</span><span class="lnt"> 37
+</span><span class="lnt"> 38
+</span><span class="lnt"> 39
+</span><span class="lnt"> 40
+</span><span class="lnt"> 41
+</span><span class="lnt"> 42
+</span><span class="lnt"> 43
+</span><span class="lnt"> 44
+</span><span class="lnt"> 45
+</span><span class="lnt"> 46
+</span><span class="lnt"> 47
+</span><span class="lnt"> 48
+</span><span class="lnt"> 49
+</span><span class="lnt"> 50
+</span><span class="lnt"> 51
+</span><span class="lnt"> 52
+</span><span class="lnt"> 53
+</span><span class="lnt"> 54
+</span><span class="lnt"> 55
+</span><span class="lnt"> 56
+</span><span class="lnt"> 57
+</span><span class="lnt"> 58
+</span><span class="lnt"> 59
+</span><span class="lnt"> 60
+</span><span class="lnt"> 61
+</span><span class="lnt"> 62
+</span><span class="lnt"> 63
+</span><span class="lnt"> 64
+</span><span class="lnt"> 65
+</span><span class="lnt"> 66
+</span><span class="lnt"> 67
+</span><span class="lnt"> 68
+</span><span class="lnt"> 69
+</span><span class="lnt"> 70
+</span><span class="lnt"> 71
+</span><span class="lnt"> 72
+</span><span class="lnt"> 73
+</span><span class="lnt"> 74
+</span><span class="lnt"> 75
+</span><span class="lnt"> 76
+</span><span class="lnt"> 77
+</span><span class="lnt"> 78
+</span><span class="lnt"> 79
+</span><span class="lnt"> 80
+</span><span class="lnt"> 81
+</span><span class="lnt"> 82
+</span><span class="lnt"> 83
+</span><span class="lnt"> 84
+</span><span class="lnt"> 85
+</span><span class="lnt"> 86
+</span><span class="lnt"> 87
+</span><span class="lnt"> 88
+</span><span class="lnt"> 89
+</span><span class="lnt"> 90
+</span><span class="lnt"> 91
+</span><span class="lnt"> 92
+</span><span class="lnt"> 93
+</span><span class="lnt"> 94
+</span><span class="lnt"> 95
+</span><span class="lnt"> 96
+</span><span class="lnt"> 97
+</span><span class="lnt"> 98
+</span><span class="lnt"> 99
+</span><span class="lnt">100
+</span><span class="lnt">101
+</span><span class="lnt">102
+</span><span class="lnt">103
+</span><span class="lnt">104
+</span><span class="lnt">105
+</span><span class="lnt">106
+</span><span class="lnt">107
+</span><span class="lnt">108
+</span><span class="lnt">109
+</span><span class="lnt">110
+</span><span class="lnt">111
+</span><span class="lnt">112
+</span><span class="lnt">113
+</span><span class="lnt">114
+</span><span class="lnt">115
+</span><span class="lnt">116
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="c"># Hexo Configuration</span><span class="w">
+</span><span class="w"></span><span class="c">## Docs: https://hexo.io/docs/configuration.html</span><span class="w">
+</span><span class="w"></span><span class="c">## Source: https://github.com/hexojs/hexo/</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="c"># Site</span><span class="w">
+</span><span class="w"></span><span class="c"># title是设置网站的title，例如：虹猫的技术博客</span><span class="w">
+</span><span class="w"></span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">Hexo</span><span class="w">
+</span><span class="w"></span><span class="c"># subtitle是设置网站的副标题，例如：&#39;开放共享、追求极致&#39;</span><span class="w">
+</span><span class="w"></span><span class="nt">subtitle</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="w">
+</span><span class="w"></span><span class="c"># description是设置网站的描述</span><span class="w">
+</span><span class="w"></span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="w">
+</span><span class="w"></span><span class="c"># keywords是设置网站的关键词</span><span class="w">
+</span><span class="w"></span><span class="nt">keywords</span><span class="p">:</span><span class="w">
+</span><span class="w"></span><span class="c"># author是设置博客的作者，例如：虹猫</span><span class="w">
+</span><span class="w"></span><span class="nt">author</span><span class="p">:</span><span class="w"> </span><span class="l">John Doe</span><span class="w">
+</span><span class="w"></span><span class="c"># language是设置当前网站的语言，需要和当前所使用的主题下的语言文件名想对应</span><span class="w">
+</span><span class="w"></span><span class="c"># 例如，当前使用next主题，则需要和themes/next/languages/下的文件名对应，例如：zh-CN</span><span class="w">
+</span><span class="w"></span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="l">en</span><span class="w">
+</span><span class="w"></span><span class="c"># timezone是设置时区，默认使用当前服务器的时区</span><span class="w">
+</span><span class="w"></span><span class="nt">timezone</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="c"># URL</span><span class="w">
+</span><span class="w"></span><span class="c">## Set your site url here. For example, if you use GitHub Page, set url as &#39;https://username.github.io/project&#39;</span><span class="w">
+</span><span class="w"></span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">http://example.com</span><span class="w">
+</span><span class="w"></span><span class="c"># 链接的样式，默认是：年/月/日/文章标题</span><span class="w">
+</span><span class="w"></span><span class="nt">permalink</span><span class="p">:</span><span class="w"> </span><span class="p">:</span><span class="l">year/:month/:day/:title/</span><span class="w">
+</span><span class="w"></span><span class="nt">permalink_defaults</span><span class="p">:</span><span class="w">
+</span><span class="w"></span><span class="nt">pretty_urls</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">trailing_index</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="c"># Set to false to remove trailing &#39;index.html&#39; from permalinks</span><span class="w">
+</span><span class="w">  </span><span class="nt">trailing_html</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="c"># Set to false to remove trailing &#39;.html&#39; from permalinks</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="c"># Directory</span><span class="w">
+</span><span class="w"></span><span class="nt">source_dir</span><span class="p">:</span><span class="w"> </span><span class="l">source</span><span class="w">
+</span><span class="w"></span><span class="nt">public_dir</span><span class="p">:</span><span class="w"> </span><span class="l">public</span><span class="w">
+</span><span class="w"></span><span class="nt">tag_dir</span><span class="p">:</span><span class="w"> </span><span class="l">tags</span><span class="w">
+</span><span class="w"></span><span class="nt">archive_dir</span><span class="p">:</span><span class="w"> </span><span class="l">archives</span><span class="w">
+</span><span class="w"></span><span class="nt">category_dir</span><span class="p">:</span><span class="w"> </span><span class="l">categories</span><span class="w">
+</span><span class="w"></span><span class="nt">code_dir</span><span class="p">:</span><span class="w"> </span><span class="l">downloads/code</span><span class="w">
+</span><span class="w"></span><span class="nt">i18n_dir</span><span class="p">:</span><span class="w"> </span><span class="p">:</span><span class="l">lang</span><span class="w">
+</span><span class="w"></span><span class="nt">skip_render</span><span class="p">:</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="c"># Writing</span><span class="w">
+</span><span class="w"></span><span class="nt">new_post_name</span><span class="p">:</span><span class="w"> </span><span class="p">:</span><span class="l">title.md</span><span class="w"> </span><span class="c"># File name of new posts</span><span class="w">
+</span><span class="w"></span><span class="nt">default_layout</span><span class="p">:</span><span class="w"> </span><span class="l">post</span><span class="w">
+</span><span class="w"></span><span class="nt">titlecase</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w"> </span><span class="c"># Transform title into titlecase</span><span class="w">
+</span><span class="w"></span><span class="nt">external_link</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">enable</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="c"># Open external links in new tab</span><span class="w">
+</span><span class="w">  </span><span class="nt">field</span><span class="p">:</span><span class="w"> </span><span class="l">site</span><span class="w"> </span><span class="c"># Apply to the whole site</span><span class="w">
+</span><span class="w">  </span><span class="nt">exclude</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="w">
+</span><span class="w"></span><span class="nt">filename_case</span><span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
+</span><span class="w"></span><span class="nt">render_drafts</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span><span class="w"></span><span class="nt">post_asset_folder</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span><span class="w"></span><span class="nt">relative_link</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span><span class="w"></span><span class="nt">future</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w"></span><span class="nt">highlight</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">enable</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span><span class="nt">line_number</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span><span class="nt">auto_detect</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span><span class="w">  </span><span class="nt">tab_replace</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="w">
+</span><span class="w">  </span><span class="nt">wrap</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span><span class="nt">hljs</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span><span class="w"></span><span class="nt">prismjs</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">enable</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span><span class="w">  </span><span class="nt">preprocess</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span><span class="nt">line_number</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span><span class="nt">tab_replace</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="c"># Home page setting</span><span class="w">
+</span><span class="w"></span><span class="c"># path: Root path for your blogs index page. (default = &#39;&#39;)</span><span class="w">
+</span><span class="w"></span><span class="c"># per_page: Posts displayed per page. (0 = disable pagination)</span><span class="w">
+</span><span class="w"></span><span class="c"># order_by: Posts order. (Order by date descending by default)</span><span class="w">
+</span><span class="w"></span><span class="nt">index_generator</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="w">
+</span><span class="w">  </span><span class="nt">per_page</span><span class="p">:</span><span class="w"> </span><span class="m">10</span><span class="w">
+</span><span class="w">  </span><span class="nt">order_by</span><span class="p">:</span><span class="w"> </span>-<span class="l">date</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="c"># Category &amp; Tag</span><span class="w">
+</span><span class="w"></span><span class="nt">default_category</span><span class="p">:</span><span class="w"> </span><span class="l">uncategorized</span><span class="w">
+</span><span class="w"></span><span class="nt">category_map</span><span class="p">:</span><span class="w">
+</span><span class="w"></span><span class="nt">tag_map</span><span class="p">:</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="c"># Metadata elements</span><span class="w">
+</span><span class="w"></span><span class="c">## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta</span><span class="w">
+</span><span class="w"></span><span class="nt">meta_generator</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="c"># Date / Time format</span><span class="w">
+</span><span class="w"></span><span class="c">## Hexo uses Moment.js to parse and display date</span><span class="w">
+</span><span class="w"></span><span class="c">## You can customize the date format as defined in</span><span class="w">
+</span><span class="w"></span><span class="c">## http://momentjs.com/docs/#/displaying/format/</span><span class="w">
+</span><span class="w"></span><span class="nt">date_format</span><span class="p">:</span><span class="w"> </span><span class="l">YYYY-MM-DD</span><span class="w">
+</span><span class="w"></span><span class="nt">time_format</span><span class="p">:</span><span class="w"> </span><span class="l">HH:mm:ss</span><span class="w">
+</span><span class="w"></span><span class="c">## updated_option supports &#39;mtime&#39;, &#39;date&#39;, &#39;empty&#39;</span><span class="w">
+</span><span class="w"></span><span class="nt">updated_option</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;mtime&#39;</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="c"># Pagination</span><span class="w">
+</span><span class="w"></span><span class="c">## Set per_page to 0 to disable pagination</span><span class="w">
+</span><span class="w"></span><span class="c"># 设置每页展示的文章数，若想取消分页可将此属性设置为0</span><span class="w">
+</span><span class="w"></span><span class="nt">per_page</span><span class="p">:</span><span class="w"> </span><span class="m">10</span><span class="w">
+</span><span class="w"></span><span class="nt">pagination_dir</span><span class="p">:</span><span class="w"> </span><span class="l">page</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="c"># Include / Exclude file(s)</span><span class="w">
+</span><span class="w"></span><span class="c">## include:/exclude: options only apply to the &#39;source/&#39; folder</span><span class="w">
+</span><span class="w"></span><span class="nt">include</span><span class="p">:</span><span class="w">
+</span><span class="w"></span><span class="nt">exclude</span><span class="p">:</span><span class="w">
+</span><span class="w"></span><span class="nt">ignore</span><span class="p">:</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="c"># Extensions</span><span class="w">
+</span><span class="w"></span><span class="c">## Plugins: https://hexo.io/plugins/</span><span class="w">
+</span><span class="w"></span><span class="c">## Themes: https://hexo.io/themes/</span><span class="w">
+</span><span class="w"></span><span class="nt">theme</span><span class="p">:</span><span class="w"> </span><span class="l">landscape</span><span class="w">
+</span><span class="w"></span><span class="c"># theme_config，在默认中并没有此设置。该设置是指定主题的配置文件，在这里放置的配置会覆盖主题目录下的 _config.yml 中的配置，例如：_config.next.yml</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="c"># Deployment</span><span class="w">
+</span><span class="w"></span><span class="c">## Docs: https://hexo.io/docs/one-command-deployment</span><span class="w">
+</span><span class="w"></span><span class="nt">deploy</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="w">
+</span></code></pre></td></tr></table>
+</div>
+</div><p>参考文档：</p>
+<ol>
+<li><a href="https://hexo.io/zh-cn/docs/configuration.html">配置 | Hexo</a></li>
+<li><a href="https://blog.csdn.net/loze/article/details/94209583">Hexo+NexT（二）：Hexo站点配置详解_Guide2IT-CSDN博客</a></li>
+</ol>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">hongmao</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2021-05-10
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/blog/tags/hexo/">Hexo</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/blog/post/002-hexo-change-to-next/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">【Hexo】Hexo更换为NexT主题</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/blog/post/000-hexo-create/">
+            <span class="next-text nav-default">【Hexo】使用Hexo创建一个站点</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:zhd04911@163.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/zhdbest" class="iconfont icon-github" title="github"></a>
+  <a href="https://zhdbest.github.io/blog/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2021<span class="heart"><i class="iconfont icon-heart"></i></span><span>hongmao</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/blog/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

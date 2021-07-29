@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 虹猫的自留地</title>
+    <link>https://zhdbest.github.io/blog/post/</link>
+    <description>Recent content in Posts on 虹猫的自留地</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 26 Jul 2021 22:38:05 +0800</lastBuildDate><atom:link href="https://zhdbest.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【Hugo】hugo-book主题使用</title>
+      <link>https://zhdbest.github.io/blog/post/010-hugo-book/</link>
+      <pubDate>Mon, 26 Jul 2021 22:38:05 +0800</pubDate>
+      
+      <guid>https://zhdbest.github.io/blog/post/010-hugo-book/</guid>
+      <description>一、安装 1 2 3 4 5 6 7 # 首先初始化一个站点项目 hugo new site hugo-book cd hugo-book # 下载主题 git clone &amp;lt;https://github.com/alex-shpak/hugo-book.git&amp;gt; themes/book # 指定主题为“book”启动便可以看到效果了 hugo server -t book 二、使用 首先</description>
+    </item>
+    
+    <item>
+      <title>【折腾】寻找Gitbook的替代者</title>
+      <link>https://zhdbest.github.io/blog/post/009-gitbook-replacer/</link>
+      <pubDate>Mon, 19 Jul 2021 23:05:55 +0800</pubDate>
+      
+      <guid>https://zhdbest.github.io/blog/post/009-gitbook-replacer/</guid>
+      <description>大概是在2019年的时候，我折腾过gitbook。 当时分别用它的两种主题做了两个小玩意儿，一个是默认主题“theme-default”，它就</description>
+    </item>
+    
+    <item>
+      <title>【Hugo】使用Hugo&#43;Even主题构建一个博客站点</title>
+      <link>https://zhdbest.github.io/blog/post/008-hugo-even-create/</link>
+      <pubDate>Sat, 10 Jul 2021 15:30:44 +0800</pubDate>
+      
+      <guid>https://zhdbest.github.io/blog/post/008-hugo-even-create/</guid>
+      <description>1. 安装Hugo 1 brew install hugo 2. 新建一个站点项目 1 hugo new site hugo-blog 3. 下载Even主题 1 2 3 4 # 首先进入站点项目根目录 cd hugo-blog # 下载主题 git clone &amp;lt;https://github.com/olOwOlo/hugo-theme-even&amp;gt; themes/even 4. 配置 将hugo-</description>
+    </item>
+    
+    <item>
+      <title>【Java】Java集合框架图</title>
+      <link>https://zhdbest.github.io/blog/post/007-java-collection-pic/</link>
+      <pubDate>Mon, 21 Jun 2021 17:55:22 +0800</pubDate>
+      
+      <guid>https://zhdbest.github.io/blog/post/007-java-collection-pic/</guid>
+      <description>注意事项： 不是严格的继承与实现关系 不含内部类实现 只包含访问修饰符为 public 的接口或者类 不包含抽象类 仅包含 java.util 包下的类或接口 绿色代表接口，蓝色代表类 有</description>
+    </item>
+    
+    <item>
+      <title>【Java文档】Java集合框架概述</title>
+      <link>https://zhdbest.github.io/blog/post/006-java-doc-collection-overview/</link>
+      <pubDate>Thu, 17 Jun 2021 17:56:29 +0800</pubDate>
+      
+      <guid>https://zhdbest.github.io/blog/post/006-java-doc-collection-overview/</guid>
+      <description>本文档主要是翻译的Collections Framework Overview，基于Java8。 概述 集合框架是表示和操作集合的统一体系结构，使它们能够独立于表示</description>
+    </item>
+    
+    <item>
+      <title>【Hexo】Hexo &#43; NexT 常见问题解决</title>
+      <link>https://zhdbest.github.io/blog/post/005-hexo-question/</link>
+      <pubDate>Sun, 06 Jun 2021 11:04:51 +0800</pubDate>
+      
+      <guid>https://zhdbest.github.io/blog/post/005-hexo-question/</guid>
+      <description>&lt;h1 id=&#34;1-如何设置文章折叠隐藏&#34;&gt;1. 如何设置文章折叠隐藏&lt;/h1&gt;
+&lt;p&gt;该痛点是文章较长，在博客首页展示的时候很不优雅，访客要翻很久才能翻到下一篇文章。&lt;/p&gt;
+&lt;p&gt;解决这个问题就是把文章给折叠起来，同时提供一个“阅读全文”按钮。访问如果想看该文章，就点击这个按钮。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>【Hexo】将Hexo站点一键部署至GitHub</title>
+      <link>https://zhdbest.github.io/blog/post/004-hexo-to-github/</link>
+      <pubDate>Wed, 02 Jun 2021 23:06:16 +0800</pubDate>
+      
+      <guid>https://zhdbest.github.io/blog/post/004-hexo-to-github/</guid>
+      <description>&lt;h1 id=&#34;前提&#34;&gt;前提&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;本地已安装git&lt;/li&gt;
+&lt;li&gt;有GitHub账号&lt;/li&gt;
+&lt;li&gt;已在GitHub上创建好了一个repo，并开启了GitHub Pages服务&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;此处需注意，在GitHub上创建repo时的命名很重要，这意味着你将来可以以怎样的域名访问你的站点。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>【Hexo】NexT主题配置</title>
+      <link>https://zhdbest.github.io/blog/post/003-hugo-next-config/</link>
+      <pubDate>Mon, 10 May 2021 19:55:33 +0800</pubDate>
+      
+      <guid>https://zhdbest.github.io/blog/post/003-hugo-next-config/</guid>
+      <description>&lt;p&gt;因为NexT主题的配置非常多，此处就不一一列举了。&lt;/p&gt;
+&lt;h1 id=&#34;1-主题核心配置&#34;&gt;1. 主题核心配置&lt;/h1&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;c&#34;&gt;# 当主题有新版本时，是否提醒，默认是false&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;reminder&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;false&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>【Hexo】Hexo更换为NexT主题</title>
+      <link>https://zhdbest.github.io/blog/post/002-hexo-change-to-next/</link>
+      <pubDate>Mon, 10 May 2021 19:44:38 +0800</pubDate>
+      
+      <guid>https://zhdbest.github.io/blog/post/002-hexo-change-to-next/</guid>
+      <description>&lt;p&gt;hexo默认的主题是 &lt;code&gt;landscape&lt;/code&gt; 。&lt;/p&gt;
+&lt;h1 id=&#34;更换主题&#34;&gt;更换主题&lt;/h1&gt;
+&lt;h2 id=&#34;下载主题&#34;&gt;下载主题&lt;/h2&gt;
+&lt;p&gt;进入要更换主题的网站项目内，进入 &lt;code&gt;themes&lt;/code&gt; 文件夹下，将要更换的主题放置在该目录下。例如：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 进入网站项目的根目录下，例如：&lt;/span&gt;
+&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; hexo-test
+
+&lt;span class=&#34;c1&#34;&gt;# 安装next主题，把它下载至themes文件夹下的next文件夹内&lt;/span&gt;
+git clone &amp;lt;https://github.com/theme-next/hexo-theme-next&amp;gt; themes/next
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>【Hexo】Hexo站点配置文件_config.yml详解</title>
+      <link>https://zhdbest.github.io/blog/post/001-hexo-config/</link>
+      <pubDate>Mon, 10 May 2021 19:39:25 +0800</pubDate>
+      
+      <guid>https://zhdbest.github.io/blog/post/001-hexo-config/</guid>
+      <description>一个原生的站点配置文件如下： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56</description>
+    </item>
+    
+    <item>
+      <title>【Hexo】使用Hexo创建一个站点</title>
+      <link>https://zhdbest.github.io/blog/post/000-hexo-create/</link>
+      <pubDate>Mon, 10 May 2021 19:30:19 +0800</pubDate>
+      
+      <guid>https://zhdbest.github.io/blog/post/000-hexo-create/</guid>
+      <description>&lt;h1 id=&#34;1-简介&#34;&gt;1. 简介&lt;/h1&gt;
+&lt;p&gt;Hexo是一套快速、简洁、高效的博客框架，基于Node.js。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

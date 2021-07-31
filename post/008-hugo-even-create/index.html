@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.86.0 with theme even" />
+<meta name="generator" content="Hugo 0.86.1 with theme even" />
 
 
 <link rel="canonical" href="https://zhdbest.github.io/blog/post/008-hugo-even-create/" />
@@ -49,7 +49,7 @@
 <meta itemprop="name" content="【Hugo】使用Hugo&#43;Even主题构建一个博客站点">
 <meta itemprop="description" content="1. 安装Hugo 1 brew install hugo 2. 新建一个站点项目 1 hugo new site hugo-blog 3. 下载Even主题 1 2 3 4 # 首先进入站点项目根目录 cd hugo-blog # 下载主题 git clone &lt;https://github.com/olOwOlo/hugo-theme-even&gt; themes/even 4. 配置 将hugo-"><meta itemprop="datePublished" content="2021-07-10T15:30:44+08:00" />
 <meta itemprop="dateModified" content="2021-07-10T15:30:44+08:00" />
-<meta itemprop="wordCount" content="1381">
+<meta itemprop="wordCount" content="1458">
 <meta itemprop="keywords" content="Hugo," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="【Hugo】使用Hugo&#43;Even主题构建一个博客站点"/>
 <meta name="twitter:description" content="1. 安装Hugo 1 brew install hugo 2. 新建一个站点项目 1 hugo new site hugo-blog 3. 下载Even主题 1 2 3 4 # 首先进入站点项目根目录 cd hugo-blog # 下载主题 git clone &lt;https://github.com/olOwOlo/hugo-theme-even&gt; themes/even 4. 配置 将hugo-"/>
@@ -351,6 +351,10 @@ hugo -d &lt;dir&gt;
 </span><span class="lnt">46
 </span><span class="lnt">47
 </span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="cp">#! /bin/bash
@@ -366,8 +370,8 @@ hugo -d &lt;dir&gt;
     <span class="c1"># 存在，开始删除旧文件</span>
     <span class="nb">cd</span> <span class="nv">$output_dir</span>
     <span class="nb">echo</span> <span class="s2">&#34;Deleting files in </span><span class="nv">$output_dir</span><span class="s2">...&#34;</span>
-    <span class="c1"># 删除</span>
-    find . <span class="p">|</span> grep -v -i -w readme.md <span class="p">|</span> grep -v -i -w .gitignore <span class="p">|</span> xargs rm -rf
+    <span class="c1"># 删除，但排除“readme.md”、“.gitignore”、“.git”</span>
+    find . <span class="p">|</span> grep -v -i -w readme.md <span class="p">|</span> grep -v -i -w .gitignore <span class="p">|</span> grep -v -i -w .git <span class="p">|</span> xargs rm -rf
     <span class="nb">echo</span> <span class="s2">&#34;Delete done... &#34;</span>
     <span class="nb">cd</span> ..
 <span class="k">fi</span>
@@ -377,10 +381,14 @@ hugo --theme<span class="o">=</span><span class="nv">$theme</span> -d <span clas
 
 <span class="nb">cd</span> <span class="nv">$output_dir</span>
 
-<span class="c1"># 执行git相关</span>
-git init
-<span class="c1"># 设置远程主机</span>
-git remote add origin https://github.com/zhdbest/blog.git
+<span class="c1"># 判断是否已有远程主机，若是，则无需再做初始化</span>
+<span class="k">if</span> <span class="o">[</span> <span class="s2">&#34;</span><span class="k">$(</span>git remote<span class="k">)</span><span class="s2">&#34;</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+    <span class="c1"># 执行git相关</span>
+    git init
+    <span class="c1"># 设置远程主机</span>
+    git remote add origin https://github.com/zhdbest/blog.git
+<span class="k">fi</span>
+
 <span class="c1"># 设置git user</span>
 git config user.name zhdbest
 git config user.email zhd94811@163.com

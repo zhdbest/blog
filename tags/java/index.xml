@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on 虹猫的自留地</title>
+    <link>https://zhdbest.github.io/blog/tags/java/</link>
+    <description>Recent content in Java on 虹猫的自留地</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 01 Aug 2021 18:19:37 +0800</lastBuildDate><atom:link href="https://zhdbest.github.io/blog/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【Java】聊聊Java SE、Java EE和Java ME</title>
+      <link>https://zhdbest.github.io/blog/post/013-java-platform-edition/</link>
+      <pubDate>Sun, 01 Aug 2021 18:19:37 +0800</pubDate>
+      
+      <guid>https://zhdbest.github.io/blog/post/013-java-platform-edition/</guid>
+      <description>先来看Oracle官网的解释： Java EE：Java Platform, Enterprise Edition Java平台企业版（JavaEE）是社区驱动企业软件的标准。Java EE是利用Java Community</description>
+    </item>
+    
+  </channel>
+</rss>

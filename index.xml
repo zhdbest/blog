@@ -6,7 +6,16 @@
     <description>Recent content on 虹猫的自留地</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 31 Jul 2021 14:05:19 +0800</lastBuildDate><atom:link href="https://zhdbest.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Aug 2021 18:19:37 +0800</lastBuildDate><atom:link href="https://zhdbest.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【Java】聊聊Java SE、Java EE和Java ME</title>
+      <link>https://zhdbest.github.io/blog/post/013-java-platform-edition/</link>
+      <pubDate>Sun, 01 Aug 2021 18:19:37 +0800</pubDate>
+      
+      <guid>https://zhdbest.github.io/blog/post/013-java-platform-edition/</guid>
+      <description>先来看Oracle官网的解释： Java EE：Java Platform, Enterprise Edition Java平台企业版（JavaEE）是社区驱动企业软件的标准。Java EE是利用Java Community</description>
+    </item>
+    
     <item>
       <title>【Hugo】Hugo配置详解及常见问题</title>
       <link>https://zhdbest.github.io/blog/post/012-hugo-faq/</link>

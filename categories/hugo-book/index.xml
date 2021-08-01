@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo-book on 虹猫的自留地</title>
+    <title>hugo-book on 虹猫的自留地</title>
     <link>https://zhdbest.github.io/blog/categories/hugo-book/</link>
-    <description>Recent content in Hugo-book on 虹猫的自留地</description>
+    <description>Recent content in hugo-book on 虹猫的自留地</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 26 Jul 2021 22:38:05 +0800</lastBuildDate><atom:link href="https://zhdbest.github.io/blog/categories/hugo-book/index.xml" rel="self" type="application/rss+xml" />

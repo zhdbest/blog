@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo-geekdoc on 虹猫的自留地</title>
+    <link>https://zhdbest.github.io/blog/tags/hugo-geekdoc/</link>
+    <description>Recent content in hugo-geekdoc on 虹猫的自留地</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 27 Jul 2021 19:48:40 +0800</lastBuildDate><atom:link href="https://zhdbest.github.io/blog/tags/hugo-geekdoc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【Hugo】hugo-geekdoc主题使用</title>
+      <link>https://zhdbest.github.io/blog/post/011-hugo-geekdoc/</link>
+      <pubDate>Tue, 27 Jul 2021 19:48:40 +0800</pubDate>
+      
+      <guid>https://zhdbest.github.io/blog/post/011-hugo-geekdoc/</guid>
+      <description>1. 准备工作 1 2 3 4 5 6 7 8 9 # 新建站点 hugo new site hugo-geekdoc # 进入站点路径下 cd hugo-geekdoc # 安装主题 mkdir -p themes/hugo-geekdoc/ curl -L &amp;lt;https://github.com/thegeeklab/hugo-geekdoc/releases/latest/download/hugo-geekdoc.tar.gz&amp;gt; | tar -xz -C themes/hugo-geekdoc/ --strip-components=1 修改根目目下的config.toml进行</description>
+    </item>
+    
+  </channel>
+</rss>

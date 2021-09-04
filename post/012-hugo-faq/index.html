@@ -24,7 +24,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.86.1 with theme even" />
+<meta name="generator" content="Hugo 0.88.0 with theme even" />
 
 
 <link rel="canonical" href="https://zhdbest.github.io/blog/post/012-hugo-faq/" />
@@ -52,7 +52,7 @@
 <meta itemprop="description" content="配置文件详解
 此处配置项并非最全、也不保证最新，只是我个人在使用这些配置时的记录。"><meta itemprop="datePublished" content="2021-07-31T14:05:19+08:00" />
 <meta itemprop="dateModified" content="2021-07-31T14:05:19+08:00" />
-<meta itemprop="wordCount" content="2387">
+<meta itemprop="wordCount" content="2412">
 <meta itemprop="keywords" content="Hugo," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="【Hugo】Hugo配置详解及常见问题"/>
 <meta name="twitter:description" content="配置文件详解
@@ -208,12 +208,18 @@
 </span><span class="lnt">45
 </span><span class="lnt">46
 </span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="c"># 网站的语言代码。它在默认RSS模板中使用，对于多语言站点非常有用，默认值为空字符串</span>
 <span class="nx">languageCode</span> <span class="p">=</span> <span class="s2">&#34;zh-cn&#34;</span>
 <span class="c"># 没有语言指示器的内容将默认为是该语言，默认值为“en”，如果此属性值与languageCode的值不同，则可能触发浏览器提示进行网页翻译</span>
 <span class="nx">defaultContentLanguage</span> <span class="p">=</span> <span class="s2">&#34;en&#34;</span> 
+
+<span class="c"># 开启对emoji的支持，默认是关闭的</span>
+<span class="nx">enableEmoji</span> <span class="p">=</span> <span class="kc">true</span>
 
 <span class="c"># 配置标记</span>
 <span class="p">[</span><span class="nx">markup</span><span class="p">]</span>

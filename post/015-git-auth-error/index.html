@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>【问题解决】GitHub不支持密码认证 - 虹猫的自留地</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="hongmao" /><meta name="description" content="在昨天，也就是2021年的8月13日，GitHub正式取消了使用账号密码token验证访问GitHub API。 在这之后，假设您一直使用的是账" /><meta name="keywords" content="Github" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.88.0 with theme even" />
+
+
+<link rel="canonical" href="https://zhdbest.github.io/blog/post/015-git-auth-error/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/blog/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/blog/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/blog/favicon-16x16.png">
+<link rel="manifest" href="/blog/manifest.json">
+<link rel="mask-icon" href="/blog/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/blog/sass/main.min.b874a8796a492f0d7c86bb24c33cbf052935783a5778ebaf819a8e514bf49f10.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="【问题解决】GitHub不支持密码认证" />
+<meta property="og:description" content="在昨天，也就是2021年的8月13日，GitHub正式取消了使用账号密码token验证访问GitHub API。 在这之后，假设您一直使用的是账" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://zhdbest.github.io/blog/post/015-git-auth-error/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-08-14T16:38:06+08:00" />
+<meta property="article:modified_time" content="2021-08-14T16:38:06+08:00" />
+
+<meta itemprop="name" content="【问题解决】GitHub不支持密码认证">
+<meta itemprop="description" content="在昨天，也就是2021年的8月13日，GitHub正式取消了使用账号密码token验证访问GitHub API。 在这之后，假设您一直使用的是账"><meta itemprop="datePublished" content="2021-08-14T16:38:06+08:00" />
+<meta itemprop="dateModified" content="2021-08-14T16:38:06+08:00" />
+<meta itemprop="wordCount" content="890">
+<meta itemprop="keywords" content="Github," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="【问题解决】GitHub不支持密码认证"/>
+<meta name="twitter:description" content="在昨天，也就是2021年的8月13日，GitHub正式取消了使用账号密码token验证访问GitHub API。 在这之后，假设您一直使用的是账"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/blog/" class="logo">虹猫的自留地</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/blog/">
+        <li class="mobile-menu-item">首页</li>
+      </a><a href="/blog/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/blog/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/blog/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/blog/" class="logo">虹猫的自留地</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/blog/">首页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/blog/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/blog/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/blog/categories/">分类</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">【问题解决】GitHub不支持密码认证</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2021-08-14 </span>
+        <div class="post-category">
+            <a href="/blog/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"> 问题解决 </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents"></nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>在昨天，也就是2021年的8月13日，GitHub正式取消了使用账号密码token验证访问GitHub API。</p>
+<p>在这之后，假设您一直使用的是账号密码认证，则<code>push</code>操作或者针对私有项目的<code>pull</code>操作时会报错。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># 假设当前项目是个私有项目</span>
+git pull
+Username <span class="k">for</span> <span class="s1">&#39;https://github.com&#39;</span>: zhdbest
+<span class="c1"># 下面输入的密码是你GitHub账号的密码</span>
+Password <span class="k">for</span> <span class="s1">&#39;https://zhdbest@github.com&#39;</span>:
+remote: Support <span class="k">for</span> password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ <span class="k">for</span> more information.
+fatal: 无法访问 <span class="s1">&#39;https://github.com/zhdbest/hugo-blog.git/&#39;</span>：The requested URL returned error: <span class="m">403</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>此时，我们需要去GitHub上生成一个token，路径为：“Settings” -&gt; “Developer settings” -&gt; “Personal access tokens”（<a href="https://github.com/settings/tokens">点我</a>可直达）。</p>
+<p>在该页面点击“Generate new token”生成一个新的token，或者你想重新生成以前的token也可以。</p>
+<p>新生成的token类似于：<code>ghp_h3xDn0OPQEe3hMMaN7v6no2FWmJXth7Cbqi9</code>。</p>
+<p>此时，我们便可以再次重试上面失败了的操作：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># 假设当前项目是个私有项目</span>
+git pull
+Username <span class="k">for</span> <span class="s1">&#39;https://github.com&#39;</span>: zhdbest
+<span class="c1"># 下面输入的密码不再是您GitHub账号的密码，而是您刚生成的token：ghp_h3xDn0OPQEe3hMMaN7v6no2FWmJXth7Cbqi9</span>
+Password <span class="k">for</span> <span class="s1">&#39;https://zhdbest@github.com&#39;</span>:
+<span class="c1"># 输出了如下内容，可以看到目前已经不再报错了</span>
+已经是最新的。
+</code></pre></td></tr></table>
+</div>
+</div><p>如果您使用的是macOS系统，那大概率您的GitHub的账号密码已经记录在了“钥匙串访问”里，此时您做上述git操作时，不会提示您输入账号、密码，而是直接报错<code>Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.</code>，此时的解决方案是，在钥匙串中找到该密码，然后删除该密码，此时再次重试git操作时便会让您输入账号密码了，此时注意输入的密码为新生成的token即可。或者，干脆直接在“钥匙串访问”中双击该密码记录，然后修改密码为新生成的token即可。</p>
+<p>在“钥匙串访问”中搜索“github”即可找到对应的密码记录，注意其种类为“互联网密码”。</p>
+<p><img src="https://img.hongmao.run/blog/2021/08/github-pwd.png" alt="github-pwd"></p>
+<ul>
+<li>参考资料：<a href="https://stackoverflow.com/questions/68775869/support-for-password-authentication-was-removed-please-use-a-personal-access-to">git - Support for password authentication was removed. Please use a personal access token instead - Stack Overflow</a></li>
+</ul>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">hongmao</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2021-08-14
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/blog/tags/github/">Github</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/blog/post/017-hugo-learn/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">【Hugo】hugo-theme-learn主题使用</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/blog/post/013-java-platform-edition/">
+            <span class="next-text nav-default">【Java】聊聊Java SE、Java EE和Java ME</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:zhd04911@163.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/zhdbest" class="iconfont icon-github" title="github"></a>
+  <a href="https://zhdbest.github.io/blog/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2021<span class="heart"><i class="iconfont icon-heart"></i></span><span>hongmao</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/blog/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

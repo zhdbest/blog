@@ -6,7 +6,25 @@
     <description>Recent content in Posts on 虹猫的自留地</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 01 Aug 2021 18:19:37 +0800</lastBuildDate><atom:link href="https://zhdbest.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 22 Aug 2021 16:34:26 +0800</lastBuildDate><atom:link href="https://zhdbest.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【Hugo】hugo-theme-learn主题使用</title>
+      <link>https://zhdbest.github.io/blog/post/017-hugo-learn/</link>
+      <pubDate>Sun, 22 Aug 2021 16:34:26 +0800</pubDate>
+      
+      <guid>https://zhdbest.github.io/blog/post/017-hugo-learn/</guid>
+      <description>一、 安装 1 2 3 4 5 6 7 8 9 # 新建站点 hugo new site hugo-learn # 进入站点路径下 cd hugo-learn # 安装主题 cd themes git clone https://github.com/matcornic/hugo-theme-learn.git 修改根目目下的config.toml进行简单配置： 1 2 3</description>
+    </item>
+    
+    <item>
+      <title>【问题解决】GitHub不支持密码认证</title>
+      <link>https://zhdbest.github.io/blog/post/015-git-auth-error/</link>
+      <pubDate>Sat, 14 Aug 2021 16:38:06 +0800</pubDate>
+      
+      <guid>https://zhdbest.github.io/blog/post/015-git-auth-error/</guid>
+      <description>在昨天，也就是2021年的8月13日，GitHub正式取消了使用账号密码token验证访问GitHub API。 在这之后，假设您一直使用的是账</description>
+    </item>
+    
     <item>
       <title>【Java】聊聊Java SE、Java EE和Java ME</title>
       <link>https://zhdbest.github.io/blog/post/013-java-platform-edition/</link>

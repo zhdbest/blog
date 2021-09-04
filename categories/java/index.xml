@@ -16,5 +16,14 @@
       <description>先来看Oracle官网的解释： Java EE：Java Platform, Enterprise Edition Java平台企业版（JavaEE）是社区驱动企业软件的标准。Java EE是利用Java Community</description>
     </item>
     
+    <item>
+      <title>【Java】Java集合框架图</title>
+      <link>https://zhdbest.github.io/blog/post/007-java-collection-pic/</link>
+      <pubDate>Mon, 21 Jun 2021 17:55:22 +0800</pubDate>
+      
+      <guid>https://zhdbest.github.io/blog/post/007-java-collection-pic/</guid>
+      <description>注意事项： 不是严格的继承与实现关系 不含内部类实现 只包含访问修饰符为 public 的接口或者类 不包含抽象类 仅包含 java.util 包下的类或接口 绿色代表接口，蓝色代表类 有</description>
+    </item>
+    
   </channel>
 </rss>

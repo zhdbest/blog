@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.86.1 with theme even" />
+<meta name="generator" content="Hugo 0.88.0 with theme even" />
 
 
 <link rel="canonical" href="https://zhdbest.github.io/blog/post/008-hugo-even-create/" />
@@ -426,7 +426,7 @@ git push -u origin +master
 <span class="s">```</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>如果，在代码块中直接这样写，会导致Hugo尝试将其解析为Shortcode，但有找不到名为<code>tag</code>的Shortcode定义，进而导致报错。</p>
+</div><p>如果，在代码块中直接这样写，会导致Hugo尝试将其解析为Shortcode，但又找不到名为<code>tag</code>的Shortcode定义，进而导致报错。</p>
 <p>为了避免这种问题，可以使用<code>/*</code>和<code>*/</code>将不需要解析的内容包裹起来，例如：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">

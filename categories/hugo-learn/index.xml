@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo-learn on 虹猫的自留地</title>
+    <link>https://zhdbest.github.io/blog/categories/hugo-learn/</link>
+    <description>Recent content in hugo-learn on 虹猫的自留地</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 22 Aug 2021 16:34:26 +0800</lastBuildDate><atom:link href="https://zhdbest.github.io/blog/categories/hugo-learn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【Hugo】hugo-theme-learn主题使用</title>
+      <link>https://zhdbest.github.io/blog/post/017-hugo-learn/</link>
+      <pubDate>Sun, 22 Aug 2021 16:34:26 +0800</pubDate>
+      
+      <guid>https://zhdbest.github.io/blog/post/017-hugo-learn/</guid>
+      <description>一、 安装 1 2 3 4 5 6 7 8 9 # 新建站点 hugo new site hugo-learn # 进入站点路径下 cd hugo-learn # 安装主题 cd themes git clone https://github.com/matcornic/hugo-theme-learn.git 修改根目目下的config.toml进行简单配置： 1 2 3</description>
+    </item>
+    
+  </channel>
+</rss>

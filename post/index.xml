@@ -6,7 +6,16 @@
     <description>Recent content in Posts on 虹猫的自留地</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 05 Oct 2021 18:21:01 +0800</lastBuildDate><atom:link href="https://zhdbest.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 07 Nov 2021 10:59:42 +0800</lastBuildDate><atom:link href="https://zhdbest.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【Docker】CentOS7安装Docker</title>
+      <link>https://zhdbest.github.io/blog/post/025-centos7-install-docker/</link>
+      <pubDate>Sun, 07 Nov 2021 10:59:42 +0800</pubDate>
+      
+      <guid>https://zhdbest.github.io/blog/post/025-centos7-install-docker/</guid>
+      <description>准备工作 首先说一下安装的环境，我是用的阿里云的服务器，操作系统为centOS，版本是7.9.2009，系统内核版本是3.10.0-957.2</description>
+    </item>
+    
     <item>
       <title>【折腾】oh-my-zsh使用</title>
       <link>https://zhdbest.github.io/blog/post/022-oh-my-zsh/</link>
@@ -14,6 +23,15 @@
       
       <guid>https://zhdbest.github.io/blog/post/022-oh-my-zsh/</guid>
       <description>简介 引用官网的介绍： Oh My Zsh是一个愉快的、开源的、社区驱动的框架，用于管理您的Zsh配置。它附带了数千个有用的功能、助手、插件、主题，还有</description>
+    </item>
+    
+    <item>
+      <title>【HTTP】MIME类型</title>
+      <link>https://zhdbest.github.io/blog/post/020-mime-type/</link>
+      <pubDate>Sat, 25 Sep 2021 22:08:41 +0800</pubDate>
+      
+      <guid>https://zhdbest.github.io/blog/post/020-mime-type/</guid>
+      <description>MIME类型简称为媒体类型，全称是：“Multipurpose Internet Mail Extensions”，它是一套标准，用于让浏览器识别出如何处理请求的资源</description>
     </item>
     
     <item>

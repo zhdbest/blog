@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on 虹猫的自留地</title>
+    <link>https://zhdbest.github.io/blog/categories/docker/</link>
+    <description>Recent content in Docker on 虹猫的自留地</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 07 Nov 2021 10:59:42 +0800</lastBuildDate><atom:link href="https://zhdbest.github.io/blog/categories/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【Docker】CentOS7安装Docker</title>
+      <link>https://zhdbest.github.io/blog/post/025-centos7-install-docker/</link>
+      <pubDate>Sun, 07 Nov 2021 10:59:42 +0800</pubDate>
+      
+      <guid>https://zhdbest.github.io/blog/post/025-centos7-install-docker/</guid>
+      <description>准备工作 首先说一下安装的环境，我是用的阿里云的服务器，操作系统为centOS，版本是7.9.2009，系统内核版本是3.10.0-957.2</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HTTP on 虹猫的自留地</title>
+    <link>https://zhdbest.github.io/blog/categories/http/</link>
+    <description>Recent content in HTTP on 虹猫的自留地</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 25 Sep 2021 22:08:41 +0800</lastBuildDate><atom:link href="https://zhdbest.github.io/blog/categories/http/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【HTTP】MIME类型</title>
+      <link>https://zhdbest.github.io/blog/post/020-mime-type/</link>
+      <pubDate>Sat, 25 Sep 2021 22:08:41 +0800</pubDate>
+      
+      <guid>https://zhdbest.github.io/blog/post/020-mime-type/</guid>
+      <description>MIME类型简称为媒体类型，全称是：“Multipurpose Internet Mail Extensions”，它是一套标准，用于让浏览器识别出如何处理请求的资源</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tomcat on 虹猫的自留地</title>
+    <link>https://zhdbest.github.io/blog/tags/tomcat/</link>
+    <description>Recent content in Tomcat on 虹猫的自留地</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 20 Feb 2022 16:40:53 +0800</lastBuildDate><atom:link href="https://zhdbest.github.io/blog/tags/tomcat/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【Servlet】写一个简单的servlet，并用tomcat部署它</title>
+      <link>https://zhdbest.github.io/blog/post/029-servlet-demo/</link>
+      <pubDate>Sun, 20 Feb 2022 16:40:53 +0800</pubDate>
+      
+      <guid>https://zhdbest.github.io/blog/post/029-servlet-demo/</guid>
+      <description>&lt;h1 id=&#34;一创建一个空项目并编写相关代码&#34;&gt;一、创建一个空项目，并编写相关代码&lt;/h1&gt;
+&lt;p&gt;使用IDEA创建一个空项目，名为&lt;code&gt;hello-world&lt;/code&gt;：&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

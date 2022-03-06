@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.92.2 with theme even" />
+<meta name="generator" content="Hugo 0.93.1 with theme even" />
 
 
 <link rel="canonical" href="https://zhdbest.github.io/blog/post/022-oh-my-zsh/" />
@@ -168,11 +168,11 @@
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">$ sh -c <span class="s2">&#34;</span><span class="k">$(</span>curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh<span class="k">)</span><span class="s2">&#34;</span>
-
-<span class="c1"># 也可以使用wget</span>
-$ sh -c <span class="s2">&#34;</span><span class="k">$(</span>wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -<span class="k">)</span><span class="s2">&#34;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ sh -c <span class="s2">&#34;</span><span class="k">$(</span>curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh<span class="k">)</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 也可以使用wget</span>
+</span></span><span class="line"><span class="cl">$ sh -c <span class="s2">&#34;</span><span class="k">$(</span>wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -<span class="k">)</span><span class="s2">&#34;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>安装完成后可以看到控制台有如下输出：</p>
 <div class="highlight"><div class="chroma">
@@ -196,24 +196,24 @@ $ sh -c <span class="s2">&#34;</span><span class="k">$(</span>wget https://raw.g
 </span><span class="lnt">17
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">Looking <span class="k">for</span> an existing zsh config...
-Found ~/.zshrc. Backing up to /Users/hongmao/.zshrc.pre-oh-my-zsh
-Using the Oh My Zsh template file and adding it to ~/.zshrc.
-
-         __                                     __
-  ____  / /_     ____ ___  __  __   ____  _____/ /_
- / __ <span class="se">\/</span> __ <span class="se">\ </span>  / __ <span class="sb">`</span>__ <span class="se">\/</span> / / /  /_  / / ___/ __ <span class="se">\
-</span><span class="se"></span>/ /_/ / / / /  / / / / / / /_/ /    / /_<span class="o">(</span>__  <span class="o">)</span> / / /
-<span class="se">\_</span>___/_/ /_/  /_/ /_/ /_/<span class="se">\_</span>_, /    /___/____/_/ /_/
-                        /____/                       ....is now installed!
-
-
-Before you scream Oh My Zsh! look over the <span class="sb">`</span>.zshrc<span class="sb">`</span> file to <span class="k">select</span> plugins, themes, and options.
-
-• Follow us on Twitter: @ohmyzsh
-• Join our Discord community: Discord server
-• Get stickers, t-shirts, coffee mugs and more: Planet Argon Shop
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">Looking <span class="k">for</span> an existing zsh config...
+</span></span><span class="line"><span class="cl">Found ~/.zshrc. Backing up to /Users/hongmao/.zshrc.pre-oh-my-zsh
+</span></span><span class="line"><span class="cl">Using the Oh My Zsh template file and adding it to ~/.zshrc.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">         __                                     __
+</span></span><span class="line"><span class="cl">  ____  / /_     ____ ___  __  __   ____  _____/ /_
+</span></span><span class="line"><span class="cl"> / __ <span class="se">\/</span> __ <span class="se">\ </span>  / __ <span class="sb">`</span>__ <span class="se">\/</span> / / /  /_  / / ___/ __ <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>/ /_/ / / / /  / / / / / / /_/ /    / /_<span class="o">(</span>__  <span class="o">)</span> / / /
+</span></span><span class="line"><span class="cl"><span class="se">\_</span>___/_/ /_/  /_/ /_/ /_/<span class="se">\_</span>_, /    /___/____/_/ /_/
+</span></span><span class="line"><span class="cl">                        /____/                       ....is now installed!
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Before you scream Oh My Zsh! look over the <span class="sb">`</span>.zshrc<span class="sb">`</span> file to <span class="k">select</span> plugins, themes, and options.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">• Follow us on Twitter: @ohmyzsh
+</span></span><span class="line"><span class="cl">• Join our Discord community: Discord server
+</span></span><span class="line"><span class="cl">• Get stickers, t-shirts, coffee mugs and more: Planet Argon Shop
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>鉴于某些特殊情况，可能连不上https://raw.github.com这个域名，此时要么自己想办法解决网络问题，要么使用gitee：</p>
 <div class="highlight"><div class="chroma">
@@ -221,8 +221,8 @@ Before you scream Oh My Zsh! look over the <span class="sb">`</span>.zshrc<span 
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sh -c <span class="s2">&#34;</span><span class="k">$(</span>wget -O- https://gitee.com/mirrors/oh-my-zsh/raw/master/tools/install.sh<span class="k">)</span><span class="s2">&#34;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sh -c <span class="s2">&#34;</span><span class="k">$(</span>wget -O- https://gitee.com/mirrors/oh-my-zsh/raw/master/tools/install.sh<span class="k">)</span><span class="s2">&#34;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>注：上述命令我并未执行过，不保证一定可以成功，如不能安装，可自行去gitee寻找解决方案。</p>
 <p>还有，注意安装时控制台的输出中有三行：</p>
@@ -233,10 +233,10 @@ Before you scream Oh My Zsh! look over the <span class="sb">`</span>.zshrc<span 
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">Looking <span class="k">for</span> an existing zsh config...
-Found ~/.zshrc. Backing up to /Users/hongmao/.zshrc.pre-oh-my-zsh
-Using the Oh My Zsh template file and adding it to ~/.zshrc.
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">Looking <span class="k">for</span> an existing zsh config...
+</span></span><span class="line"><span class="cl">Found ~/.zshrc. Backing up to /Users/hongmao/.zshrc.pre-oh-my-zsh
+</span></span><span class="line"><span class="cl">Using the Oh My Zsh template file and adding it to ~/.zshrc.
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>意思就是，你原来的<code>.zshrc</code>文件现已被“Oh My Zsh”霸占了，原文件也没给你删掉，而是改名成了<code>.zshrc.pre-oh-my-zsh</code>。</p>
 <h1 id="主题">主题</h1>
@@ -249,9 +249,9 @@ Using the Oh My Zsh template file and adding it to ~/.zshrc.
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># 设置zsh的主题为ys</span>
-<span class="nv">ZSH_THEME</span><span class="o">=</span><span class="s2">&#34;ys&#34;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># 设置zsh的主题为ys</span>
+</span></span><span class="line"><span class="cl"><span class="nv">ZSH_THEME</span><span class="o">=</span><span class="s2">&#34;ys&#34;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>除此之外你还可以去自定义主题，或者设置<code>ZSH_THEME=&quot;random&quot;</code>，则每次创建一个会话时会采用一个随机主题。</p>
 <h1 id="插件">插件</h1>
@@ -264,11 +264,11 @@ Using the Oh My Zsh template file and adding it to ~/.zshrc.
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="nv">plugins</span><span class="o">=(</span>git<span class="o">)</span>
-
-<span class="c1"># 如果想开启更多插件，只需如下设置即可：</span>
-<span class="nv">plugins</span><span class="o">=(</span>git brew<span class="o">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nv">plugins</span><span class="o">=(</span>git<span class="o">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 如果想开启更多插件，只需如下设置即可：</span>
+</span></span><span class="line"><span class="cl"><span class="nv">plugins</span><span class="o">=(</span>git brew<span class="o">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>我使用的插件有：</p>
 <ul>
@@ -288,11 +288,11 @@ Using the Oh My Zsh template file and adding it to ~/.zshrc.
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># 下载</span>
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git <span class="si">${</span><span class="nv">ZSH_CUSTOM</span><span class="k">:-</span><span class="p">~/.oh-my-zsh/custom</span><span class="si">}</span>/plugins/zsh-syntax-highlighting
-<span class="c1"># 修改.zshrc文件</span>
-<span class="nv">plugins</span><span class="o">=(</span> <span class="o">[</span>plugins...<span class="o">]</span> zsh-syntax-highlighting<span class="o">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># 下载</span>
+</span></span><span class="line"><span class="cl">git clone https://github.com/zsh-users/zsh-syntax-highlighting.git <span class="si">${</span><span class="nv">ZSH_CUSTOM</span><span class="k">:-</span><span class="p">~/.oh-my-zsh/custom</span><span class="si">}</span>/plugins/zsh-syntax-highlighting
+</span></span><span class="line"><span class="cl"><span class="c1"># 修改.zshrc文件</span>
+</span></span><span class="line"><span class="cl"><span class="nv">plugins</span><span class="o">=(</span> <span class="o">[</span>plugins...<span class="o">]</span> zsh-syntax-highlighting<span class="o">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div></li>
 <li>
@@ -308,14 +308,14 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git <span class="
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># 下载</span>
-git clone https://github.com/zsh-users/zsh-autosuggestions <span class="si">${</span><span class="nv">ZSH_CUSTOM</span><span class="k">:-</span><span class="p">~/.oh-my-zsh/custom</span><span class="si">}</span>/plugins/zsh-autosuggestions
-<span class="c1"># 修改.zshrc文件</span>
-<span class="nv">plugins</span><span class="o">=(</span> 
-    <span class="c1"># other plugins...</span>
-    zsh-autosuggestions
-<span class="o">)</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># 下载</span>
+</span></span><span class="line"><span class="cl">git clone https://github.com/zsh-users/zsh-autosuggestions <span class="si">${</span><span class="nv">ZSH_CUSTOM</span><span class="k">:-</span><span class="p">~/.oh-my-zsh/custom</span><span class="si">}</span>/plugins/zsh-autosuggestions
+</span></span><span class="line"><span class="cl"><span class="c1"># 修改.zshrc文件</span>
+</span></span><span class="line"><span class="cl"><span class="nv">plugins</span><span class="o">=(</span> 
+</span></span><span class="line"><span class="cl">    <span class="c1"># other plugins...</span>
+</span></span><span class="line"><span class="cl">    zsh-autosuggestions
+</span></span><span class="line"><span class="cl"><span class="o">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div></li>
 </ul>
@@ -344,26 +344,26 @@ git clone https://github.com/zsh-users/zsh-autosuggestions <span class="si">${</
 </span><span class="lnt">19
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># 1. 在自定义插件的目录下创建文件夹my-aliases</span>
-mkdir <span class="nv">$ZSH_CUSTOM</span>/plugins/my-aliases
-<span class="c1"># 2. 进入新创建的目录</span>
-<span class="nb">cd</span> <span class="nv">$ZSH_CUSTOM</span>/plugins/my-aliases
-<span class="c1"># 3. 创建并编辑、保存文件：my-aliases.plugin.zsh</span>
-vim my-aliases.plugin.zsh
-<span class="c1"># 上述zsh文件中写入的命令别名类似如下所示：</span>
-<span class="c1"># # open APP: Code</span>
-<span class="c1"># alias code=&#39;open /Applications/Visual\ Studio\ Code.app&#39;</span>
-<span class="c1"># # open APP: IDEA</span>
-<span class="c1"># alias idea=&#39;open ~/Applications/JetBrains\ Toolbox/IntelliJ\ IDEA\ Ultimate.app&#39;</span>
-<span class="c1"># # open APP: DataGrip</span>
-<span class="c1"># alias data=&#39;open ~/Applications/JetBrains\ Toolbox/DataGrip.app&#39;</span>
-<span class="c1"># 4. 编辑.zshrc文件，开启刚自定义的插件my-aliases</span>
-vim ~/.zshrc
-<span class="c1"># 在插件的最后加入my-aliases</span>
-<span class="nv">plugins</span><span class="o">=(</span>git z zsh-syntax-highlighting zsh-autosuggestions my-aliases<span class="o">)</span>
-<span class="c1"># 5. 刷新.zshrc</span>
-<span class="nb">source</span> ~/.zshrc
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># 1. 在自定义插件的目录下创建文件夹my-aliases</span>
+</span></span><span class="line"><span class="cl">mkdir <span class="nv">$ZSH_CUSTOM</span>/plugins/my-aliases
+</span></span><span class="line"><span class="cl"><span class="c1"># 2. 进入新创建的目录</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> <span class="nv">$ZSH_CUSTOM</span>/plugins/my-aliases
+</span></span><span class="line"><span class="cl"><span class="c1"># 3. 创建并编辑、保存文件：my-aliases.plugin.zsh</span>
+</span></span><span class="line"><span class="cl">vim my-aliases.plugin.zsh
+</span></span><span class="line"><span class="cl"><span class="c1"># 上述zsh文件中写入的命令别名类似如下所示：</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># # open APP: Code</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># alias code=&#39;open /Applications/Visual\ Studio\ Code.app&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># # open APP: IDEA</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># alias idea=&#39;open ~/Applications/JetBrains\ Toolbox/IntelliJ\ IDEA\ Ultimate.app&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># # open APP: DataGrip</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># alias data=&#39;open ~/Applications/JetBrains\ Toolbox/DataGrip.app&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 4. 编辑.zshrc文件，开启刚自定义的插件my-aliases</span>
+</span></span><span class="line"><span class="cl">vim ~/.zshrc
+</span></span><span class="line"><span class="cl"><span class="c1"># 在插件的最后加入my-aliases</span>
+</span></span><span class="line"><span class="cl"><span class="nv">plugins</span><span class="o">=(</span>git z zsh-syntax-highlighting zsh-autosuggestions my-aliases<span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 5. 刷新.zshrc</span>
+</span></span><span class="line"><span class="cl"><span class="nb">source</span> ~/.zshrc
+</span></span></code></pre></td></tr></table>
 </div>
 </div>
     </div>
@@ -450,7 +450,7 @@ vim ~/.zshrc
 
 
 
-<script type="text/javascript" src="/blog/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+<script type="text/javascript" src="/blog/js/main.min.64437849d125a2d603b3e71d6de5225d641a32d17168a58106e0b61852079683.js"></script>
 
 
 

@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.92.2 with theme even" />
+<meta name="generator" content="Hugo 0.93.1 with theme even" />
 
 
 <link rel="canonical" href="https://zhdbest.github.io/blog/post/030-python-builtin-main/" />
@@ -49,7 +49,7 @@
 <meta itemprop="name" content="【Python】if __name__ == &#39;__main__&#39;的作用">
 <meta itemprop="description" content=""><meta itemprop="datePublished" content="2022-02-27T15:27:14+08:00" />
 <meta itemprop="dateModified" content="2022-02-27T15:27:14+08:00" />
-<meta itemprop="wordCount" content="883">
+<meta itemprop="wordCount" content="878">
 <meta itemprop="keywords" content="Python," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="【Python】if __name__ == &#39;__main__&#39;的作用"/>
 <meta name="twitter:description" content=""/>
@@ -161,25 +161,21 @@
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="nb">print</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
-
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>再定义一个<code>other_module.py</code>：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
-</span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">main_module</span>
-<span class="nb">print</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
-
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">main_module</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>执行<code>main_module.py</code>得到如下输出：</p>
 <div class="highlight"><div class="chroma">
@@ -187,8 +183,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">__main__
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">__main__
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>执行<code>other_module.py</code>得到如下输出：</p>
 <div class="highlight"><div class="chroma">
@@ -197,9 +193,9 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">main_module
-__main__
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">main_module
+</span></span><span class="line"><span class="cl">__main__
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>可以看出，当前模块被直接执行时<code>__name__</code>就是<code>__main__</code>，当前模块作为被导入模块执行时<code>__name__</code>就是模块名。</p>
 <h1 id="2-为什么要使用if-__name__--__main__">2. 为什么要使用<code>if __name__ == '__main__'</code>?</h1>
@@ -212,16 +208,14 @@ __main__
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
-</span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">calculate</span><span class="p">(</span><span class="n">length</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">length</span> <span class="o">*</span> <span class="mi">4</span><span class="p">)</span>
-
-
-<span class="n">calculate</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">calculate</span><span class="p">(</span><span class="n">length</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">length</span> <span class="o">*</span> <span class="mi">4</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">calculate</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>直接执行上述模块，可以得到如下输出：</p>
 <div class="highlight"><div class="chroma">
@@ -229,21 +223,19 @@ __main__
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">20
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">20
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>现在假设有一个模块（<code>test.py</code>）中需要用到该计算正方形周长的模块：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
-</span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">square_perimeter</span> <span class="k">as</span> <span class="nn">sp</span>
-<span class="n">sp</span><span class="o">.</span><span class="n">calculate</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
-
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">square_perimeter</span> <span class="k">as</span> <span class="nn">sp</span>
+</span></span><span class="line"><span class="cl"><span class="n">sp</span><span class="o">.</span><span class="n">calculate</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>执行<code>test.py</code>可以得到如下输出：</p>
 <div class="highlight"><div class="chroma">
@@ -252,9 +244,9 @@ __main__
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">20
-32
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">20
+</span></span><span class="line"><span class="cl">32
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>可见，我们在<code>square_perimeter.py</code>中写的单测也被执行了，这如何了得？此时我们就可以按如下方法来改造<code>square_perimeter.py</code>：</p>
 <div class="highlight"><div class="chroma">
@@ -265,17 +257,15 @@ __main__
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span><span class="lnt">6
-</span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">calculate</span><span class="p">(</span><span class="n">length</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">length</span> <span class="o">*</span> <span class="mi">4</span><span class="p">)</span>
-
-    
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
-    <span class="n">calculate</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">calculate</span><span class="p">(</span><span class="n">length</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">length</span> <span class="o">*</span> <span class="mi">4</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">calculate</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>此时直接执行<code>square_perimeter.py</code>可以得到：</p>
 <div class="highlight"><div class="chroma">
@@ -283,8 +273,8 @@ __main__
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">20
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">20
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>执行<code>test.py</code>可以得到：</p>
 <div class="highlight"><div class="chroma">
@@ -292,8 +282,8 @@ __main__
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">32
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">32
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>所以，<code>if __name__ == '__main__'</code>可以用于设置一段仅在直接执行该模块时才被执行的代码。</p>
 <p>无论是有主函数的语言，还是脚本型的语言，其一个被执行的程序的入口肯定只有一个，所以该判断也可以用于判断程序的入口，即是从当前模块开始执行的，还是从其他模块开始执行的，然后基于此做一些逻辑。</p>
@@ -319,7 +309,11 @@ __main__
           <a href="/blog/tags/python/">Python</a>
           </div>
       <nav class="post-nav">
-        
+        <a class="prev" href="/blog/post/031-m1-mac-install-conda/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">【Python】M1芯片Mac安装Conda</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
         <a class="next" href="/blog/post/029-servlet-demo/">
             <span class="next-text nav-default">【Servlet】写一个简单的servlet，并用tomcat部署它</span>
             <span class="next-text nav-mobile">下一篇</span>
@@ -377,7 +371,7 @@ __main__
 
 
 
-<script type="text/javascript" src="/blog/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+<script type="text/javascript" src="/blog/js/main.min.64437849d125a2d603b3e71d6de5225d641a32d17168a58106e0b61852079683.js"></script>
 
 
 

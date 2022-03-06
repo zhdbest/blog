@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.92.2 with theme even" />
+<meta name="generator" content="Hugo 0.93.1 with theme even" />
 
 
 <link rel="canonical" href="https://zhdbest.github.io/blog/post/013-java-platform-edition/" />
@@ -229,59 +229,59 @@
 </span><span class="lnt">52
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">.
-├── README.txt
-├── bin
-│   ├── asadmin
-│   └── asadmin.bat
-├── docs
-│   ├── api
-│   ├── firstcup
-│   └── javaee-tutorial
-├── glassfish
-│   ├── bin
-│   ├── common
-│   ├── config
-│   ├── docs
-│   ├── domains
-│   ├── legal
-│   ├── lib
-│   ├── modules
-│   └── osgi
-├── index.html
-├── javadb
-│   ├── KEYS
-│   ├── LICENSE
-│   ├── NOTICE
-│   ├── RELEASE-NOTES.html
-│   ├── bin
-│   ├── index.html
-│   └── lib
-├── mq
-│   ├── bin
-│   ├── etc
-│   ├── legal
-│   └── lib
-└── samples
-    ├── README.md
-    ├── batch
-    ├── cdi
-    ├── concurrency
-    ├── connectors
-    ├── docs
-    ├── ejb
-    ├── el
-    ├── index.html
-    ├── jsf
-    ├── jsonb
-    ├── jsonp
-    ├── platform
-    ├── pom.xml
-    ├── rest
-    ├── security
-    ├── servlet
-    └── websocket
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">.
+</span></span><span class="line"><span class="cl">├── README.txt
+</span></span><span class="line"><span class="cl">├── bin
+</span></span><span class="line"><span class="cl">│   ├── asadmin
+</span></span><span class="line"><span class="cl">│   └── asadmin.bat
+</span></span><span class="line"><span class="cl">├── docs
+</span></span><span class="line"><span class="cl">│   ├── api
+</span></span><span class="line"><span class="cl">│   ├── firstcup
+</span></span><span class="line"><span class="cl">│   └── javaee-tutorial
+</span></span><span class="line"><span class="cl">├── glassfish
+</span></span><span class="line"><span class="cl">│   ├── bin
+</span></span><span class="line"><span class="cl">│   ├── common
+</span></span><span class="line"><span class="cl">│   ├── config
+</span></span><span class="line"><span class="cl">│   ├── docs
+</span></span><span class="line"><span class="cl">│   ├── domains
+</span></span><span class="line"><span class="cl">│   ├── legal
+</span></span><span class="line"><span class="cl">│   ├── lib
+</span></span><span class="line"><span class="cl">│   ├── modules
+</span></span><span class="line"><span class="cl">│   └── osgi
+</span></span><span class="line"><span class="cl">├── index.html
+</span></span><span class="line"><span class="cl">├── javadb
+</span></span><span class="line"><span class="cl">│   ├── KEYS
+</span></span><span class="line"><span class="cl">│   ├── LICENSE
+</span></span><span class="line"><span class="cl">│   ├── NOTICE
+</span></span><span class="line"><span class="cl">│   ├── RELEASE-NOTES.html
+</span></span><span class="line"><span class="cl">│   ├── bin
+</span></span><span class="line"><span class="cl">│   ├── index.html
+</span></span><span class="line"><span class="cl">│   └── lib
+</span></span><span class="line"><span class="cl">├── mq
+</span></span><span class="line"><span class="cl">│   ├── bin
+</span></span><span class="line"><span class="cl">│   ├── etc
+</span></span><span class="line"><span class="cl">│   ├── legal
+</span></span><span class="line"><span class="cl">│   └── lib
+</span></span><span class="line"><span class="cl">└── samples
+</span></span><span class="line"><span class="cl">    ├── README.md
+</span></span><span class="line"><span class="cl">    ├── batch
+</span></span><span class="line"><span class="cl">    ├── cdi
+</span></span><span class="line"><span class="cl">    ├── concurrency
+</span></span><span class="line"><span class="cl">    ├── connectors
+</span></span><span class="line"><span class="cl">    ├── docs
+</span></span><span class="line"><span class="cl">    ├── ejb
+</span></span><span class="line"><span class="cl">    ├── el
+</span></span><span class="line"><span class="cl">    ├── index.html
+</span></span><span class="line"><span class="cl">    ├── jsf
+</span></span><span class="line"><span class="cl">    ├── jsonb
+</span></span><span class="line"><span class="cl">    ├── jsonp
+</span></span><span class="line"><span class="cl">    ├── platform
+</span></span><span class="line"><span class="cl">    ├── pom.xml
+</span></span><span class="line"><span class="cl">    ├── rest
+</span></span><span class="line"><span class="cl">    ├── security
+</span></span><span class="line"><span class="cl">    ├── servlet
+</span></span><span class="line"><span class="cl">    └── websocket
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>所以，官方提供的也不是像JDK一样的内容，而是Java EE的一个具体实现：<code>glassfish</code>。</p>
 <p>但是Java EE的这些实现，我都感觉很陌生，至少从没有直接使用过。可能是因为我从写代码就开始使用Spring了吧，Spring提供了更轻量级、更便利的企业级解决方案，而且目前Spring已经推出了“Spring Native”，将不再依赖JVM，未来究竟是什么样的尚未可知。</p>
@@ -371,7 +371,7 @@
 
 
 
-<script type="text/javascript" src="/blog/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+<script type="text/javascript" src="/blog/js/main.min.64437849d125a2d603b3e71d6de5225d641a32d17168a58106e0b61852079683.js"></script>
 
 
 

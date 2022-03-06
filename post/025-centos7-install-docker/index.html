@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.92.2 with theme even" />
+<meta name="generator" content="Hugo 0.93.1 with theme even" />
 
 
 <link rel="canonical" href="https://zhdbest.github.io/blog/post/025-centos7-install-docker/" />
@@ -173,15 +173,15 @@
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">$ sudo yum remove docker <span class="se">\
-</span><span class="se"></span>                  docker-client <span class="se">\
-</span><span class="se"></span>                  docker-client-latest <span class="se">\
-</span><span class="se"></span>                  docker-common <span class="se">\
-</span><span class="se"></span>                  docker-latest <span class="se">\
-</span><span class="se"></span>                  docker-latest-logrotate <span class="se">\
-</span><span class="se"></span>                  docker-logrotate <span class="se">\
-</span><span class="se"></span>                  docker-engine
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ sudo yum remove docker <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>                  docker-client <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>                  docker-client-latest <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>                  docker-common <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>                  docker-latest <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>                  docker-latest-logrotate <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>                  docker-logrotate <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>                  docker-engine
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>现在docker引擎已经改名叫做<code>docker-ce</code>了，如果尝试使用<code>sudo yum install docker-ce</code>会发现找不到此包，因为默认的软件源里没有<code>docker-ce</code>这个包。</p>
 <p>此时可以先安装<code>yum-utils</code>:</p>
@@ -190,8 +190,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo yum install yum-utils
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo yum install yum-utils
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><code>yum-utils</code>中包含一个实用工具<code>yum-config-manager</code>，使用该工具可以很方便的新增yum的软件仓库：</p>
 <div class="highlight"><div class="chroma">
@@ -200,9 +200,9 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># 将docker官方的软件仓库加进来</span>
-sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># 将docker官方的软件仓库加进来</span>
+</span></span><span class="line"><span class="cl">sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="安装并启动docker">安装并启动docker</h1>
 <p>使用如下命令安装：</p>
@@ -211,8 +211,8 @@ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/dock
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo yum install docker-ce docker-ce-cli containerd.io
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo yum install docker-ce docker-ce-cli containerd.io
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>启动docker：</p>
 <div class="highlight"><div class="chroma">
@@ -220,8 +220,8 @@ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/dock
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo systemctl start docker
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo systemctl start docker
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="解决权限不足问题">解决“权限不足”问题</h2>
 <p>此时执行<code>docker ps</code>查看容器，会报错：</p>
@@ -235,13 +235,13 @@ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/dock
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="o">[</span>hongmao@aliyun ~<span class="o">]</span>$ docker ps
-Got permission denied <span class="k">while</span> trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get <span class="s2">&#34;http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/json&#34;</span>: dial unix /var/run/docker.sock: connect: permission denied
-
-<span class="c1"># 使用sudo便可以正常执行docker命令</span>
-<span class="o">[</span>hongmao@aliyun ~<span class="o">]</span>$ sudo docker ps
-CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="o">[</span>hongmao@aliyun ~<span class="o">]</span>$ docker ps
+</span></span><span class="line"><span class="cl">Got permission denied <span class="k">while</span> trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get <span class="s2">&#34;http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/json&#34;</span>: dial unix /var/run/docker.sock: connect: permission denied
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 使用sudo便可以正常执行docker命令</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>hongmao@aliyun ~<span class="o">]</span>$ sudo docker ps
+</span></span><span class="line"><span class="cl">CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>造成这种现象的原因是：Docker守护进程绑定到Unix socket而不是TCP端口。默认情况下，Unix socket由<code>root</code>用户拥有，其他用户只能使用<code>sudo</code>访问。而Docker守护进程始终是以<code>root</code>用户身份运行。</p>
 <p>如果不想每次执行命令前都使用<code>sudo</code>，则可以创建一个名为<code>docker</code>的组，然后将你当前用户（非root用户）加入该组。然后，当Docker守护进程启动时会创建一个<code>docker</code>组内成员可访问的Unix socket。</p>
@@ -258,16 +258,16 @@ CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># 首先检查下当前是否已经有docker组</span>
-<span class="o">[</span>hongmao@aliyun ~<span class="o">]</span>$ cat /etc/group <span class="p">|</span> grep docker
-dockerroot❌994:
-docker❌993:
-<span class="c1"># 可以发现，当前已经有名为docker的组了，则直接将非root用户放入该组即可</span>
-sudo usermod -aG docker hongmao
-
-<span class="c1"># 如果没有docker组，可以使用如下命令新建组</span>
-sudo groupadd docker
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># 首先检查下当前是否已经有docker组</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>hongmao@aliyun ~<span class="o">]</span>$ cat /etc/group <span class="p">|</span> grep docker
+</span></span><span class="line"><span class="cl">dockerroot❌994:
+</span></span><span class="line"><span class="cl">docker❌993:
+</span></span><span class="line"><span class="cl"><span class="c1"># 可以发现，当前已经有名为docker的组了，则直接将非root用户放入该组即可</span>
+</span></span><span class="line"><span class="cl">sudo usermod -aG docker hongmao
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 如果没有docker组，可以使用如下命令新建组</span>
+</span></span><span class="line"><span class="cl">sudo groupadd docker
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>此时再次执行<code>docker ps</code>发现问题并没有解决，原因是组设置并未生效，执行如下命令即可：</p>
 <div class="highlight"><div class="chroma">
@@ -275,8 +275,8 @@ sudo groupadd docker
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">newgrp docker
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">newgrp docker
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="安装后的配置">安装后的配置</h1>
 <h2 id="设置docker守护进程为开启自动启动">设置docker守护进程为开启自动启动</h2>
@@ -287,9 +287,9 @@ sudo groupadd docker
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo systemctl <span class="nb">enable</span> docker.service
-sudo systemctl <span class="nb">enable</span> containerd.service
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo systemctl <span class="nb">enable</span> docker.service
+</span></span><span class="line"><span class="cl">sudo systemctl <span class="nb">enable</span> containerd.service
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="设置阿里云镜像加速器">设置阿里云镜像加速器</h2>
 <p>编辑或新建docker的默认配置文件：<code>/etc/docker/daemon.json</code></p>
@@ -303,13 +303,13 @@ sudo systemctl <span class="nb">enable</span> containerd.service
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">sudo vim /etc/docker/daemon.json
-
-<span class="c1"># 在daemon.json文件中写入如下内容：</span>
-<span class="o">{</span>
-    <span class="s2">&#34;registry-mirrors&#34;</span>: <span class="o">[</span><span class="s2">&#34;https://你自己的加速器地址&#34;</span><span class="o">]</span>
-<span class="o">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo vim /etc/docker/daemon.json
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 在daemon.json文件中写入如下内容：</span>
+</span></span><span class="line"><span class="cl"><span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;registry-mirrors&#34;</span>: <span class="o">[</span><span class="s2">&#34;https://你自己的加速器地址&#34;</span><span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>此时下载速度就很快了。</p>
 <blockquote>
@@ -403,7 +403,7 @@ sudo systemctl <span class="nb">enable</span> containerd.service
 
 
 
-<script type="text/javascript" src="/blog/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+<script type="text/javascript" src="/blog/js/main.min.64437849d125a2d603b3e71d6de5225d641a32d17168a58106e0b61852079683.js"></script>
 
 
 

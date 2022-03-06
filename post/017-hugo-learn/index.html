@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.92.2 with theme even" />
+<meta name="generator" content="Hugo 0.93.1 with theme even" />
 
 
 <link rel="canonical" href="https://zhdbest.github.io/blog/post/017-hugo-learn/" />
@@ -49,7 +49,7 @@
 <meta itemprop="name" content="【Hugo】hugo-theme-learn主题使用">
 <meta itemprop="description" content="一、 安装 1 2 3 4 5 6 7 8 9 # 新建站点 hugo new site hugo-learn # 进入站点路径下 cd hugo-learn # 安装主题 cd themes git clone https://github.com/matcornic/hugo-theme-learn.git 修改根目目下的config.toml进行简单配置： 1 2 3"><meta itemprop="datePublished" content="2021-08-22T16:34:26+08:00" />
 <meta itemprop="dateModified" content="2021-08-22T16:34:26+08:00" />
-<meta itemprop="wordCount" content="5210">
+<meta itemprop="wordCount" content="5201">
 <meta itemprop="keywords" content="Hugo,hugo-learn," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="【Hugo】hugo-theme-learn主题使用"/>
 <meta name="twitter:description" content="一、 安装 1 2 3 4 5 6 7 8 9 # 新建站点 hugo new site hugo-learn # 进入站点路径下 cd hugo-learn # 安装主题 cd themes git clone https://github.com/matcornic/hugo-theme-learn.git 修改根目目下的config.toml进行简单配置： 1 2 3"/>
@@ -191,16 +191,16 @@
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># 新建站点</span>
-hugo new site hugo-learn
-
-<span class="c1"># 进入站点路径下</span>
-<span class="nb">cd</span> hugo-learn
-
-<span class="c1"># 安装主题</span>
-<span class="nb">cd</span> themes
-git clone https://github.com/matcornic/hugo-theme-learn.git
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># 新建站点</span>
+</span></span><span class="line"><span class="cl">hugo new site hugo-learn
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 进入站点路径下</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> hugo-learn
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 安装主题</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> themes
+</span></span><span class="line"><span class="cl">git clone https://github.com/matcornic/hugo-theme-learn.git
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>修改根目目下的<code>config.toml</code>进行简单配置：</p>
 <div class="highlight"><div class="chroma">
@@ -212,12 +212,12 @@ git clone https://github.com/matcornic/hugo-theme-learn.git
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">baseURL</span> <span class="p">=</span> <span class="s1">&#39;http://example.org/&#39;</span>
-<span class="nx">languageCode</span> <span class="p">=</span> <span class="s1">&#39;zh&#39;</span>
-<span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;命令文档&#39;</span>
-<span class="c"># 指定主题</span>
-<span class="nx">theme</span> <span class="p">=</span> <span class="s2">&#34;hugo-theme-learn&#34;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">baseURL</span> <span class="p">=</span> <span class="s1">&#39;http://example.org/&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">languageCode</span> <span class="p">=</span> <span class="s1">&#39;zh&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;命令文档&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="c"># 指定主题</span>
+</span></span><span class="line"><span class="cl"><span class="nx">theme</span> <span class="p">=</span> <span class="s2">&#34;hugo-theme-learn&#34;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>此时便可以启动了：</p>
 <div class="highlight"><div class="chroma">
@@ -225,8 +225,8 @@ git clone https://github.com/matcornic/hugo-theme-learn.git
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">hugo server
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">hugo server
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果一切顺利的话，启动后在<code>1313</code>端口便可看到页面了。</p>
 <h1 id="二基本使用">二、基本使用</h1>
@@ -239,11 +239,11 @@ git clone https://github.com/matcornic/hugo-theme-learn.git
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># 进行站点项目内</span>
-<span class="nb">cd</span> hugo-learn
-<span class="c1"># 删除模板文件</span>
-rm archetypes/default.md
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># 进行站点项目内</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> hugo-learn
+</span></span><span class="line"><span class="cl"><span class="c1"># 删除模板文件</span>
+</span></span><span class="line"><span class="cl">rm archetypes/default.md
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="1-创建一个章节">1. 创建一个章节</h2>
 <div class="highlight"><div class="chroma">
@@ -252,9 +252,9 @@ rm archetypes/default.md
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># 基于模板“chapter.md”创建文件</span>
-hugo new --kind chapter Docker/_index.md
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># 基于模板“chapter.md”创建文件</span>
+</span></span><span class="line"><span class="cl">hugo new --kind chapter Docker/_index.md
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>生成的文件如下：</p>
 <div class="highlight"><div class="chroma">
@@ -272,26 +272,22 @@ hugo new --kind chapter Docker/_index.md
 </span><span class="lnt">11
 </span><span class="lnt">12
 </span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">+++
-title = &#34;Docker&#34;
-date = 2021-08-22T17:02:53+08:00
-weight = 5
-chapter = true
-pre = &#34;<span class="p">&lt;</span><span class="nt">b</span><span class="p">&gt;</span>X. <span class="p">&lt;/</span><span class="nt">b</span><span class="p">&gt;</span>&#34;
-+++
-
-<span class="gu">### Chapter X
-</span><span class="gu"></span>
-<span class="gh"># Some Chapter title
-</span><span class="gh"></span>
-Lorem Ipsum.
-
-
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">+++
+</span></span><span class="line"><span class="cl">title = &#34;Docker&#34;
+</span></span><span class="line"><span class="cl">date = 2021-08-22T17:02:53+08:00
+</span></span><span class="line"><span class="cl">weight = 5
+</span></span><span class="line"><span class="cl">chapter = true
+</span></span><span class="line"><span class="cl">pre = &#34;<span class="p">&lt;</span><span class="nt">b</span><span class="p">&gt;</span>X. <span class="p">&lt;/</span><span class="nt">b</span><span class="p">&gt;</span>&#34;
+</span></span><span class="line"><span class="cl">+++
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="gu">### Chapter X
+</span></span></span><span class="line"><span class="cl"><span class="gu"></span>
+</span></span><span class="line"><span class="cl"><span class="gh"># Some Chapter title
+</span></span></span><span class="line"><span class="cl"><span class="gh"></span>
+</span></span><span class="line"><span class="cl">Lorem Ipsum.
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>顶部配置中，有两个不常见的配置：</p>
 <ul>
@@ -316,27 +312,23 @@ Lorem Ipsum.
 </span><span class="lnt">12
 </span><span class="lnt">13
 </span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">+++
-<span class="nv">title</span> <span class="o">=</span> <span class="s2">&#34;Docker&#34;</span>
-<span class="nv">date</span> <span class="o">=</span> 2021-08-22T17:02:53+08:00
-<span class="nv">weight</span> <span class="o">=</span> <span class="m">1</span>
-<span class="nv">chapter</span> <span class="o">=</span> <span class="nb">true</span>
-<span class="nv">pre</span> <span class="o">=</span> <span class="s2">&#34;&lt;b&gt;1. &lt;/b&gt;&#34;</span>
-
-+++
-
-<span class="c1">### 章节 1</span>
-
-<span class="c1"># Docker</span>
-
-本章节主要讲述Docker的相关命令。
-
-
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">+++
+</span></span><span class="line"><span class="cl"><span class="nv">title</span> <span class="o">=</span> <span class="s2">&#34;Docker&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">date</span> <span class="o">=</span> 2021-08-22T17:02:53+08:00
+</span></span><span class="line"><span class="cl"><span class="nv">weight</span> <span class="o">=</span> <span class="m">1</span>
+</span></span><span class="line"><span class="cl"><span class="nv">chapter</span> <span class="o">=</span> <span class="nb">true</span>
+</span></span><span class="line"><span class="cl"><span class="nv">pre</span> <span class="o">=</span> <span class="s2">&#34;&lt;b&gt;1. &lt;/b&gt;&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">+++
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">### 章节 1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Docker</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">本章节主要讲述Docker的相关命令。
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>效果如下：</p>
 <p><img src="https://img.hongmao.run/blog/2021/08/hugo-learn-chapter.png" alt="hugo-learn-chapter"></p>
@@ -346,35 +338,31 @@ Lorem Ipsum.
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">hugo new Docker/common.md
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">hugo new Docker/common.md
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>生成的<code>common.md</code>如下所示：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">+++
-title = &#34;Common&#34;
-date =  2021-08-22T17:41:14+08:00
-weight = 5
-
-+++
-
-Lorem Ipsum.
-
-
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">+++
+</span></span><span class="line"><span class="cl">title = &#34;Common&#34;
+</span></span><span class="line"><span class="cl">date =  2021-08-22T17:41:14+08:00
+</span></span><span class="line"><span class="cl">weight = 5
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">+++
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Lorem Ipsum.
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>对其进行修改：</p>
 <div class="highlight"><div class="chroma">
@@ -393,27 +381,23 @@ Lorem Ipsum.
 </span><span class="lnt">12
 </span><span class="lnt">13
 </span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">+++
-title = &#34;常用命令&#34;
-date =  2021-08-22T17:41:14+08:00
-weight = 1
-
-+++
-
-<span class="s">```shell
-</span><span class="s"></span><span class="c1"># 查看docker版本</span>
-docker -v
-
-<span class="c1"># 查看所有已下载镜像</span>
-docker images
-<span class="s">```</span>
-
-
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">+++
+</span></span><span class="line"><span class="cl">title = &#34;常用命令&#34;
+</span></span><span class="line"><span class="cl">date =  2021-08-22T17:41:14+08:00
+</span></span><span class="line"><span class="cl">weight = 1
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">+++
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="s">```shell
+</span></span></span><span class="line"><span class="cl"><span class="s"></span><span class="c1"># 查看docker版本</span>
+</span></span><span class="line"><span class="cl">docker -v
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 查看所有已下载镜像</span>
+</span></span><span class="line"><span class="cl">docker images
+</span></span><span class="line"><span class="cl"><span class="s">```</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>效果如下：</p>
 <p><img src="https://img.hongmao.run/blog/2021/08/hugo-learn-content.png" alt="hugo-learn-content"></p>
@@ -462,47 +446,47 @@ docker images
 </span><span class="lnt">40
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
-  <span class="c"># 为URL添加前缀以编辑当前页面。将在每页的右上角显示“编辑此页”按钮。</span>
-  <span class="c"># 有助于让人们有机会为您的文档创建合并请求。</span>
-  <span class="nx">editURL</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
-  <span class="c"># 该网站的作者，将用于元信息</span>
-  <span class="nx">author</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
-  <span class="c"># 该网站的说明，将用于元信息</span>
-  <span class="nx">description</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
-  <span class="c"># 在菜单上显示已访问页面的复选标记，默认是false</span>
-  <span class="nx">showVisitedLinks</span> <span class="p">=</span> <span class="kc">false</span>
-  <span class="c"># 禁用搜索功能。它将隐藏搜索栏，默认是false</span>
-  <span class="nx">disableSearch</span> <span class="p">=</span> <span class="kc">false</span>
-  <span class="c"># 当生成站点的新版本时，Javascript和CSS缓存会自动被失效。</span>
-  <span class="c"># 将此设置为true以禁用此行为（某些代理无法很好地处理此优化）</span>
-  <span class="nx">disableAssetsBusting</span> <span class="p">=</span> <span class="kc">false</span>
-  <span class="c"># 将此设置为true可禁用行内代码的“复制到剪贴板”按钮。</span>
-  <span class="nx">disableInlineCopyToClipBoard</span> <span class="p">=</span> <span class="kc">false</span>
-  <span class="c"># 默认设置菜单中快捷方式的标题。将此设置为true以禁用它。</span>
-  <span class="nx">disableShortcutsTitle</span> <span class="p">=</span> <span class="kc">false</span>
-  <span class="c"># 如果设置为false，则在菜单上的搜索栏下方将显示Home（主页）按钮。</span>
-  <span class="c"># 如果指定，它将重定向到当前语言的登录页(默认值为“/”）</span>
-  <span class="nx">disableLandingPageButton</span> <span class="p">=</span> <span class="kc">true</span>
-  <span class="c"># 使用多语言网站时，禁用“切换语言”按钮。</span>
-  <span class="nx">disableLanguageSwitchingButton</span> <span class="p">=</span> <span class="kc">false</span>
-  <span class="c"># 在页眉中隐藏面包屑，仅显示当前页面标题</span>
-  <span class="nx">disableBreadcrumb</span> <span class="p">=</span> <span class="kc">true</span>
-  <span class="c"># 如果设置为true，则在不需要时阻止Hugo引入mermaid模块（将减少加载时间和流量）</span>
-  <span class="nx">disableMermaid</span> <span class="p">=</span> <span class="kc">false</span>
-  <span class="c"># 指定mermaid js的远程位置</span>
-  <span class="nx">customMermaidURL</span> <span class="p">=</span> <span class="s2">&#34;https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js&#34;</span>
-  <span class="c"># 隐藏下一页和上一页按钮 通常显示在内容旁边的全高位置，默认是false</span>
-  <span class="nx">disableNextPrev</span> <span class="p">=</span> <span class="kc">true</span>
-  <span class="c"># 按“weight”或“title”排列菜单中的部分。默认为“weight”，即权重</span>
-  <span class="nx">ordersectionsby</span> <span class="p">=</span> <span class="s2">&#34;weight&#34;</span>
-  <span class="c"># 使用变体更改默认配色方案。可以是“red”、“blue”、“green”。</span>
-  <span class="nx">themeVariant</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
-  <span class="c"># 提供自定义css文件列表，以从站点根目录中的“static/”文件夹相对加载。</span>
-  <span class="nx">custom_css</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;css/foo.css&#34;</span><span class="p">,</span> <span class="s2">&#34;css/bar.css&#34;</span><span class="p">]</span>
-  <span class="c"># 更改标题分隔符。默认为“::”。</span>
-  <span class="nx">titleSeparator</span> <span class="p">=</span> <span class="s2">&#34;-&#34;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># 为URL添加前缀以编辑当前页面。将在每页的右上角显示“编辑此页”按钮。</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># 有助于让人们有机会为您的文档创建合并请求。</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">editURL</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># 该网站的作者，将用于元信息</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">author</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># 该网站的说明，将用于元信息</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">description</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># 在菜单上显示已访问页面的复选标记，默认是false</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">showVisitedLinks</span> <span class="p">=</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># 禁用搜索功能。它将隐藏搜索栏，默认是false</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">disableSearch</span> <span class="p">=</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># 当生成站点的新版本时，Javascript和CSS缓存会自动被失效。</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># 将此设置为true以禁用此行为（某些代理无法很好地处理此优化）</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">disableAssetsBusting</span> <span class="p">=</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># 将此设置为true可禁用行内代码的“复制到剪贴板”按钮。</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">disableInlineCopyToClipBoard</span> <span class="p">=</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># 默认设置菜单中快捷方式的标题。将此设置为true以禁用它。</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">disableShortcutsTitle</span> <span class="p">=</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># 如果设置为false，则在菜单上的搜索栏下方将显示Home（主页）按钮。</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># 如果指定，它将重定向到当前语言的登录页(默认值为“/”）</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">disableLandingPageButton</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># 使用多语言网站时，禁用“切换语言”按钮。</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">disableLanguageSwitchingButton</span> <span class="p">=</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># 在页眉中隐藏面包屑，仅显示当前页面标题</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">disableBreadcrumb</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># 如果设置为true，则在不需要时阻止Hugo引入mermaid模块（将减少加载时间和流量）</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">disableMermaid</span> <span class="p">=</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># 指定mermaid js的远程位置</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">customMermaidURL</span> <span class="p">=</span> <span class="s2">&#34;https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># 隐藏下一页和上一页按钮 通常显示在内容旁边的全高位置，默认是false</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">disableNextPrev</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># 按“weight”或“title”排列菜单中的部分。默认为“weight”，即权重</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">ordersectionsby</span> <span class="p">=</span> <span class="s2">&#34;weight&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># 使用变体更改默认配色方案。可以是“red”、“blue”、“green”。</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">themeVariant</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># 提供自定义css文件列表，以从站点根目录中的“static/”文件夹相对加载。</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">custom_css</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;css/foo.css&#34;</span><span class="p">,</span> <span class="s2">&#34;css/bar.css&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># 更改标题分隔符。默认为“::”。</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">titleSeparator</span> <span class="p">=</span> <span class="s2">&#34;-&#34;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="四特性的使用">四、特性的使用</h1>
 <h2 id="1-开启搜索">1. 开启搜索</h2>
@@ -513,9 +497,9 @@ docker images
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">outputs</span><span class="p">]</span>
-  <span class="nx">home</span> <span class="p">=</span> <span class="p">[</span> <span class="s2">&#34;HTML&#34;</span><span class="p">,</span> <span class="s2">&#34;RSS&#34;</span><span class="p">,</span> <span class="s2">&#34;JSON&#34;</span><span class="p">]</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">outputs</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">home</span> <span class="p">=</span> <span class="p">[</span> <span class="s2">&#34;HTML&#34;</span><span class="p">,</span> <span class="s2">&#34;RSS&#34;</span><span class="p">,</span> <span class="s2">&#34;JSON&#34;</span><span class="p">]</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>“learn”主题采用的是<code>lunr.js</code>检索，按照上述这样就可以搜索了，添加上述配置是为了在生成静态文件时，同时生成站点的索引文件，以便在搜索时用于检索。</p>
 <h2 id="2-更换logo">2. 更换Logo</h2>
@@ -530,13 +514,13 @@ docker images
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># 进入站点目录</span>
-<span class="nb">cd</span> hugo-learn
-<span class="c1"># 新建partials目录</span>
-mkdir layouts/partials/
-<span class="c1"># 执行复制</span>
-cp themes/hugo-theme-learn/layouts/partials/logo.html layouts/partials/
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># 进入站点目录</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> hugo-learn
+</span></span><span class="line"><span class="cl"><span class="c1"># 新建partials目录</span>
+</span></span><span class="line"><span class="cl">mkdir layouts/partials/
+</span></span><span class="line"><span class="cl"><span class="c1"># 执行复制</span>
+</span></span><span class="line"><span class="cl">cp themes/hugo-theme-learn/layouts/partials/logo.html layouts/partials/
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>然后编辑<code>logo.html</code>：</p>
 <div class="highlight"><div class="chroma">
@@ -546,10 +530,10 @@ cp themes/hugo-theme-learn/layouts/partials/logo.html layouts/partials/
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;logo&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#39;{{ (cond (and (ne .Site.Params.landingPageURL nil) (.Site.IsMultiLingual)) .Site.Params.landingPageURL &#34;/&#34;) }}&#39;</span><span class="p">&gt;</span>
-  <span class="c">&lt;!-- 此处可以是一个svg，也可以是一个图片，使用HTML语言引入即可 --&gt;</span>
-<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;logo&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#39;{{ (cond (and (ne .Site.Params.landingPageURL nil) (.Site.IsMultiLingual)) .Site.Params.landingPageURL &#34;/&#34;) }}&#39;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="c">&lt;!-- 此处可以是一个svg，也可以是一个图片，使用HTML语言引入即可 --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="3-更换favicon">3. 更换favicon</h2>
 <p>与更换Logo的方法一致，不同点在于本次要修改的文件是<code>favicon.html</code>。</p>
@@ -564,13 +548,13 @@ cp themes/hugo-theme-learn/layouts/partials/logo.html layouts/partials/
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># 进入站点目录</span>
-<span class="nb">cd</span> hugo-learn
-<span class="c1"># 新建partials目录</span>
-mkdir layouts/partials/
-<span class="c1"># 执行复制</span>
-cp themes/hugo-theme-learn/layouts/partials/favicon.html layouts/partials/
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># 进入站点目录</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> hugo-learn
+</span></span><span class="line"><span class="cl"><span class="c1"># 新建partials目录</span>
+</span></span><span class="line"><span class="cl">mkdir layouts/partials/
+</span></span><span class="line"><span class="cl"><span class="c1"># 执行复制</span>
+</span></span><span class="line"><span class="cl">cp themes/hugo-theme-learn/layouts/partials/favicon.html layouts/partials/
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>然后编辑<code>favicon.html</code>：</p>
 <div class="highlight"><div class="chroma">
@@ -578,8 +562,8 @@ cp themes/hugo-theme-learn/layouts/partials/favicon.html layouts/partials/
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;icon&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{&#34;</span><span class="na">images</span><span class="err">/</span><span class="na">cmd-line</span><span class="err">.</span><span class="na">svg</span><span class="err">&#34;</span> <span class="err">|</span> <span class="na">relURL</span><span class="err">}}&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;image/svg+xml&#34;</span><span class="p">&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;icon&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{&#34;</span><span class="na">images</span><span class="err">/</span><span class="na">cmd-line</span><span class="err">.</span><span class="na">svg</span><span class="err">&#34;</span> <span class="err">|</span> <span class="na">relURL</span><span class="err">}}&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;image/svg+xml&#34;</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>上述设置需将<code>cmd-line.svg</code>文件放至<code>static/images/</code>目录下。</p>
 <h2 id="4-创建一个首页">4. 创建一个首页</h2>
@@ -593,18 +577,16 @@ cp themes/hugo-theme-learn/layouts/partials/favicon.html layouts/partials/
 </span><span class="lnt">5
 </span><span class="lnt">6
 </span><span class="lnt">7
-</span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">---
-title: &#34;命令库&#34;
----
-
-<span class="gh"># 命令库
-</span><span class="gh"></span>
-这儿主要放一些常用的命令。
-
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">title: &#34;命令库&#34;
+</span></span><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="gh"># 命令库
+</span></span></span><span class="line"><span class="cl"><span class="gh"></span>
+</span></span><span class="line"><span class="cl">这儿主要放一些常用的命令。
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>效果如图所示：</p>
 <p><img src="https://img.hongmao.run/blog/2021/08/hugo-learn-index.png" alt="hugo-learn-index"></p>
@@ -615,8 +597,8 @@ title: &#34;命令库&#34;
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">{{% children %}}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">{{% children %}}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><code>children</code>可以指定多个参数，上述用法的各参数都取了默认值。它可设置的参数如下：</p>
 <table>
@@ -666,8 +648,8 @@ title: &#34;命令库&#34;
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">{{% children description=&#34;true&#34; depth=&#34;2&#34; %}}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">{{% children description=&#34;true&#34; depth=&#34;2&#34; %}}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>页面效果如下：</p>
 <p><img src="https://img.hongmao.run/blog/2021/08/hugo-learn-children.png" alt="hugo-learn-children"></p>
@@ -697,25 +679,25 @@ title: &#34;命令库&#34;
 </span><span class="lnt">18
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">{{% notice note %}}
-A notice disclaimer
-{{% /notice %}}
-
-
-{{% notice info %}}
-An information disclaimer
-{{% /notice %}}
-
-
-{{% notice tip %}}
-A tip disclaimer
-{{% /notice %}}
-
-
-{{% notice warning %}}
-A warning disclaimer
-{{% /notice %}}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">{{% notice note %}}
+</span></span><span class="line"><span class="cl">A notice disclaimer
+</span></span><span class="line"><span class="cl">{{% /notice %}}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">{{% notice info %}}
+</span></span><span class="line"><span class="cl">An information disclaimer
+</span></span><span class="line"><span class="cl">{{% /notice %}}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">{{% notice tip %}}
+</span></span><span class="line"><span class="cl">A tip disclaimer
+</span></span><span class="line"><span class="cl">{{% /notice %}}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">{{% notice warning %}}
+</span></span><span class="line"><span class="cl">A warning disclaimer
+</span></span><span class="line"><span class="cl">{{% /notice %}}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>效果如下：</p>
 <p><img src="https://img.hongmao.run/blog/2021/08/hugo-learn-notice.png" alt="hugo-learn-notice"></p>
@@ -766,48 +748,48 @@ A warning disclaimer
 </span><span class="lnt">41
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">{{<span class="p">&lt;</span> <span class="nt">tabs</span> <span class="na">groupId</span><span class="o">=</span><span class="s">&#34;config&#34;</span> <span class="p">&gt;</span>}}
-{{% tab name=&#34;json&#34; %}}
-<span class="s">```json
-</span><span class="s"></span><span class="p">{</span>
-  <span class="nt">&#34;Hello&#34;</span><span class="p">:</span> <span class="s2">&#34;World&#34;</span>
-<span class="p">}</span>
-<span class="s">```</span>
-{{% /tab %}}
-{{% tab name=&#34;XML&#34; %}}
-<span class="s">```xml
-</span><span class="s"></span><span class="nt">&lt;Hello&gt;</span>World<span class="nt">&lt;/Hello&gt;</span>
-<span class="s">```</span>
-{{% /tab %}}
-{{% tab name=&#34;properties&#34; %}}
-<span class="s">```properties
-</span><span class="s"></span>Hello = World
-<span class="s">```</span>
-{{% /tab %}}
-{{<span class="p">&lt;</span> <span class="p">/</span><span class="nt">tabs</span> <span class="p">&gt;</span>}}
-
-
-
-{{<span class="p">&lt;</span> <span class="nt">tabs</span> <span class="na">groupId</span><span class="o">=</span><span class="s">&#34;config&#34;</span> <span class="p">&gt;</span>}}
-{{% tab name=&#34;json&#34; %}}
-<span class="s">```json
-</span><span class="s"></span><span class="p">{</span>
-  <span class="nt">&#34;Hello&#34;</span><span class="p">:</span> <span class="s2">&#34;World&#34;</span>
-<span class="p">}</span>
-<span class="s">```</span>
-{{% /tab %}}
-{{% tab name=&#34;XML&#34; %}}
-<span class="s">```xml
-</span><span class="s"></span><span class="nt">&lt;Hello&gt;</span>World<span class="nt">&lt;/Hello&gt;</span>
-<span class="s">```</span>
-{{% /tab %}}
-{{% tab name=&#34;properties&#34; %}}
-<span class="s">```properties
-</span><span class="s"></span>Hello = World
-<span class="s">```</span>
-{{% /tab %}}
-{{<span class="p">&lt;</span> <span class="p">/</span><span class="nt">tabs</span> <span class="p">&gt;</span>}}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">{{<span class="p">&lt;</span> <span class="nt">tabs</span> <span class="na">groupId</span><span class="o">=</span><span class="s">&#34;config&#34;</span> <span class="p">&gt;</span>}}
+</span></span><span class="line"><span class="cl">{{% tab name=&#34;json&#34; %}}
+</span></span><span class="line"><span class="cl"><span class="s">```json
+</span></span></span><span class="line"><span class="cl"><span class="s"></span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;Hello&#34;</span><span class="p">:</span> <span class="s2">&#34;World&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="s">```</span>
+</span></span><span class="line"><span class="cl">{{% /tab %}}
+</span></span><span class="line"><span class="cl">{{% tab name=&#34;XML&#34; %}}
+</span></span><span class="line"><span class="cl"><span class="s">```xml
+</span></span></span><span class="line"><span class="cl"><span class="s"></span><span class="nt">&lt;Hello&gt;</span>World<span class="nt">&lt;/Hello&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="s">```</span>
+</span></span><span class="line"><span class="cl">{{% /tab %}}
+</span></span><span class="line"><span class="cl">{{% tab name=&#34;properties&#34; %}}
+</span></span><span class="line"><span class="cl"><span class="s">```properties
+</span></span></span><span class="line"><span class="cl"><span class="s"></span>Hello = World
+</span></span><span class="line"><span class="cl"><span class="s">```</span>
+</span></span><span class="line"><span class="cl">{{% /tab %}}
+</span></span><span class="line"><span class="cl">{{<span class="p">&lt;</span> <span class="p">/</span><span class="nt">tabs</span> <span class="p">&gt;</span>}}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">{{<span class="p">&lt;</span> <span class="nt">tabs</span> <span class="na">groupId</span><span class="o">=</span><span class="s">&#34;config&#34;</span> <span class="p">&gt;</span>}}
+</span></span><span class="line"><span class="cl">{{% tab name=&#34;json&#34; %}}
+</span></span><span class="line"><span class="cl"><span class="s">```json
+</span></span></span><span class="line"><span class="cl"><span class="s"></span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;Hello&#34;</span><span class="p">:</span> <span class="s2">&#34;World&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="s">```</span>
+</span></span><span class="line"><span class="cl">{{% /tab %}}
+</span></span><span class="line"><span class="cl">{{% tab name=&#34;XML&#34; %}}
+</span></span><span class="line"><span class="cl"><span class="s">```xml
+</span></span></span><span class="line"><span class="cl"><span class="s"></span><span class="nt">&lt;Hello&gt;</span>World<span class="nt">&lt;/Hello&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="s">```</span>
+</span></span><span class="line"><span class="cl">{{% /tab %}}
+</span></span><span class="line"><span class="cl">{{% tab name=&#34;properties&#34; %}}
+</span></span><span class="line"><span class="cl"><span class="s">```properties
+</span></span></span><span class="line"><span class="cl"><span class="s"></span>Hello = World
+</span></span><span class="line"><span class="cl"><span class="s">```</span>
+</span></span><span class="line"><span class="cl">{{% /tab %}}
+</span></span><span class="line"><span class="cl">{{<span class="p">&lt;</span> <span class="p">/</span><span class="nt">tabs</span> <span class="p">&gt;</span>}}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>效果如下：</p>
 <p><img src="https://img.hongmao.run/blog/2021/08/hugo-learn-tabs.png" alt="hugo-learn-tabs"></p>
@@ -825,13 +807,13 @@ A warning disclaimer
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">+++
-title = &#34;Docker&#34;
-chapter = true
-pre = &#34;<span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;fab fa-docker&#39;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> &#34;
-description = &#34;本章节主要讲述Docker的相关命令。&#34;
-+++
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">+++
+</span></span><span class="line"><span class="cl">title = &#34;Docker&#34;
+</span></span><span class="line"><span class="cl">chapter = true
+</span></span><span class="line"><span class="cl">pre = &#34;<span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;fab fa-docker&#39;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> &#34;
+</span></span><span class="line"><span class="cl">description = &#34;本章节主要讲述Docker的相关命令。&#34;
+</span></span><span class="line"><span class="cl">+++
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>效果如下：</p>
 <p><img src="https://img.hongmao.run/blog/2021/08/hugo-learn-menu-icon-1.png" alt="hugo-learn-menu-icon-1"></p>
@@ -859,20 +841,20 @@ description = &#34;本章节主要讲述Docker的相关命令。&#34;
 </span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">.
-├── Read Me.txt
-├── demo-files
-│   ├── demo.css
-│   └── demo.js
-├── demo.html
-├── fonts
-│   ├── icomoon.eot
-│   ├── icomoon.svg
-│   ├── icomoon.ttf
-│   └── icomoon.woff
-├── selection.json
-└── style.css
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">.
+</span></span><span class="line"><span class="cl">├── Read Me.txt
+</span></span><span class="line"><span class="cl">├── demo-files
+</span></span><span class="line"><span class="cl">│   ├── demo.css
+</span></span><span class="line"><span class="cl">│   └── demo.js
+</span></span><span class="line"><span class="cl">├── demo.html
+</span></span><span class="line"><span class="cl">├── fonts
+</span></span><span class="line"><span class="cl">│   ├── icomoon.eot
+</span></span><span class="line"><span class="cl">│   ├── icomoon.svg
+</span></span><span class="line"><span class="cl">│   ├── icomoon.ttf
+</span></span><span class="line"><span class="cl">│   └── icomoon.woff
+</span></span><span class="line"><span class="cl">├── selection.json
+</span></span><span class="line"><span class="cl">└── style.css
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>我们可以通过<code>demo.html</code>来看效果。</p>
 <p><img src="https://img.hongmao.run/blog/2021/08/icomoon-demo.png" alt="icomoon-demo"></p>
@@ -892,17 +874,17 @@ description = &#34;本章节主要讲述Docker的相关命令。&#34;
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">.
-├── fonts
-│   ├── fonts
-│   │   ├── icomoon.eot
-│   │   ├── icomoon.svg
-│   │   ├── icomoon.ttf
-│   │   └── icomoon.woff
-│   └── style.css
-└── images
-    └── cmd-line.svg
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">.
+</span></span><span class="line"><span class="cl">├── fonts
+</span></span><span class="line"><span class="cl">│   ├── fonts
+</span></span><span class="line"><span class="cl">│   │   ├── icomoon.eot
+</span></span><span class="line"><span class="cl">│   │   ├── icomoon.svg
+</span></span><span class="line"><span class="cl">│   │   ├── icomoon.ttf
+</span></span><span class="line"><span class="cl">│   │   └── icomoon.woff
+</span></span><span class="line"><span class="cl">│   └── style.css
+</span></span><span class="line"><span class="cl">└── images
+</span></span><span class="line"><span class="cl">    └── cmd-line.svg
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>（忽略<code>images</code>目录，和此处所讲内容无关）</p>
 <p>此时，我们就已经保证了在使用<code>hugo</code>命令生成静态文件时会把这些文件放至<code>public</code>目录内，下一步要做的就是让我们的页面上可以引用到它。</p>
@@ -913,9 +895,9 @@ description = &#34;本章节主要讲述Docker的相关命令。&#34;
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">{{ $assetBusting := not .Site.Params.disableAssetsBusting }}
-<span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;/cmd/fonts/style.css{{ if $assetBusting }}?{{ now.Unix }}{{ end }}&#34;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span><span class="p">&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">{{ $assetBusting := not .Site.Params.disableAssetsBusting }}
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;/cmd/fonts/style.css{{ if $assetBusting }}?{{ now.Unix }}{{ end }}&#34;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>这种方式是本主题所支持的，即在生成静态文件时，会把这个文件内的内容放至HTML文件里。此处所写的路径是绝对路径，不然在非首页内就无法取到<code>style.css</code>文件了。之所以此处我写了<code>cmd</code>，是因为我的项目部署在域名下的<code>cmd</code>下。</p>
 <p>这样，我们的每个页面都引用了<code>fonts/style.css</code>文件了，下一步就是使用对应的图标了。</p>
@@ -930,13 +912,13 @@ description = &#34;本章节主要讲述Docker的相关命令。&#34;
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">+++
-title = &#34;常用命令&#34;
-date =  2021-08-22T17:41:14+08:00
-weight = 1
-pre = &#34;<span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;icon-kafka&#39;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> &#34;
-+++
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">+++
+</span></span><span class="line"><span class="cl">title = &#34;常用命令&#34;
+</span></span><span class="line"><span class="cl">date =  2021-08-22T17:41:14+08:00
+</span></span><span class="line"><span class="cl">weight = 1
+</span></span><span class="line"><span class="cl">pre = &#34;<span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;icon-kafka&#39;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> &#34;
+</span></span><span class="line"><span class="cl">+++
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>效果如下：</p>
 <p><img src="https://img.hongmao.run/blog/2021/08/icomoon-view.png" alt="icomoon-view"></p>
@@ -952,10 +934,10 @@ pre = &#34;<span class="p">&lt;</span><span class="nt">i</span> <span class="na"
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;logo&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#39;{{ (cond (and (ne .Site.Params.landingPageURL nil) (.Site.IsMultiLingual)) .Site.Params.landingPageURL &#34;/&#34;) }}&#39;</span><span class="p">&gt;</span>
-  
-<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;logo&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#39;{{ (cond (and (ne .Site.Params.landingPageURL nil) (.Site.IsMultiLingual)) .Site.Params.landingPageURL &#34;/&#34;) }}&#39;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>因为我也不搞多语言，所以此处我的解决方式很暴力，就是直接把<code>href</code>属性设置为<code>/cmd</code>：</p>
 <div class="highlight"><div class="chroma">
@@ -965,10 +947,10 @@ pre = &#34;<span class="p">&lt;</span><span class="nt">i</span> <span class="na"
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;logo&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#39;/cmd&#39;</span><span class="p">&gt;</span>
-  
-<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;logo&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#39;/cmd&#39;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>问题解决。</p>
 <p>至于home菜单点击后跳转域名根目录的问题，我的解决方式同样暴力，直接修改配置文件，隐藏home菜单。（因为我看该<a href="https://learn.netlify.app/en/">主题官网</a>都隐藏了home菜单。）</p>
@@ -978,9 +960,9 @@ pre = &#34;<span class="p">&lt;</span><span class="nt">i</span> <span class="na"
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
-  <span class="nx">disableLandingPageButton</span> <span class="p">=</span> <span class="kc">true</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">disableLandingPageButton</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>等以后有时间了再去研究其他解决方案吧。</p>
 <h2 id="2-部署后搜索失效了">2. 部署后搜索失效了</h2>
@@ -1001,15 +983,15 @@ pre = &#34;<span class="p">&lt;</span><span class="nt">i</span> <span class="na"
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">+++
-title = &#34;Docker&#34;
-date = 2021-08-22T17:02:53+08:00
-weight = 1
-chapter = true
-pre = &#34;<span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;fab fa-docker&#39;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> &#34;
-description = &#34;本章节主要讲述Docker的相关命令。&#34;
-+++
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">+++
+</span></span><span class="line"><span class="cl">title = &#34;Docker&#34;
+</span></span><span class="line"><span class="cl">date = 2021-08-22T17:02:53+08:00
+</span></span><span class="line"><span class="cl">weight = 1
+</span></span><span class="line"><span class="cl">chapter = true
+</span></span><span class="line"><span class="cl">pre = &#34;<span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;fab fa-docker&#39;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> &#34;
+</span></span><span class="line"><span class="cl">description = &#34;本章节主要讲述Docker的相关命令。&#34;
+</span></span><span class="line"><span class="cl">+++
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>这样设置多篇文章后，由于图标不同，则菜单的字符不能对齐。但我发现本主题的官方文档中的“More”下的图标是对齐的，然后debug了一下，发现是由于缺少了一个样式导致的，即设置图标时，应该给其添加样式类<code>fa-fw</code>，如下所示：</p>
 <div class="highlight"><div class="chroma">
@@ -1024,15 +1006,15 @@ description = &#34;本章节主要讲述Docker的相关命令。&#34;
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">+++
-title = &#34;Docker&#34;
-date = 2021-08-22T17:02:53+08:00
-weight = 1
-chapter = true
-pre = &#34;<span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;fab fa-fw fa-docker&#39;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> &#34;
-description = &#34;本章节主要讲述Docker的相关命令。&#34;
-+++
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">+++
+</span></span><span class="line"><span class="cl">title = &#34;Docker&#34;
+</span></span><span class="line"><span class="cl">date = 2021-08-22T17:02:53+08:00
+</span></span><span class="line"><span class="cl">weight = 1
+</span></span><span class="line"><span class="cl">chapter = true
+</span></span><span class="line"><span class="cl">pre = &#34;<span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;fab fa-fw fa-docker&#39;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> &#34;
+</span></span><span class="line"><span class="cl">description = &#34;本章节主要讲述Docker的相关命令。&#34;
+</span></span><span class="line"><span class="cl">+++
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>这样设置后，问题解决。</p>
 
@@ -1121,7 +1103,7 @@ description = &#34;本章节主要讲述Docker的相关命令。&#34;
 
 
 
-<script type="text/javascript" src="/blog/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+<script type="text/javascript" src="/blog/js/main.min.64437849d125a2d603b3e71d6de5225d641a32d17168a58106e0b61852079683.js"></script>
 
 
 

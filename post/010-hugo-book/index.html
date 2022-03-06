@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.92.2 with theme even" />
+<meta name="generator" content="Hugo 0.93.1 with theme even" />
 
 
 <link rel="canonical" href="https://zhdbest.github.io/blog/post/010-hugo-book/" />
@@ -181,14 +181,14 @@
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 首先初始化一个站点项目</span>
-hugo new site hugo-book
-<span class="nb">cd</span> hugo-book
-<span class="c1"># 下载主题</span>
-git clone &lt;https://github.com/alex-shpak/hugo-book.git&gt; themes/book
-<span class="c1"># 指定主题为“book”启动便可以看到效果了</span>
-hugo server -t book
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 首先初始化一个站点项目</span>
+</span></span><span class="line"><span class="cl">hugo new site hugo-book
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> hugo-book
+</span></span><span class="line"><span class="cl"><span class="c1"># 下载主题</span>
+</span></span><span class="line"><span class="cl">git clone &lt;https://github.com/alex-shpak/hugo-book.git&gt; themes/book
+</span></span><span class="line"><span class="cl"><span class="c1"># 指定主题为“book”启动便可以看到效果了</span>
+</span></span><span class="line"><span class="cl">hugo server -t book
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="二使用">二、使用</h1>
 <p>首先将主题中的文章模板复制到本项目的模板目录下：</p>
@@ -199,10 +199,10 @@ hugo server -t book
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">cp -R themes/book/archetypes .
-<span class="c1"># 删除原来的default.md</span>
-rm archetypes/default.md
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cp -R themes/book/archetypes .
+</span></span><span class="line"><span class="cl"><span class="c1"># 删除原来的default.md</span>
+</span></span><span class="line"><span class="cl">rm archetypes/default.md
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>下面我们就可以使用新复制过来的模板来创建文章了：</p>
 <div class="highlight"><div class="chroma">
@@ -212,10 +212,10 @@ rm archetypes/default.md
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">hugo new docs/章节一.md
-hugo new docs/章节二.md
-hugo new docs/章节三.md
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hugo new docs/章节一.md
+</span></span><span class="line"><span class="cl">hugo new docs/章节二.md
+</span></span><span class="line"><span class="cl">hugo new docs/章节三.md
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>此时如果启动的话，页面仍是空白的，看不到任何一个章节，因为这几个章节的文档内容是空的。</p>
 <p>我们编辑“章节一.md”：</p>
@@ -230,14 +230,14 @@ hugo new docs/章节三.md
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">这是章节一。
-
-<span class="gh"># 一级标题
-</span><span class="gh"></span>
-<span class="gu">## 二级标题
-</span><span class="gu"></span>
-<span class="gu">### 三级标题
-</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">这是章节一。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="gh"># 一级标题
+</span></span></span><span class="line"><span class="cl"><span class="gh"></span>
+</span></span><span class="line"><span class="cl"><span class="gu">## 二级标题
+</span></span></span><span class="line"><span class="cl"><span class="gu"></span>
+</span></span><span class="line"><span class="cl"><span class="gu">### 三级标题
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>此时，启动服务，页面便可以看到章节一了：</p>
 <p><img src="https://img.hongmao.run/blog/2021/07/hugo-book-init.png" alt="https://img.hongmao.run/blog/2021/07/hugo-book-init.png"></p>
@@ -255,12 +255,12 @@ hugo new docs/章节三.md
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">---
-title: &#34;Spring框架文档&#34;
-<span class="gh"># 就是该字段，数字越大，该文章将越往下
-</span><span class="gh"></span>weight: 1
----
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">title: &#34;Spring框架文档&#34;
+</span></span><span class="line"><span class="cl"><span class="gh"># 就是该字段，数字越大，该文章将越往下
+</span></span></span><span class="line"><span class="cl"><span class="gh"></span>weight: 1
+</span></span><span class="line"><span class="cl">---
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>也可以通过绑定菜单的方式来实现，创建文件“content/menu/index.md”，按照如下方式排列：</p>
 <div class="highlight"><div class="chroma">
@@ -273,13 +273,13 @@ title: &#34;Spring框架文档&#34;
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">+++
-headless = true
-+++
-<span class="k">-</span> [<span class="nt">章节一</span>](<span class="na">{{&lt; relref &#34;/docs/章节一&#34; &gt;}}</span>)
-<span class="k">-</span> [<span class="nt">章节二</span>](<span class="na">{{&lt; relref &#34;/docs/章节二&#34; &gt;}}</span>)
-<span class="k">-</span> [<span class="nt">章节三</span>](<span class="na">{{&lt; relref &#34;/docs/章节三&#34; &gt;}}</span>)
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">+++
+</span></span><span class="line"><span class="cl">headless = true
+</span></span><span class="line"><span class="cl">+++
+</span></span><span class="line"><span class="cl"><span class="k">-</span> [<span class="nt">章节一</span>](<span class="na">{{&lt; relref &#34;/docs/章节一&#34; &gt;}}</span>)
+</span></span><span class="line"><span class="cl"><span class="k">-</span> [<span class="nt">章节二</span>](<span class="na">{{&lt; relref &#34;/docs/章节二&#34; &gt;}}</span>)
+</span></span><span class="line"><span class="cl"><span class="k">-</span> [<span class="nt">章节三</span>](<span class="na">{{&lt; relref &#34;/docs/章节三&#34; &gt;}}</span>)
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>然后，再修改配置文件，添加如下配置：</p>
 <div class="highlight"><div class="chroma">
@@ -289,10 +289,10 @@ headless = true
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">[params]
-  # 设置菜单栏排列的方式为绑定，且指定菜单的文件
-  BookMenuBundle = &#39;/menu&#39;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">[params]
+</span></span><span class="line"><span class="cl">  # 设置菜单栏排列的方式为绑定，且指定菜单的文件
+</span></span><span class="line"><span class="cl">  BookMenuBundle = &#39;/menu&#39;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>启动服务后便可发现，目前菜单的排列是按照我们设定的方式排列的了。但是，这种绑定菜单的方式在本主题内已被标记废弃，会在启动时打印如下内容：</p>
 <div class="highlight"><div class="chroma">
@@ -300,8 +300,8 @@ headless = true
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">WARN 2021/07/28 20:14:35 Bundle menu mode is deprecated and will be removed
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">WARN 2021/07/28 20:14:35 Bundle menu mode is deprecated and will be removed
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>所以，还是建议使用“文件树”模式生成菜单。</p>
 <h1 id="三部分特性的使用">三、部分特性的使用</h1>
@@ -313,9 +313,9 @@ headless = true
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="gh"># 但是，仅针对使用“文件树”模式的菜单时，该设置才生效
-</span><span class="gh"></span>bookCollapseSection: true
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl"><span class="gh"># 但是，仅针对使用“文件树”模式的菜单时，该设置才生效
+</span></span></span><span class="line"><span class="cl"><span class="gh"></span>bookCollapseSection: true
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="2-使用提示框">2. 使用提示框</h2>
 <p>代码如下：</p>
@@ -340,24 +340,24 @@ headless = true
 </span><span class="lnt">17
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">{{<span class="p">&lt;</span> <span class="nt">hint</span> <span class="na">info</span> <span class="p">&gt;</span>}}
-<span class="gs">**Markdown content**</span>  
-Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
-stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
-{{<span class="p">&lt;</span> <span class="p">/</span><span class="nt">hint</span> <span class="p">&gt;</span>}}
-
-{{<span class="p">&lt;</span> <span class="nt">hint</span> <span class="na">warning</span> <span class="p">&gt;</span>}}
-<span class="gs">**Markdown content**</span>  
-Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
-stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
-{{<span class="p">&lt;</span> <span class="p">/</span><span class="nt">hint</span> <span class="p">&gt;</span>}}
-
-{{<span class="p">&lt;</span> <span class="nt">hint</span> <span class="na">danger</span> <span class="p">&gt;</span>}}
-<span class="gs">**Markdown content**</span>  
-Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
-stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
-{{<span class="p">&lt;</span> <span class="p">/</span><span class="nt">hint</span> <span class="p">&gt;</span>}}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">{{<span class="p">&lt;</span> <span class="nt">hint</span> <span class="na">info</span> <span class="p">&gt;</span>}}
+</span></span><span class="line"><span class="cl"><span class="gs">**Markdown content**</span>  
+</span></span><span class="line"><span class="cl">Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+</span></span><span class="line"><span class="cl">stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
+</span></span><span class="line"><span class="cl">{{<span class="p">&lt;</span> <span class="p">/</span><span class="nt">hint</span> <span class="p">&gt;</span>}}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">{{<span class="p">&lt;</span> <span class="nt">hint</span> <span class="na">warning</span> <span class="p">&gt;</span>}}
+</span></span><span class="line"><span class="cl"><span class="gs">**Markdown content**</span>  
+</span></span><span class="line"><span class="cl">Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+</span></span><span class="line"><span class="cl">stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
+</span></span><span class="line"><span class="cl">{{<span class="p">&lt;</span> <span class="p">/</span><span class="nt">hint</span> <span class="p">&gt;</span>}}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">{{<span class="p">&lt;</span> <span class="nt">hint</span> <span class="na">danger</span> <span class="p">&gt;</span>}}
+</span></span><span class="line"><span class="cl"><span class="gs">**Markdown content**</span>  
+</span></span><span class="line"><span class="cl">Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+</span></span><span class="line"><span class="cl">stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
+</span></span><span class="line"><span class="cl">{{<span class="p">&lt;</span> <span class="p">/</span><span class="nt">hint</span> <span class="p">&gt;</span>}}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>目前仅支持上述三种提示框，效果如下：</p>
 <p><img src="https://img.hongmao.run/blog/2021/07/hugo-book-hints.png" alt="https://img.hongmao.run/blog/2021/07/hugo-book-hints.png"></p>
@@ -396,36 +396,36 @@ stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
 </span><span class="lnt">29
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="c1">// 新增hint类型：tip
-</span><span class="c1"></span><span class="nc">.markdown</span> <span class="nc">.book-hint.tip</span> <span class="p">{</span>
-    <span class="na">border-color</span><span class="o">:</span> <span class="mh">#3375b4</span><span class="p">;</span>
-    <span class="na">background-color</span><span class="o">:</span> <span class="mh">#e9f1f6</span>
-<span class="p">}</span>
-
-<span class="c1">// 新增hint类型：note
-</span><span class="c1"></span><span class="nc">.markdown</span> <span class="nc">.book-hint.note</span> <span class="p">{</span>
-    <span class="na">border-color</span><span class="o">:</span> <span class="mh">#4a692d</span><span class="p">;</span>
-    <span class="na">background-color</span><span class="o">:</span> <span class="mh">#ecf1e8</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="c1">// 修改原hint类型样式：warning
-</span><span class="c1"></span><span class="nc">.markdown</span> <span class="nc">.book-hint.warning</span> <span class="p">{</span>
-    <span class="na">border-color</span><span class="o">:</span> <span class="mh">#cc882f</span><span class="p">;</span>
-    <span class="na">background-color</span><span class="o">:</span> <span class="mh">#fff9e4</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="c1">// 新增hint类型：important
-</span><span class="c1"></span><span class="nc">.markdown</span> <span class="nc">.book-hint.important</span> <span class="p">{</span>
-    <span class="na">border-color</span><span class="o">:</span> <span class="mh">#af2418</span><span class="p">;</span>
-    <span class="na">background-color</span><span class="o">:</span> <span class="mh">#f9ebeb</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="c1">// 新增hint类型：caution
-</span><span class="c1"></span><span class="nc">.markdown</span> <span class="nc">.book-hint.caution</span> <span class="p">{</span>
-    <span class="na">border-color</span><span class="o">:</span> <span class="mh">#b0401c</span><span class="p">;</span>
-    <span class="na">background-color</span><span class="o">:</span> <span class="mh">#f9ebeb</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="c1">// 新增hint类型：tip
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nc">.markdown</span> <span class="nc">.book-hint.tip</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="na">border-color</span><span class="o">:</span> <span class="mh">#3375b4</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="na">background-color</span><span class="o">:</span> <span class="mh">#e9f1f6</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 新增hint类型：note
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nc">.markdown</span> <span class="nc">.book-hint.note</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="na">border-color</span><span class="o">:</span> <span class="mh">#4a692d</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="na">background-color</span><span class="o">:</span> <span class="mh">#ecf1e8</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 修改原hint类型样式：warning
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nc">.markdown</span> <span class="nc">.book-hint.warning</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="na">border-color</span><span class="o">:</span> <span class="mh">#cc882f</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="na">background-color</span><span class="o">:</span> <span class="mh">#fff9e4</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 新增hint类型：important
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nc">.markdown</span> <span class="nc">.book-hint.important</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="na">border-color</span><span class="o">:</span> <span class="mh">#af2418</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="na">background-color</span><span class="o">:</span> <span class="mh">#f9ebeb</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 新增hint类型：caution
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nc">.markdown</span> <span class="nc">.book-hint.caution</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="na">border-color</span><span class="o">:</span> <span class="mh">#b0401c</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="na">background-color</span><span class="o">:</span> <span class="mh">#f9ebeb</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>然后效果如下：</p>
 <p><img src="https://img.hongmao.run/blog/2021/07/hugo-book-hints-custom.png" alt="https://img.hongmao.run/blog/2021/07/hugo-book-hints-custom.png"></p>
@@ -440,12 +440,12 @@ stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">{{<span class="p">&lt;</span> <span class="nt">tabs</span> <span class="err">&#34;</span><span class="na">uniqueid</span><span class="err">&#34;</span> <span class="p">&gt;</span>}}
-{{<span class="p">&lt;</span> <span class="nt">tab</span> <span class="err">&#34;</span><span class="na">MacOS</span><span class="err">&#34;</span> <span class="p">&gt;</span>}} # MacOS Content {{<span class="p">&lt;</span> <span class="p">/</span><span class="nt">tab</span> <span class="p">&gt;</span>}}
-{{<span class="p">&lt;</span> <span class="nt">tab</span> <span class="err">&#34;</span><span class="na">Linux</span><span class="err">&#34;</span> <span class="p">&gt;</span>}} # Linux Content {{<span class="p">&lt;</span> <span class="p">/</span><span class="nt">tab</span> <span class="p">&gt;</span>}}
-{{<span class="p">&lt;</span> <span class="nt">tab</span> <span class="err">&#34;</span><span class="na">Windows</span><span class="err">&#34;</span> <span class="p">&gt;</span>}} # Windows Content {{<span class="p">&lt;</span> <span class="p">/</span><span class="nt">tab</span> <span class="p">&gt;</span>}}
-{{<span class="p">&lt;</span> <span class="p">/</span><span class="nt">tabs</span> <span class="p">&gt;</span>}}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">{{<span class="p">&lt;</span> <span class="nt">tabs</span> <span class="err">&#34;</span><span class="na">uniqueid</span><span class="err">&#34;</span> <span class="p">&gt;</span>}}
+</span></span><span class="line"><span class="cl">{{<span class="p">&lt;</span> <span class="nt">tab</span> <span class="err">&#34;</span><span class="na">MacOS</span><span class="err">&#34;</span> <span class="p">&gt;</span>}} # MacOS Content {{<span class="p">&lt;</span> <span class="p">/</span><span class="nt">tab</span> <span class="p">&gt;</span>}}
+</span></span><span class="line"><span class="cl">{{<span class="p">&lt;</span> <span class="nt">tab</span> <span class="err">&#34;</span><span class="na">Linux</span><span class="err">&#34;</span> <span class="p">&gt;</span>}} # Linux Content {{<span class="p">&lt;</span> <span class="p">/</span><span class="nt">tab</span> <span class="p">&gt;</span>}}
+</span></span><span class="line"><span class="cl">{{<span class="p">&lt;</span> <span class="nt">tab</span> <span class="err">&#34;</span><span class="na">Windows</span><span class="err">&#34;</span> <span class="p">&gt;</span>}} # Windows Content {{<span class="p">&lt;</span> <span class="p">/</span><span class="nt">tab</span> <span class="p">&gt;</span>}}
+</span></span><span class="line"><span class="cl">{{<span class="p">&lt;</span> <span class="p">/</span><span class="nt">tabs</span> <span class="p">&gt;</span>}}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>效果如下：</p>
 <p><img src="https://img.hongmao.run/blog/2021/07/hugo-book-tab.png" alt="https://img.hongmao.run/blog/2021/07/hugo-book-tab.png"></p>
@@ -458,10 +458,10 @@ stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">[params]
-  # 设置Logo，可以使用网络上的地址，也可以将logo放在static包下，然后在此指定相对路径，例如：logo.png
-  BookLogo = &#39;&lt;https://xxx.xxx.png&gt;&#39;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[params]
+</span></span><span class="line"><span class="cl">  # 设置Logo，可以使用网络上的地址，也可以将logo放在static包下，然后在此指定相对路径，例如：logo.png
+</span></span><span class="line"><span class="cl">  BookLogo = &#39;&lt;https://xxx.xxx.png&gt;&#39;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="5-指定网站favicon">5. 指定网站favicon</h2>
 <p>将图标命名为“favicon.png”，注意后缀也不可以错，让后将该文件放入站点的“static”目录下即可。</p>
@@ -476,11 +476,11 @@ stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="cm">/* 定制化代码样式，包括行内代码和代码块 */</span>
-<span class="nt">code</span> <span class="p">{</span>
-    <span class="na">font-family</span><span class="o">:</span> <span class="n">Monaco</span><span class="o">,</span><span class="n">Consolas</span><span class="o">,</span><span class="n">Menlo</span><span class="o">,</span><span class="n">dejavu</span> <span class="n">sans</span> <span class="n">mono</span><span class="o">,</span><span class="n">bitstream</span> <span class="n">vera</span> <span class="n">sans</span> <span class="n">mono</span><span class="o">,</span><span class="n">courier</span> <span class="n">new</span><span class="o">,</span><span class="ni">monospace</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="cm">/* 定制化代码样式，包括行内代码和代码块 */</span>
+</span></span><span class="line"><span class="cl"><span class="nt">code</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="na">font-family</span><span class="o">:</span> <span class="n">Monaco</span><span class="o">,</span><span class="n">Consolas</span><span class="o">,</span><span class="n">Menlo</span><span class="o">,</span><span class="n">dejavu</span> <span class="n">sans</span> <span class="n">mono</span><span class="o">,</span><span class="n">bitstream</span> <span class="n">vera</span> <span class="n">sans</span> <span class="n">mono</span><span class="o">,</span><span class="n">courier</span> <span class="n">new</span><span class="o">,</span><span class="ni">monospace</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="2-自定义代码高亮样式">2. 自定义代码高亮样式</h2>
 <p>本设定与当前主题无关了，它属于hugo本身的功能，方法是在配置文件中添加如下配置：</p>
@@ -501,20 +501,20 @@ stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
 </span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">[markup]
-  [markup.highlight]
-    anchorLineNos = false
-    codeFences = true
-    guessSyntax = false
-    hl_Lines = &#34;&#34;
-    lineAnchors = &#34;&#34;
-    lineNoStart = 1
-    lineNos = false
-    lineNumbersInTable = true
-    noClasses = true
-    style = &#34;dracula&#34;
-    tabWidth = 4
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[markup]
+</span></span><span class="line"><span class="cl">  [markup.highlight]
+</span></span><span class="line"><span class="cl">    anchorLineNos = false
+</span></span><span class="line"><span class="cl">    codeFences = true
+</span></span><span class="line"><span class="cl">    guessSyntax = false
+</span></span><span class="line"><span class="cl">    hl_Lines = &#34;&#34;
+</span></span><span class="line"><span class="cl">    lineAnchors = &#34;&#34;
+</span></span><span class="line"><span class="cl">    lineNoStart = 1
+</span></span><span class="line"><span class="cl">    lineNos = false
+</span></span><span class="line"><span class="cl">    lineNumbersInTable = true
+</span></span><span class="line"><span class="cl">    noClasses = true
+</span></span><span class="line"><span class="cl">    style = &#34;dracula&#34;
+</span></span><span class="line"><span class="cl">    tabWidth = 4
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>style样式可以在https://xyproto.github.io/splash/docs/all.html去找，只不过在本主题下有个问题，部分样式的背景颜色为白色，而本主题也是白色，可能会展示很奇怪，如下所示：</p>
 <p><img src="https://img.hongmao.run/blog/2021/07/hugo-book-code-xcode.png" alt="https://img.hongmao.run/blog/2021/07/hugo-book-code-xcode.png"></p>
@@ -534,15 +534,15 @@ stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">[markup]
-  [markup.tableOfContents]
-    # 纳入目录的最小标题级别，默认为3
-    endLevel = 3
-    # 是否排序，其实就是是否在目录的前面添加序号“1. ”、&#34;2. &#34;等等
-    ordered = false
-    # 纳入目录的最大标题级别，默认为2
-    startLevel = 2
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[markup]
+</span></span><span class="line"><span class="cl">  [markup.tableOfContents]
+</span></span><span class="line"><span class="cl">    # 纳入目录的最小标题级别，默认为3
+</span></span><span class="line"><span class="cl">    endLevel = 3
+</span></span><span class="line"><span class="cl">    # 是否排序，其实就是是否在目录的前面添加序号“1. ”、&#34;2. &#34;等等
+</span></span><span class="line"><span class="cl">    ordered = false
+</span></span><span class="line"><span class="cl">    # 纳入目录的最大标题级别，默认为2
+</span></span><span class="line"><span class="cl">    startLevel = 2
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>其实，我觉得文章内的目录中不展示一级标题倒不是个问题，因为一级标题最好是用于设定本篇文章的标题。</p>
 
@@ -631,7 +631,7 @@ stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
 
 
 
-<script type="text/javascript" src="/blog/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+<script type="text/javascript" src="/blog/js/main.min.64437849d125a2d603b3e71d6de5225d641a32d17168a58106e0b61852079683.js"></script>
 
 
 

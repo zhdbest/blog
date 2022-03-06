@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.92.2 with theme even" />
+<meta name="generator" content="Hugo 0.93.1 with theme even" />
 
 
 <link rel="canonical" href="https://zhdbest.github.io/blog/post/011-hugo-geekdoc/" />
@@ -184,16 +184,16 @@
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># 新建站点</span>
-hugo new site hugo-geekdoc
-
-<span class="c1"># 进入站点路径下</span>
-<span class="nb">cd</span> hugo-geekdoc
-
-<span class="c1"># 安装主题</span>
-mkdir -p themes/hugo-geekdoc/
-curl -L &lt;https://github.com/thegeeklab/hugo-geekdoc/releases/latest/download/hugo-geekdoc.tar.gz&gt; <span class="p">|</span> tar -xz -C themes/hugo-geekdoc/ --strip-components<span class="o">=</span><span class="m">1</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># 新建站点</span>
+</span></span><span class="line"><span class="cl">hugo new site hugo-geekdoc
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 进入站点路径下</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> hugo-geekdoc
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 安装主题</span>
+</span></span><span class="line"><span class="cl">mkdir -p themes/hugo-geekdoc/
+</span></span><span class="line"><span class="cl">curl -L &lt;https://github.com/thegeeklab/hugo-geekdoc/releases/latest/download/hugo-geekdoc.tar.gz&gt; <span class="p">|</span> tar -xz -C themes/hugo-geekdoc/ --strip-components<span class="o">=</span><span class="m">1</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>修改根目目下的<code>config.toml</code>进行简单配置：</p>
 <div class="highlight"><div class="chroma">
@@ -205,12 +205,12 @@ curl -L &lt;https://github.com/thegeeklab/hugo-geekdoc/releases/latest/download/
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">baseURL</span> <span class="p">=</span> <span class="s2">&#34;&lt;http://example.org/&gt;&#34;</span>
-<span class="nx">languageCode</span> <span class="p">=</span> <span class="s2">&#34;en-us&#34;</span>
-<span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;JDK8源码阅读笔记&#34;</span>
-<span class="c"># 指定主题</span>
-<span class="nx">theme</span> <span class="p">=</span> <span class="s2">&#34;hugo-geekdoc&#34;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">baseURL</span> <span class="p">=</span> <span class="s2">&#34;&lt;http://example.org/&gt;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">languageCode</span> <span class="p">=</span> <span class="s2">&#34;en-us&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;JDK8源码阅读笔记&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c"># 指定主题</span>
+</span></span><span class="line"><span class="cl"><span class="nx">theme</span> <span class="p">=</span> <span class="s2">&#34;hugo-geekdoc&#34;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>此时便可以启动了：</p>
 <div class="highlight"><div class="chroma">
@@ -218,8 +218,8 @@ curl -L &lt;https://github.com/thegeeklab/hugo-geekdoc/releases/latest/download/
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">hugo server
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">hugo server
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果一切顺利的话，启动后在<code>1313</code>端口便可看到页面了。</p>
 <p><img src="https://img.hongmao.run/blog/2021/07/hugo-geekdoc-init.png" alt="https://img.hongmao.run/blog/2021/07/hugo-geekdoc-init.png"></p>
@@ -244,14 +244,14 @@ curl -L &lt;https://github.com/thegeeklab/hugo-geekdoc/releases/latest/download/
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">hugo new 第一章/_index.md
-hugo new 第一章/第一节.md
-hugo new 第二章/_index.md
-hugo new 第二章/第一节.md
-hugo new 第二章/第二节.md
-hugo new 第二章/第三节/_index.md
-hugo new 第二章/第三节/2.3.1小节.md
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">hugo new 第一章/_index.md
+</span></span><span class="line"><span class="cl">hugo new 第一章/第一节.md
+</span></span><span class="line"><span class="cl">hugo new 第二章/_index.md
+</span></span><span class="line"><span class="cl">hugo new 第二章/第一节.md
+</span></span><span class="line"><span class="cl">hugo new 第二章/第二节.md
+</span></span><span class="line"><span class="cl">hugo new 第二章/第三节/_index.md
+</span></span><span class="line"><span class="cl">hugo new 第二章/第三节/2.3.1小节.md
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>此时我们使用<code>hugo server -D</code>命令启动服务，可以看到效果如下：</p>
 <p><img src="https://img.hongmao.run/blog/2021/07/hugo-geekdoc-filetree.png" alt="https://img.hongmao.run/blog/2021/07/hugo-geekdoc-filetree.png"></p>
@@ -267,12 +267,12 @@ hugo new 第二章/第三节/2.3.1小节.md
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">---
-title: &#34;2.3&#34;
-date: 2021-07-17T14:34:42+08:00
-draft: true
----
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">title: &#34;2.3&#34;
+</span></span><span class="line"><span class="cl">date: 2021-07-17T14:34:42+08:00
+</span></span><span class="line"><span class="cl">draft: true
+</span></span><span class="line"><span class="cl">---
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>这说明，在创建这个文件时，<code>title</code>截取了文件名的一部分造成的，此处的截取规则没有深究。手动调整<code>title</code>即可解决这个问题。</p>
 <p>而对于菜单排列顺序问题，可以在文章md文件头中添加<code>weight</code>属性来进行排序，该值越大越往后。</p>
@@ -286,13 +286,13 @@ draft: true
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">---
-title: &#34;第三节&#34;
-date: 2021-07-17T14:34:42+08:00
-draft: false
-weight: 5
----
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">title: &#34;第三节&#34;
+</span></span><span class="line"><span class="cl">date: 2021-07-17T14:34:42+08:00
+</span></span><span class="line"><span class="cl">draft: false
+</span></span><span class="line"><span class="cl">weight: 5
+</span></span><span class="line"><span class="cl">---
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="22-绑定菜单">2.2 绑定菜单</h2>
 <p><code>geekdoc</code>主题还提供了另一种组织菜单的方式：绑定菜单。也就是通过一个文件来组织菜单，对每个章节都做强绑定。这样的话，我们对菜单的掌控度大大提高了。</p>
@@ -304,9 +304,9 @@ weight: 5
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
-  <span class="nx">geekdocMenuBundle</span> <span class="p">=</span> <span class="kc">true</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">geekdocMenuBundle</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>然后，创建一个文件：<code>data/menu/main.yml</code>：</p>
 <div class="highlight"><div class="chroma">
@@ -315,9 +315,9 @@ weight: 5
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">mkdir data/menu
-touch data/menu/main.yml
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">mkdir data/menu
+</span></span><span class="line"><span class="cl">touch data/menu/main.yml
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>修改这个文件：</p>
 <div class="highlight"><div class="chroma">
@@ -343,26 +343,26 @@ touch data/menu/main.yml
 </span><span class="lnt">19
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nn">---</span><span class="w">
-</span><span class="w"></span><span class="nt">main</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第一章&#34;</span><span class="w">
-</span><span class="w">    </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第一章&#34;</span><span class="w">
-</span><span class="w">    </span><span class="nt">sub</span><span class="p">:</span><span class="w">
-</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第一节&#34;</span><span class="w">
-</span><span class="w">        </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第一章/第一节.md&#34;</span><span class="w">
-</span><span class="w">  </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第二章&#34;</span><span class="w">
-</span><span class="w">    </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第二章&#34;</span><span class="w">
-</span><span class="w">    </span><span class="nt">sub</span><span class="p">:</span><span class="w">
-</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第一节&#34;</span><span class="w">
-</span><span class="w">        </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第二章/第一节.md&#34;</span><span class="w">
-</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第二节&#34;</span><span class="w">
-</span><span class="w">        </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第二章/第二节.md&#34;</span><span class="w">
-</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第三节&#34;</span><span class="w">
-</span><span class="w">        </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第二章/第三节&#34;</span><span class="w">
-</span><span class="w">        </span><span class="nt">sub</span><span class="p">:</span><span class="w">
-</span><span class="w">          </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;2.3.1小节&#34;</span><span class="w">
-</span><span class="w">            </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第二章/第三节/2.3.1小节.md&#34;</span><span class="w">
-</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">main</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第一章&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第一章&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">sub</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第一节&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第一章/第一节.md&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第二章&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第二章&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">sub</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第一节&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第二章/第一节.md&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第二节&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第二章/第二节.md&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第三节&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第二章/第三节&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">sub</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;2.3.1小节&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第二章/第三节/2.3.1小节.md&#34;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>重启服务后，可以看到效果如下：</p>
 <p><img src="https://img.hongmao.run/blog/2021/07/hugo-geekdoc-bundle-menu.png" alt="https://img.hongmao.run/blog/2021/07/hugo-geekdoc-bundle-menu.png"></p>
@@ -406,32 +406,32 @@ touch data/menu/main.yml
 </span><span class="lnt">25
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">---
-title: &#34;2.3&#34;
-date: 2021-07-17T14:34:42+08:00
-draft: true
----
-
-<span class="gh"># public ArrayList(int initialCapacity)
-</span><span class="gh"></span>这是行内代码：`public`。
-构造一个具有指定初始容量的空列表。
-源码如下：
-<span class="s">```java
-</span><span class="s"></span><span class="kd">public</span> <span class="nf">ArrayList</span><span class="o">(</span><span class="kt">int</span> <span class="n">initialCapacity</span><span class="o">)</span> <span class="o">{</span>
-    <span class="k">if</span> <span class="o">(</span><span class="n">initialCapacity</span> <span class="o">&gt;</span> <span class="n">0</span><span class="o">)</span> <span class="o">{</span>
-        <span class="c1">// 指定容量大于0，初始化一个指定容量的数组赋值给elementData
-</span><span class="c1"></span>        <span class="k">this</span><span class="o">.</span><span class="na">elementData</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Object</span><span class="o">[</span><span class="n">initialCapacity</span><span class="o">];</span>
-    <span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">(</span><span class="n">initialCapacity</span> <span class="o">==</span> <span class="n">0</span><span class="o">)</span> <span class="o">{</span>
-        <span class="c1">// 指定容量等于0，elementData直接取空数组
-</span><span class="c1"></span>        <span class="k">this</span><span class="o">.</span><span class="na">elementData</span> <span class="o">=</span> <span class="n">EMPTY_ELEMENTDATA</span><span class="o">;</span>
-    <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
-        <span class="c1">// 指定容量小于0，抛出异常
-</span><span class="c1"></span>        <span class="k">throw</span> <span class="k">new</span> <span class="n">IllegalArgumentException</span><span class="o">(</span><span class="s">&#34;Illegal Capacity: &#34;</span><span class="o">+</span>
-                                           <span class="n">initialCapacity</span><span class="o">);</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-<span class="s">```</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">title: &#34;2.3&#34;
+</span></span><span class="line"><span class="cl">date: 2021-07-17T14:34:42+08:00
+</span></span><span class="line"><span class="cl">draft: true
+</span></span><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="gh"># public ArrayList(int initialCapacity)
+</span></span></span><span class="line"><span class="cl"><span class="gh"></span>这是行内代码：`public`。
+</span></span><span class="line"><span class="cl">构造一个具有指定初始容量的空列表。
+</span></span><span class="line"><span class="cl">源码如下：
+</span></span><span class="line"><span class="cl"><span class="s">```java
+</span></span></span><span class="line"><span class="cl"><span class="s"></span><span class="kd">public</span> <span class="nf">ArrayList</span><span class="o">(</span><span class="kt">int</span> <span class="n">initialCapacity</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="o">(</span><span class="n">initialCapacity</span> <span class="o">&gt;</span> <span class="n">0</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 指定容量大于0，初始化一个指定容量的数组赋值给elementData
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">this</span><span class="o">.</span><span class="na">elementData</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Object</span><span class="o">[</span><span class="n">initialCapacity</span><span class="o">];</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">(</span><span class="n">initialCapacity</span> <span class="o">==</span> <span class="n">0</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 指定容量等于0，elementData直接取空数组
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">this</span><span class="o">.</span><span class="na">elementData</span> <span class="o">=</span> <span class="n">EMPTY_ELEMENTDATA</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 指定容量小于0，抛出异常
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">throw</span> <span class="k">new</span> <span class="n">IllegalArgumentException</span><span class="o">(</span><span class="s">&#34;Illegal Capacity: &#34;</span><span class="o">+</span>
+</span></span><span class="line"><span class="cl">                                           <span class="n">initialCapacity</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="s">```</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>（记得手动修改<code>title</code>哦，我们生成好之后，它的原值为<code>2.3</code>）</p>
 <p>效果如下：</p>
@@ -459,21 +459,21 @@ draft: true
 </span><span class="lnt">14
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="c"># 增加如下配置</span>
-<span class="p">[</span><span class="nx">markup</span><span class="p">]</span>
-  <span class="p">[</span><span class="nx">markup</span><span class="p">.</span><span class="nx">highlight</span><span class="p">]</span>
-    <span class="nx">anchorLineNos</span> <span class="p">=</span> <span class="kc">false</span>
-    <span class="nx">codeFences</span> <span class="p">=</span> <span class="kc">true</span>
-    <span class="nx">guessSyntax</span> <span class="p">=</span> <span class="kc">false</span>
-    <span class="nx">hl_Lines</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
-    <span class="nx">lineAnchors</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
-    <span class="nx">lineNoStart</span> <span class="p">=</span> <span class="mi">1</span>
-    <span class="nx">lineNos</span> <span class="p">=</span> <span class="kc">false</span>
-    <span class="nx">lineNumbersInTable</span> <span class="p">=</span> <span class="kc">true</span>
-    <span class="nx">noClasses</span> <span class="p">=</span> <span class="kc">true</span>
-    <span class="nx">style</span> <span class="p">=</span> <span class="s2">&#34;xcode&#34;</span>
-    <span class="nx">tabWidth</span> <span class="p">=</span> <span class="mi">4</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># 增加如下配置</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">markup</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">markup</span><span class="p">.</span><span class="nx">highlight</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">anchorLineNos</span> <span class="p">=</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">codeFences</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">guessSyntax</span> <span class="p">=</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">hl_Lines</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">lineAnchors</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">lineNoStart</span> <span class="p">=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">lineNos</span> <span class="p">=</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">lineNumbersInTable</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">noClasses</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">style</span> <span class="p">=</span> <span class="s2">&#34;xcode&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">tabWidth</span> <span class="p">=</span> <span class="mi">4</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>我挑选的风格是<code>xcode</code>，你可以在<a href="https://xyproto.github.io/splash/docs/all.html">这里面</a>去挑选自己喜欢的风格。</p>
 <p>关于heightlight的默认配置项如下：</p>
@@ -506,32 +506,32 @@ draft: true
 </span><span class="lnt">25
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">markup</span><span class="p">]</span>
-  <span class="p">[</span><span class="nx">markup</span><span class="p">.</span><span class="nx">highlight</span><span class="p">]</span>
-    <span class="c"># 是否为代码行标开启锚链接，开启后，每一行代码都有锚链接，但是可能会重复</span>
-    <span class="c"># 例如第12行代码的链接：&lt;http://localhost:1313/test/#12&gt;</span>
-    <span class="nx">anchorLineNos</span> <span class="p">=</span> <span class="kc">false</span>
-    <span class="c"># 其实就是是否开启按不同语言显示不同的高亮效果，置为false后，代码全是灰的，没有高亮效果</span>
-    <span class="nx">codeFences</span> <span class="p">=</span> <span class="kc">true</span>
-    <span class="c"># 当Markdown文件中对代码块未指定语言时，是否自动推测语言</span>
-    <span class="nx">guessSyntax</span> <span class="p">=</span> <span class="kc">false</span>
-    <span class="c"># 高亮的行，一般不会做全局设置，如果想设置某一行或某几行高亮的话，可以在代码块单独设置</span>
-    <span class="nx">hl_Lines</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
-    <span class="c"># 在生成行号的锚链接时添加前缀，例如如果设置该属性为”xxx“的话</span>
-    <span class="c"># 则第12行代码的链接可能是：&lt;http://localhost:1313/test/#xxx-12&gt;</span>
-    <span class="nx">lineAnchors</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
-    <span class="c"># 开始的行号，一般是从1开始，此设置也可以在代码块单独设置</span>
-    <span class="nx">lineNoStart</span> <span class="p">=</span> <span class="mi">1</span>
-    <span class="c"># 是否展示行号</span>
-    <span class="nx">lineNos</span> <span class="p">=</span> <span class="kc">false</span>
-    <span class="c"># 是否将行号置为独立的table内，而不是和代码行在一起，和代码行在一起时，复制多行代码时行号也会被复制</span>
-    <span class="nx">lineNumbersInTable</span> <span class="p">=</span> <span class="kc">true</span>
-    <span class="nx">noClasses</span> <span class="p">=</span> <span class="kc">true</span>
-    <span class="c"># 指定代码高亮的风格</span>
-    <span class="nx">style</span> <span class="p">=</span> <span class="s2">&#34;monokai&#34;</span>
-    <span class="c"># tab键的宽度</span>
-    <span class="nx">tabWidth</span> <span class="p">=</span> <span class="mi">4</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">markup</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">markup</span><span class="p">.</span><span class="nx">highlight</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="c"># 是否为代码行标开启锚链接，开启后，每一行代码都有锚链接，但是可能会重复</span>
+</span></span><span class="line"><span class="cl">    <span class="c"># 例如第12行代码的链接：&lt;http://localhost:1313/test/#12&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">anchorLineNos</span> <span class="p">=</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">    <span class="c"># 其实就是是否开启按不同语言显示不同的高亮效果，置为false后，代码全是灰的，没有高亮效果</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">codeFences</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">    <span class="c"># 当Markdown文件中对代码块未指定语言时，是否自动推测语言</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">guessSyntax</span> <span class="p">=</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">    <span class="c"># 高亮的行，一般不会做全局设置，如果想设置某一行或某几行高亮的话，可以在代码块单独设置</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">hl_Lines</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="c"># 在生成行号的锚链接时添加前缀，例如如果设置该属性为”xxx“的话</span>
+</span></span><span class="line"><span class="cl">    <span class="c"># 则第12行代码的链接可能是：&lt;http://localhost:1313/test/#xxx-12&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">lineAnchors</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="c"># 开始的行号，一般是从1开始，此设置也可以在代码块单独设置</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">lineNoStart</span> <span class="p">=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="c"># 是否展示行号</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">lineNos</span> <span class="p">=</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">    <span class="c"># 是否将行号置为独立的table内，而不是和代码行在一起，和代码行在一起时，复制多行代码时行号也会被复制</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">lineNumbersInTable</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">noClasses</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">    <span class="c"># 指定代码高亮的风格</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">style</span> <span class="p">=</span> <span class="s2">&#34;monokai&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="c"># tab键的宽度</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">tabWidth</span> <span class="p">=</span> <span class="mi">4</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>现在有一个问题是：当开启展示代码行号且<code>lineNumbersInTable</code>置为<code>false</code>时，代码与行号之间有间隔但很小，效果很好。但是如果将复制多行代码时，会连行号也一并复制。如果将<code>lineNumbersInTable</code>置为<code>true</code>的话，此时复制就不会复制到行号了，但是新的问题出现：行号就站在代码的左侧，却像隔着银河。</p>
 <p><img src="https://img.hongmao.run/blog/2021/07/hugo-geekdoc-init-code2.png" alt="https://img.hongmao.run/blog/2021/07/hugo-geekdoc-init-code2.png"></p>
@@ -551,14 +551,14 @@ draft: true
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="c">/* 定制化行内代码样式 */</span>
-<span class="p">.</span><span class="nc">gdoc-markdown</span> <span class="nt">p</span> <span class="nt">code</span> <span class="p">{</span>
-    <span class="c">/* 设置颜色 */</span>
-    <span class="k">color</span><span class="p">:</span> <span class="mh">#FF6A6A</span><span class="p">;</span>
-    <span class="c">/* 设置字体加粗 */</span>
-    <span class="k">font-weight</span><span class="p">:</span> <span class="kc">bold</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="c">/* 定制化行内代码样式 */</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">gdoc-markdown</span> <span class="nt">p</span> <span class="nt">code</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c">/* 设置颜色 */</span>
+</span></span><span class="line"><span class="cl">    <span class="k">color</span><span class="p">:</span> <span class="mh">#FF6A6A</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">/* 设置字体加粗 */</span>
+</span></span><span class="line"><span class="cl">    <span class="k">font-weight</span><span class="p">:</span> <span class="kc">bold</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果对代码的字体不满意，还可以设置代码字体：</p>
 <div class="highlight"><div class="chroma">
@@ -569,11 +569,11 @@ draft: true
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="c">/* 定制化代码样式，包括行内代码和代码块 */</span>
-<span class="p">.</span><span class="nc">gdoc-markdown</span> <span class="nt">code</span> <span class="p">{</span>
-    <span class="k">font-family</span><span class="p">:</span> <span class="n">Consolas</span><span class="p">,</span><span class="n">Monaco</span><span class="p">,</span><span class="n">Menlo</span><span class="p">,</span><span class="n">dejavu</span> <span class="n">sans</span> <span class="n">mono</span><span class="p">,</span><span class="n">bitstream</span> <span class="n">vera</span> <span class="n">sans</span> <span class="n">mono</span><span class="p">,</span><span class="n">courier</span> <span class="n">new</span><span class="p">,</span><span class="kc">monospace</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="c">/* 定制化代码样式，包括行内代码和代码块 */</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">gdoc-markdown</span> <span class="nt">code</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">font-family</span><span class="p">:</span> <span class="n">Consolas</span><span class="p">,</span><span class="n">Monaco</span><span class="p">,</span><span class="n">Menlo</span><span class="p">,</span><span class="n">dejavu</span> <span class="n">sans</span> <span class="n">mono</span><span class="p">,</span><span class="n">bitstream</span> <span class="n">vera</span> <span class="n">sans</span> <span class="n">mono</span><span class="p">,</span><span class="n">courier</span> <span class="n">new</span><span class="p">,</span><span class="kc">monospace</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>经过如上设置后，页面的效果如下：</p>
 <p><img src="https://img.hongmao.run/blog/2021/07/hugo-geekdoc-init-code3.png" alt="https://img.hongmao.run/blog/2021/07/hugo-geekdoc-init-code3.png"></p>
@@ -593,14 +593,14 @@ draft: true
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">---
-title: &#34;第二章&#34;
-date: 2021-07-17T14:34:42+08:00
-draft: true
----
-
-{{<span class="p">&lt;</span> <span class="nt">toc-tree</span> <span class="p">&gt;</span>}}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">title: &#34;第二章&#34;
+</span></span><span class="line"><span class="cl">date: 2021-07-17T14:34:42+08:00
+</span></span><span class="line"><span class="cl">draft: true
+</span></span><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">{{<span class="p">&lt;</span> <span class="nt">toc-tree</span> <span class="p">&gt;</span>}}
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>此时，我们再点击”第二章“效果如下：</p>
 <p><img src="https://img.hongmao.run/blog/2021/07/hugo-geekdoc-toctree.png" alt="https://img.hongmao.run/blog/2021/07/hugo-geekdoc-toctree.png"></p>
@@ -633,28 +633,28 @@ draft: true
 </span><span class="lnt">21
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nn">---</span><span class="w">
-</span><span class="w"></span><span class="nt">main</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第一章&#34;</span><span class="w">
-</span><span class="w">    </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第一章&#34;</span><span class="w">
-</span><span class="w">    </span><span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;gdoc_heart&#34;</span><span class="w">
-</span><span class="w">    </span><span class="nt">sub</span><span class="p">:</span><span class="w">
-</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第一节&#34;</span><span class="w">
-</span><span class="w">        </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第一章/第一节.md&#34;</span><span class="w">
-</span><span class="w">        </span><span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;gdoc_person&#34;</span><span class="w">
-</span><span class="w">  </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第二章&#34;</span><span class="w">
-</span><span class="w">    </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第二章&#34;</span><span class="w">
-</span><span class="w">    </span><span class="nt">sub</span><span class="p">:</span><span class="w">
-</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第一节&#34;</span><span class="w">
-</span><span class="w">        </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第二章/第一节.md&#34;</span><span class="w">
-</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第二节&#34;</span><span class="w">
-</span><span class="w">        </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第二章/第二节.md&#34;</span><span class="w">
-</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第三节&#34;</span><span class="w">
-</span><span class="w">        </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第二章/第三节&#34;</span><span class="w">
-</span><span class="w">        </span><span class="nt">sub</span><span class="p">:</span><span class="w">
-</span><span class="w">          </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;2.3.1小节&#34;</span><span class="w">
-</span><span class="w">            </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第二章/第三节/2.3.1小节.md&#34;</span><span class="w">
-</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">main</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第一章&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第一章&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;gdoc_heart&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">sub</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第一节&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第一章/第一节.md&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;gdoc_person&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第二章&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第二章&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">sub</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第一节&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第二章/第一节.md&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第二节&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第二章/第二节.md&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第三节&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第二章/第三节&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">sub</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;2.3.1小节&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第二章/第三节/2.3.1小节.md&#34;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>使用<code>icon</code>字段进行设置即可，上面我们仅设置了”第一章“和其下的”第一节“。</p>
 <p>除了主题自带的icon之外，我们也可以自己写svg文件，作为icon使用，只需满足主题对svg文件的要求即可。</p>
@@ -670,10 +670,10 @@ draft: true
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">&lt;svg xmlns=&#34;&lt;http://www.w3.org/2000/svg&gt;&#34; width=&#34;16&#34; height=&#34;16&#34; viewBox=&#34;0 0 16 16&#34;&gt;
-  &lt;path fill=&#34;#9AA7B0&#34; fill-opacity=&#34;.8&#34; fill-rule=&#34;evenodd&#34; d=&#34;M6,10.4951 C4.896,10.4951 4.001,9.6001 4,8.4981 C3.999,7.3941 4.894,6.5001 5.997,6.5001 C7.102,6.5001 7.997,7.3941 7.998,8.4981 C7.999,9.6001 7.104,10.4951 6,10.4951 Z M7.984,4.0001 L6.696,2.7111 C6.305,2.3201 5.532,2.0001 4.979,2.0001 L1.051,2.0001 C1.023,2.0001 1,2.0231 1,2.0511 L1,13.0001 L15,13.0001 L15,4.0001 L7.984,4.0001 Z&#34;/&gt;
-&lt;/svg&gt;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;svg xmlns=&#34;&lt;http://www.w3.org/2000/svg&gt;&#34; width=&#34;16&#34; height=&#34;16&#34; viewBox=&#34;0 0 16 16&#34;&gt;
+</span></span><span class="line"><span class="cl">  &lt;path fill=&#34;#9AA7B0&#34; fill-opacity=&#34;.8&#34; fill-rule=&#34;evenodd&#34; d=&#34;M6,10.4951 C4.896,10.4951 4.001,9.6001 4,8.4981 C3.999,7.3941 4.894,6.5001 5.997,6.5001 C7.102,6.5001 7.997,7.3941 7.998,8.4981 C7.999,9.6001 7.104,10.4951 6,10.4951 Z M7.984,4.0001 L6.696,2.7111 C6.305,2.3201 5.532,2.0001 4.979,2.0001 L1.051,2.0001 C1.023,2.0001 1,2.0231 1,2.0511 L1,13.0001 L15,13.0001 L15,4.0001 L7.984,4.0001 Z&#34;/&gt;
+</span></span><span class="line"><span class="cl">&lt;/svg&gt;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
 <li>class.svg</li>
@@ -688,13 +688,13 @@ draft: true
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">&lt;svg xmlns=&#34;&lt;http://www.w3.org/2000/svg&gt;&#34; width=&#34;16&#34; height=&#34;16&#34; viewBox=&#34;0 0 16 16&#34;&gt;
-  &lt;g fill=&#34;none&#34; fill-rule=&#34;evenodd&#34;&gt;
-    &lt;path fill=&#34;#40B6E0&#34; fill-opacity=&#34;.6&#34; d=&#34;M15,8 C15,11.866 11.866,15 8,15 C4.134,15 1,11.866 1,8 C1,4.134 4.134,1 8,1 C11.866,1 15,4.134 15,8&#34;/&gt;
-    &lt;path fill=&#34;#231F20&#34; fill-opacity=&#34;.7&#34; d=&#34;M5,4.28253174 C4.53,4.74153174 4.028,4.978 3.1,5 C2.061,5.022 1,4.2794 1,3.0004 C1,1.7124 1.971,1 3.1,1 C3.94833171,1 4.54833171,1.18475342 4.9,1.55426025 L5.5162,0.836730957 C4.8293999,0.270175195 4.28826904,0.0004 3.0982,0.0004 C1.3402,0.0004 0.0002,1.3584 0.0002,3.0004 C0.0002,4.6824 1.3642,6.0004 3.0022,6.0004 C4.29284668,6.0004 5.0232,5.5934 5.6162,4.9814 C5.2054,4.51548783 5,4.28253174 5,4.28253174 Z&#34; transform=&#34;translate(5 5)&#34;/&gt;
-  &lt;/g&gt;
-&lt;/svg&gt;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;svg xmlns=&#34;&lt;http://www.w3.org/2000/svg&gt;&#34; width=&#34;16&#34; height=&#34;16&#34; viewBox=&#34;0 0 16 16&#34;&gt;
+</span></span><span class="line"><span class="cl">  &lt;g fill=&#34;none&#34; fill-rule=&#34;evenodd&#34;&gt;
+</span></span><span class="line"><span class="cl">    &lt;path fill=&#34;#40B6E0&#34; fill-opacity=&#34;.6&#34; d=&#34;M15,8 C15,11.866 11.866,15 8,15 C4.134,15 1,11.866 1,8 C1,4.134 4.134,1 8,1 C11.866,1 15,4.134 15,8&#34;/&gt;
+</span></span><span class="line"><span class="cl">    &lt;path fill=&#34;#231F20&#34; fill-opacity=&#34;.7&#34; d=&#34;M5,4.28253174 C4.53,4.74153174 4.028,4.978 3.1,5 C2.061,5.022 1,4.2794 1,3.0004 C1,1.7124 1.971,1 3.1,1 C3.94833171,1 4.54833171,1.18475342 4.9,1.55426025 L5.5162,0.836730957 C4.8293999,0.270175195 4.28826904,0.0004 3.0982,0.0004 C1.3402,0.0004 0.0002,1.3584 0.0002,3.0004 C0.0002,4.6824 1.3642,6.0004 3.0022,6.0004 C4.29284668,6.0004 5.0232,5.5934 5.6162,4.9814 C5.2054,4.51548783 5,4.28253174 5,4.28253174 Z&#34; transform=&#34;translate(5 5)&#34;/&gt;
+</span></span><span class="line"><span class="cl">  &lt;/g&gt;
+</span></span><span class="line"><span class="cl">&lt;/svg&gt;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
 <li>interface.svg</li>
@@ -709,13 +709,13 @@ draft: true
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">&lt;svg xmlns=&#34;&lt;http://www.w3.org/2000/svg&gt;&#34; width=&#34;16&#34; height=&#34;16&#34; viewBox=&#34;0 0 16 16&#34;&gt;
-  &lt;g fill=&#34;none&#34; fill-rule=&#34;evenodd&#34;&gt;
-    &lt;path fill=&#34;#62B543&#34; fill-opacity=&#34;.6&#34; d=&#34;M15,8 C15,11.866 11.866,15 8,15 C4.134,15 1,11.866 1,8 C1,4.134 4.134,1 8,1 C11.866,1 15,4.134 15,8&#34;/&gt;
-    &lt;polygon fill=&#34;#231F20&#34; fill-opacity=&#34;.7&#34; points=&#34;8.5 10 8.5 6 9.5 5.664 9.5 5 6.5 5 6.5 5.664 7.5 6 7.5 10 6.5 10.344 6.5 11 9.5 11 9.5 10.344&#34;/&gt;
-  &lt;/g&gt;
-&lt;/svg&gt;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;svg xmlns=&#34;&lt;http://www.w3.org/2000/svg&gt;&#34; width=&#34;16&#34; height=&#34;16&#34; viewBox=&#34;0 0 16 16&#34;&gt;
+</span></span><span class="line"><span class="cl">  &lt;g fill=&#34;none&#34; fill-rule=&#34;evenodd&#34;&gt;
+</span></span><span class="line"><span class="cl">    &lt;path fill=&#34;#62B543&#34; fill-opacity=&#34;.6&#34; d=&#34;M15,8 C15,11.866 11.866,15 8,15 C4.134,15 1,11.866 1,8 C1,4.134 4.134,1 8,1 C11.866,1 15,4.134 15,8&#34;/&gt;
+</span></span><span class="line"><span class="cl">    &lt;polygon fill=&#34;#231F20&#34; fill-opacity=&#34;.7&#34; points=&#34;8.5 10 8.5 6 9.5 5.664 9.5 5 6.5 5 6.5 5.664 7.5 6 7.5 10 6.5 10.344 6.5 11 9.5 11 9.5 10.344&#34;/&gt;
+</span></span><span class="line"><span class="cl">  &lt;/g&gt;
+</span></span><span class="line"><span class="cl">&lt;/svg&gt;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>第一步，将svg文件放至本site根目录下的<code>/assets/sprites</code>下。</p>
 <p>第二步，修改svg文件，主要包括如下修改点：</p>
@@ -756,33 +756,33 @@ draft: true
 </span><span class="lnt">26
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nn">---</span><span class="w">
-</span><span class="w"></span><span class="nt">main</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第一章&#34;</span><span class="w">
-</span><span class="w">    </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第一章&#34;</span><span class="w">
-</span><span class="w">    </span><span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;gdoc_heart&#34;</span><span class="w">
-</span><span class="w">    </span><span class="nt">sub</span><span class="p">:</span><span class="w">
-</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第一节&#34;</span><span class="w">
-</span><span class="w">        </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第一章/第一节.md&#34;</span><span class="w">
-</span><span class="w">        </span><span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;gdoc_person&#34;</span><span class="w">
-</span><span class="w">  </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第二章&#34;</span><span class="w">
-</span><span class="w">    </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第二章&#34;</span><span class="w">
-</span><span class="w">    </span><span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;package&#34;</span><span class="w">
-</span><span class="w">    </span><span class="nt">sub</span><span class="p">:</span><span class="w">
-</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第一节&#34;</span><span class="w">
-</span><span class="w">        </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第二章/第一节.md&#34;</span><span class="w">
-</span><span class="w">        </span><span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;interface&#34;</span><span class="w">
-</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第二节&#34;</span><span class="w">
-</span><span class="w">        </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第二章/第二节.md&#34;</span><span class="w">
-</span><span class="w">        </span><span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;interface&#34;</span><span class="w">
-</span><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第三节&#34;</span><span class="w">
-</span><span class="w">        </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第二章/第三节&#34;</span><span class="w">
-</span><span class="w">        </span><span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;package&#34;</span><span class="w">
-</span><span class="w">        </span><span class="nt">sub</span><span class="p">:</span><span class="w">
-</span><span class="w">          </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;2.3.1小节&#34;</span><span class="w">
-</span><span class="w">            </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第二章/第三节/2.3.1小节.md&#34;</span><span class="w">
-</span><span class="w">            </span><span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;class&#34;</span><span class="w">
-</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">main</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第一章&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第一章&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;gdoc_heart&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">sub</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第一节&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第一章/第一节.md&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;gdoc_person&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第二章&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第二章&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;package&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">sub</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第一节&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第二章/第一节.md&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;interface&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第二节&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第二章/第二节.md&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;interface&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第三节&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第二章/第三节&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;package&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">sub</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;2.3.1小节&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;第二章/第三节/2.3.1小节.md&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;class&#34;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>效果如下：</p>
 <p><img src="https://img.hongmao.run/blog/2021/07/hugo-geekdoc-icon.png" alt="https://img.hongmao.run/blog/2021/07/hugo-geekdoc-icon.png"></p>
@@ -795,10 +795,10 @@ draft: true
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="c"># 添加如下配置</span>
-<span class="p">[</span><span class="nx">params</span><span class="p">]</span>
-  <span class="nx">geekdocCollapseSection</span> <span class="p">=</span> <span class="kc">true</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># 添加如下配置</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">geekdocCollapseSection</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>然后在要折叠起来的目录对应的Markdown文件（也就是<code>_index.md</code>）中添加：<code>geekdocCollapseSection: true</code>，届时，某<code>_index.md</code>的头内容可能如下：</p>
 <div class="highlight"><div class="chroma">
@@ -811,13 +811,13 @@ draft: true
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">---
-title: &#34;第二章&#34;
-date: 2021-07-17T14:34:42+08:00
-draft: true
-geekdocCollapseSection: true
----
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">title: &#34;第二章&#34;
+</span></span><span class="line"><span class="cl">date: 2021-07-17T14:34:42+08:00
+</span></span><span class="line"><span class="cl">draft: true
+</span></span><span class="line"><span class="cl">geekdocCollapseSection: true
+</span></span><span class="line"><span class="cl">---
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>效果如下：</p>
 <p><img src="https://img.hongmao.run/blog/2021/07/hugo-geekdoc-collapse.png" alt="https://img.hongmao.run/blog/2021/07/hugo-geekdoc-collapse.png"></p>
@@ -847,15 +847,15 @@ geekdocCollapseSection: true
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">---
-title: &#34;{{ replace .Name &#34;-&#34; &#34; &#34; | title }}&#34;
-date: {{ .Date }}
-draft: true
-geekdocCollapseSection: true
----
-
-{{<span class="p">&lt;</span> <span class="nt">toc-tree</span> <span class="p">&gt;</span>}}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">title: &#34;{{ replace .Name &#34;-&#34; &#34; &#34; | title }}&#34;
+</span></span><span class="line"><span class="cl">date: {{ .Date }}
+</span></span><span class="line"><span class="cl">draft: true
+</span></span><span class="line"><span class="cl">geekdocCollapseSection: true
+</span></span><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">{{<span class="p">&lt;</span> <span class="nt">toc-tree</span> <span class="p">&gt;</span>}}
+</span></span></code></pre></td></tr></table>
 </div>
 </div></li>
 <li>
@@ -878,16 +878,16 @@ geekdocCollapseSection: true
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">markup</span><span class="p">]</span>
-  <span class="c"># 目录相关</span>
-  <span class="p">[</span><span class="nx">markup</span><span class="p">.</span><span class="nx">tableOfContents</span><span class="p">]</span>
-    <span class="c"># 纳入目录的最小标题级别，默认为3</span>
-    <span class="nx">endLevel</span> <span class="p">=</span> <span class="mi">3</span>
-    <span class="c"># 是否排序，其实就是是否在目录的前面添加序号“1. ”、&#34;2. &#34;等等</span>
-    <span class="nx">ordered</span> <span class="p">=</span> <span class="kc">false</span>
-    <span class="c"># 纳入目录的最大标题级别，默认为2</span>
-    <span class="nx">startLevel</span> <span class="p">=</span> <span class="mi">2</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">markup</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="c"># 目录相关</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">markup</span><span class="p">.</span><span class="nx">tableOfContents</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="c"># 纳入目录的最小标题级别，默认为3</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">endLevel</span> <span class="p">=</span> <span class="mi">3</span>
+</span></span><span class="line"><span class="cl">    <span class="c"># 是否排序，其实就是是否在目录的前面添加序号“1. ”、&#34;2. &#34;等等</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">ordered</span> <span class="p">=</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">    <span class="c"># 纳入目录的最大标题级别，默认为2</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">startLevel</span> <span class="p">=</span> <span class="mi">2</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="62-使用原生markdown语法添加图片后图片不居中">6.2 使用原生Markdown语法添加图片后，图片不居中</h2>
 <p>看了下本主题的<a href="https://geekdocs.de/shortcodes/images/">官方文档</a>，其支持使用Shortcode来添加图片，而且可设置项也有很多，但是貌似不支持网络图片，需要你将图片放置在项目对应的目录下。但是，这个问题也有解决方案。</p>
@@ -899,10 +899,10 @@ geekdocCollapseSection: true
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">markup</span><span class="p">.</span><span class="nx">goldmark</span><span class="p">]</span>
-  <span class="p">[</span><span class="nx">markup</span><span class="p">.</span><span class="nx">goldmark</span><span class="p">.</span><span class="nx">renderer</span><span class="p">]</span>
-    <span class="nx">unsafe</span> <span class="p">=</span> <span class="kc">true</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">markup</span><span class="p">.</span><span class="nx">goldmark</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">markup</span><span class="p">.</span><span class="nx">goldmark</span><span class="p">.</span><span class="nx">renderer</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">unsafe</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>然后，便可以通过如下HTML代码来添加图片：</p>
 <div class="highlight"><div class="chroma">
@@ -912,10 +912,10 @@ geekdocCollapseSection: true
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;text-align: center&#34;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;&#34;</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;&#34;</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;text-align: center&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;&#34;</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>解决方案二，通过自定义简码实现，具体可参考<a href="../012-hugo-faq/#2-%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89%E7%AE%80%E7%A0%81shortcode">自定义简码</a>。</p>
 
@@ -1004,7 +1004,7 @@ geekdocCollapseSection: true
 
 
 
-<script type="text/javascript" src="/blog/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+<script type="text/javascript" src="/blog/js/main.min.64437849d125a2d603b3e71d6de5225d641a32d17168a58106e0b61852079683.js"></script>
 
 
 

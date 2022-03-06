@@ -24,7 +24,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.92.2 with theme even" />
+<meta name="generator" content="Hugo 0.93.1 with theme even" />
 
 
 <link rel="canonical" href="https://zhdbest.github.io/blog/post/004-hexo-to-github/" />
@@ -191,8 +191,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell">npm install hexo-deployer-git --save
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">npm install hexo-deployer-git --save
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="2-修改配置">2. 修改配置</h1>
 <p>修改 <code>_config.yml</code> 文件：</p>
@@ -204,11 +204,11 @@
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">deploy</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">git</span><span class="w">
-</span><span class="w">  </span><span class="nt">repo</span><span class="p">:</span><span class="w"> </span><span class="l">&lt;https://github.com/zhdbest/blog.git&gt;</span><span class="w">
-</span><span class="w">  </span><span class="nt">branch</span><span class="p">:</span><span class="w"> </span><span class="l">main</span><span class="w">
-</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">deploy</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">git</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">repo</span><span class="p">:</span><span class="w"> </span><span class="l">&lt;https://github.com/zhdbest/blog.git&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">branch</span><span class="p">:</span><span class="w"> </span><span class="l">main</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="3-执行部署">3. 执行部署</h1>
 <div class="highlight"><div class="chroma">
@@ -221,13 +221,13 @@
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># 清空缓存及已生成的public目录</span>
-hexo clean
-<span class="c1"># 生成public目录及其下的静态文件</span>
-hexo g
-<span class="c1"># 部署至GitHub</span>
-hexo d
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># 清空缓存及已生成的public目录</span>
+</span></span><span class="line"><span class="cl">hexo clean
+</span></span><span class="line"><span class="cl"><span class="c1"># 生成public目录及其下的静态文件</span>
+</span></span><span class="line"><span class="cl">hexo g
+</span></span><span class="line"><span class="cl"><span class="c1"># 部署至GitHub</span>
+</span></span><span class="line"><span class="cl">hexo d
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="4-部署时常见问题">4. 部署时常见问题</h1>
 <h2 id="41-部署后页面只显示一小部分">4.1 部署后，页面只显示一小部分</h2>
@@ -239,9 +239,9 @@ hexo d
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># 原来的URL是默认值没有改，改成如下配置后即可</span>
-url: &lt;https://zhdbest.github.io/blog&gt;
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># 原来的URL是默认值没有改，改成如下配置后即可</span>
+</span></span><span class="line"><span class="cl">url: &lt;https://zhdbest.github.io/blog&gt;
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="42-部署后页面图片无法正常展示">4.2 部署后，页面图片无法正常展示</h2>
 <p>我的页面图片挂掉的原因是：图床采用了http的域名，但页面强制https，导致无法获取到图片。</p>
@@ -329,7 +329,7 @@ url: &lt;https://zhdbest.github.io/blog&gt;
 
 
 
-<script type="text/javascript" src="/blog/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+<script type="text/javascript" src="/blog/js/main.min.64437849d125a2d603b3e71d6de5225d641a32d17168a58106e0b61852079683.js"></script>
 
 
 

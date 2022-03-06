@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.92.2 with theme even" />
+<meta name="generator" content="Hugo 0.93.1 with theme even" />
 
 
 <link rel="canonical" href="https://zhdbest.github.io/blog/post/001-hexo-config/" />
@@ -264,123 +264,123 @@
 </span><span class="lnt">116
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="c"># Hexo Configuration</span><span class="w">
-</span><span class="w"></span><span class="c">## Docs: https://hexo.io/docs/configuration.html</span><span class="w">
-</span><span class="w"></span><span class="c">## Source: https://github.com/hexojs/hexo/</span><span class="w">
-</span><span class="w">
-</span><span class="w"></span><span class="c"># Site</span><span class="w">
-</span><span class="w"></span><span class="c"># title是设置网站的title，例如：虹猫的技术博客</span><span class="w">
-</span><span class="w"></span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">Hexo</span><span class="w">
-</span><span class="w"></span><span class="c"># subtitle是设置网站的副标题，例如：&#39;开放共享、追求极致&#39;</span><span class="w">
-</span><span class="w"></span><span class="nt">subtitle</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="w">
-</span><span class="w"></span><span class="c"># description是设置网站的描述</span><span class="w">
-</span><span class="w"></span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="w">
-</span><span class="w"></span><span class="c"># keywords是设置网站的关键词</span><span class="w">
-</span><span class="w"></span><span class="nt">keywords</span><span class="p">:</span><span class="w">
-</span><span class="w"></span><span class="c"># author是设置博客的作者，例如：虹猫</span><span class="w">
-</span><span class="w"></span><span class="nt">author</span><span class="p">:</span><span class="w"> </span><span class="l">John Doe</span><span class="w">
-</span><span class="w"></span><span class="c"># language是设置当前网站的语言，需要和当前所使用的主题下的语言文件名想对应</span><span class="w">
-</span><span class="w"></span><span class="c"># 例如，当前使用next主题，则需要和themes/next/languages/下的文件名对应，例如：zh-CN</span><span class="w">
-</span><span class="w"></span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="l">en</span><span class="w">
-</span><span class="w"></span><span class="c"># timezone是设置时区，默认使用当前服务器的时区</span><span class="w">
-</span><span class="w"></span><span class="nt">timezone</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="w">
-</span><span class="w">
-</span><span class="w"></span><span class="c"># URL</span><span class="w">
-</span><span class="w"></span><span class="c">## Set your site url here. For example, if you use GitHub Page, set url as &#39;https://username.github.io/project&#39;</span><span class="w">
-</span><span class="w"></span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">http://example.com</span><span class="w">
-</span><span class="w"></span><span class="c"># 链接的样式，默认是：年/月/日/文章标题</span><span class="w">
-</span><span class="w"></span><span class="nt">permalink</span><span class="p">:</span><span class="w"> </span><span class="p">:</span><span class="l">year/:month/:day/:title/</span><span class="w">
-</span><span class="w"></span><span class="nt">permalink_defaults</span><span class="p">:</span><span class="w">
-</span><span class="w"></span><span class="nt">pretty_urls</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="nt">trailing_index</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="c"># Set to false to remove trailing &#39;index.html&#39; from permalinks</span><span class="w">
-</span><span class="w">  </span><span class="nt">trailing_html</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="c"># Set to false to remove trailing &#39;.html&#39; from permalinks</span><span class="w">
-</span><span class="w">
-</span><span class="w"></span><span class="c"># Directory</span><span class="w">
-</span><span class="w"></span><span class="nt">source_dir</span><span class="p">:</span><span class="w"> </span><span class="l">source</span><span class="w">
-</span><span class="w"></span><span class="nt">public_dir</span><span class="p">:</span><span class="w"> </span><span class="l">public</span><span class="w">
-</span><span class="w"></span><span class="nt">tag_dir</span><span class="p">:</span><span class="w"> </span><span class="l">tags</span><span class="w">
-</span><span class="w"></span><span class="nt">archive_dir</span><span class="p">:</span><span class="w"> </span><span class="l">archives</span><span class="w">
-</span><span class="w"></span><span class="nt">category_dir</span><span class="p">:</span><span class="w"> </span><span class="l">categories</span><span class="w">
-</span><span class="w"></span><span class="nt">code_dir</span><span class="p">:</span><span class="w"> </span><span class="l">downloads/code</span><span class="w">
-</span><span class="w"></span><span class="nt">i18n_dir</span><span class="p">:</span><span class="w"> </span><span class="p">:</span><span class="l">lang</span><span class="w">
-</span><span class="w"></span><span class="nt">skip_render</span><span class="p">:</span><span class="w">
-</span><span class="w">
-</span><span class="w"></span><span class="c"># Writing</span><span class="w">
-</span><span class="w"></span><span class="nt">new_post_name</span><span class="p">:</span><span class="w"> </span><span class="p">:</span><span class="l">title.md</span><span class="w"> </span><span class="c"># File name of new posts</span><span class="w">
-</span><span class="w"></span><span class="nt">default_layout</span><span class="p">:</span><span class="w"> </span><span class="l">post</span><span class="w">
-</span><span class="w"></span><span class="nt">titlecase</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w"> </span><span class="c"># Transform title into titlecase</span><span class="w">
-</span><span class="w"></span><span class="nt">external_link</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="nt">enable</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="c"># Open external links in new tab</span><span class="w">
-</span><span class="w">  </span><span class="nt">field</span><span class="p">:</span><span class="w"> </span><span class="l">site</span><span class="w"> </span><span class="c"># Apply to the whole site</span><span class="w">
-</span><span class="w">  </span><span class="nt">exclude</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="w">
-</span><span class="w"></span><span class="nt">filename_case</span><span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
-</span><span class="w"></span><span class="nt">render_drafts</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
-</span><span class="w"></span><span class="nt">post_asset_folder</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
-</span><span class="w"></span><span class="nt">relative_link</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
-</span><span class="w"></span><span class="nt">future</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w"></span><span class="nt">highlight</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="nt">enable</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span><span class="nt">line_number</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span><span class="nt">auto_detect</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
-</span><span class="w">  </span><span class="nt">tab_replace</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="w">
-</span><span class="w">  </span><span class="nt">wrap</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span><span class="nt">hljs</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
-</span><span class="w"></span><span class="nt">prismjs</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="nt">enable</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
-</span><span class="w">  </span><span class="nt">preprocess</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span><span class="nt">line_number</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">  </span><span class="nt">tab_replace</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="w">
-</span><span class="w">
-</span><span class="w"></span><span class="c"># Home page setting</span><span class="w">
-</span><span class="w"></span><span class="c"># path: Root path for your blogs index page. (default = &#39;&#39;)</span><span class="w">
-</span><span class="w"></span><span class="c"># per_page: Posts displayed per page. (0 = disable pagination)</span><span class="w">
-</span><span class="w"></span><span class="c"># order_by: Posts order. (Order by date descending by default)</span><span class="w">
-</span><span class="w"></span><span class="nt">index_generator</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="w">
-</span><span class="w">  </span><span class="nt">per_page</span><span class="p">:</span><span class="w"> </span><span class="m">10</span><span class="w">
-</span><span class="w">  </span><span class="nt">order_by</span><span class="p">:</span><span class="w"> </span>-<span class="l">date</span><span class="w">
-</span><span class="w">
-</span><span class="w"></span><span class="c"># Category &amp; Tag</span><span class="w">
-</span><span class="w"></span><span class="nt">default_category</span><span class="p">:</span><span class="w"> </span><span class="l">uncategorized</span><span class="w">
-</span><span class="w"></span><span class="nt">category_map</span><span class="p">:</span><span class="w">
-</span><span class="w"></span><span class="nt">tag_map</span><span class="p">:</span><span class="w">
-</span><span class="w">
-</span><span class="w"></span><span class="c"># Metadata elements</span><span class="w">
-</span><span class="w"></span><span class="c">## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta</span><span class="w">
-</span><span class="w"></span><span class="nt">meta_generator</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">
-</span><span class="w"></span><span class="c"># Date / Time format</span><span class="w">
-</span><span class="w"></span><span class="c">## Hexo uses Moment.js to parse and display date</span><span class="w">
-</span><span class="w"></span><span class="c">## You can customize the date format as defined in</span><span class="w">
-</span><span class="w"></span><span class="c">## http://momentjs.com/docs/#/displaying/format/</span><span class="w">
-</span><span class="w"></span><span class="nt">date_format</span><span class="p">:</span><span class="w"> </span><span class="l">YYYY-MM-DD</span><span class="w">
-</span><span class="w"></span><span class="nt">time_format</span><span class="p">:</span><span class="w"> </span><span class="l">HH:mm:ss</span><span class="w">
-</span><span class="w"></span><span class="c">## updated_option supports &#39;mtime&#39;, &#39;date&#39;, &#39;empty&#39;</span><span class="w">
-</span><span class="w"></span><span class="nt">updated_option</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;mtime&#39;</span><span class="w">
-</span><span class="w">
-</span><span class="w"></span><span class="c"># Pagination</span><span class="w">
-</span><span class="w"></span><span class="c">## Set per_page to 0 to disable pagination</span><span class="w">
-</span><span class="w"></span><span class="c"># 设置每页展示的文章数，若想取消分页可将此属性设置为0</span><span class="w">
-</span><span class="w"></span><span class="nt">per_page</span><span class="p">:</span><span class="w"> </span><span class="m">10</span><span class="w">
-</span><span class="w"></span><span class="nt">pagination_dir</span><span class="p">:</span><span class="w"> </span><span class="l">page</span><span class="w">
-</span><span class="w">
-</span><span class="w"></span><span class="c"># Include / Exclude file(s)</span><span class="w">
-</span><span class="w"></span><span class="c">## include:/exclude: options only apply to the &#39;source/&#39; folder</span><span class="w">
-</span><span class="w"></span><span class="nt">include</span><span class="p">:</span><span class="w">
-</span><span class="w"></span><span class="nt">exclude</span><span class="p">:</span><span class="w">
-</span><span class="w"></span><span class="nt">ignore</span><span class="p">:</span><span class="w">
-</span><span class="w">
-</span><span class="w"></span><span class="c"># Extensions</span><span class="w">
-</span><span class="w"></span><span class="c">## Plugins: https://hexo.io/plugins/</span><span class="w">
-</span><span class="w"></span><span class="c">## Themes: https://hexo.io/themes/</span><span class="w">
-</span><span class="w"></span><span class="nt">theme</span><span class="p">:</span><span class="w"> </span><span class="l">landscape</span><span class="w">
-</span><span class="w"></span><span class="c"># theme_config，在默认中并没有此设置。该设置是指定主题的配置文件，在这里放置的配置会覆盖主题目录下的 _config.yml 中的配置，例如：_config.next.yml</span><span class="w">
-</span><span class="w">
-</span><span class="w"></span><span class="c"># Deployment</span><span class="w">
-</span><span class="w"></span><span class="c">## Docs: https://hexo.io/docs/one-command-deployment</span><span class="w">
-</span><span class="w"></span><span class="nt">deploy</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="w">
-</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="c"># Hexo Configuration</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c">## Docs: https://hexo.io/docs/configuration.html</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c">## Source: https://github.com/hexojs/hexo/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># Site</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># title是设置网站的title，例如：虹猫的技术博客</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">Hexo</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># subtitle是设置网站的副标题，例如：&#39;开放共享、追求极致&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">subtitle</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># description是设置网站的描述</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># keywords是设置网站的关键词</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">keywords</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># author是设置博客的作者，例如：虹猫</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">author</span><span class="p">:</span><span class="w"> </span><span class="l">John Doe</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># language是设置当前网站的语言，需要和当前所使用的主题下的语言文件名想对应</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># 例如，当前使用next主题，则需要和themes/next/languages/下的文件名对应，例如：zh-CN</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="l">en</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># timezone是设置时区，默认使用当前服务器的时区</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">timezone</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># URL</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c">## Set your site url here. For example, if you use GitHub Page, set url as &#39;https://username.github.io/project&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">http://example.com</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># 链接的样式，默认是：年/月/日/文章标题</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">permalink</span><span class="p">:</span><span class="w"> </span><span class="p">:</span><span class="l">year/:month/:day/:title/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">permalink_defaults</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">pretty_urls</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">trailing_index</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="c"># Set to false to remove trailing &#39;index.html&#39; from permalinks</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">trailing_html</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="c"># Set to false to remove trailing &#39;.html&#39; from permalinks</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># Directory</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">source_dir</span><span class="p">:</span><span class="w"> </span><span class="l">source</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">public_dir</span><span class="p">:</span><span class="w"> </span><span class="l">public</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">tag_dir</span><span class="p">:</span><span class="w"> </span><span class="l">tags</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">archive_dir</span><span class="p">:</span><span class="w"> </span><span class="l">archives</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">category_dir</span><span class="p">:</span><span class="w"> </span><span class="l">categories</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">code_dir</span><span class="p">:</span><span class="w"> </span><span class="l">downloads/code</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">i18n_dir</span><span class="p">:</span><span class="w"> </span><span class="p">:</span><span class="l">lang</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">skip_render</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># Writing</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">new_post_name</span><span class="p">:</span><span class="w"> </span><span class="p">:</span><span class="l">title.md</span><span class="w"> </span><span class="c"># File name of new posts</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">default_layout</span><span class="p">:</span><span class="w"> </span><span class="l">post</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">titlecase</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w"> </span><span class="c"># Transform title into titlecase</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">external_link</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">enable</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="c"># Open external links in new tab</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">field</span><span class="p">:</span><span class="w"> </span><span class="l">site</span><span class="w"> </span><span class="c"># Apply to the whole site</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">exclude</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">filename_case</span><span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">render_drafts</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">post_asset_folder</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">relative_link</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">future</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">highlight</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">enable</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">line_number</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">auto_detect</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">tab_replace</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">wrap</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">hljs</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">prismjs</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">enable</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">preprocess</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">line_number</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">tab_replace</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># Home page setting</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># path: Root path for your blogs index page. (default = &#39;&#39;)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># per_page: Posts displayed per page. (0 = disable pagination)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># order_by: Posts order. (Order by date descending by default)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">index_generator</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">per_page</span><span class="p">:</span><span class="w"> </span><span class="m">10</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">order_by</span><span class="p">:</span><span class="w"> </span>-<span class="l">date</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># Category &amp; Tag</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">default_category</span><span class="p">:</span><span class="w"> </span><span class="l">uncategorized</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">category_map</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">tag_map</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># Metadata elements</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c">## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">meta_generator</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># Date / Time format</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c">## Hexo uses Moment.js to parse and display date</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c">## You can customize the date format as defined in</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c">## http://momentjs.com/docs/#/displaying/format/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">date_format</span><span class="p">:</span><span class="w"> </span><span class="l">YYYY-MM-DD</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">time_format</span><span class="p">:</span><span class="w"> </span><span class="l">HH:mm:ss</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c">## updated_option supports &#39;mtime&#39;, &#39;date&#39;, &#39;empty&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">updated_option</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;mtime&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># Pagination</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c">## Set per_page to 0 to disable pagination</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># 设置每页展示的文章数，若想取消分页可将此属性设置为0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">per_page</span><span class="p">:</span><span class="w"> </span><span class="m">10</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">pagination_dir</span><span class="p">:</span><span class="w"> </span><span class="l">page</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># Include / Exclude file(s)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c">## include:/exclude: options only apply to the &#39;source/&#39; folder</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">include</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">exclude</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">ignore</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># Extensions</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c">## Plugins: https://hexo.io/plugins/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c">## Themes: https://hexo.io/themes/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">theme</span><span class="p">:</span><span class="w"> </span><span class="l">landscape</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># theme_config，在默认中并没有此设置。该设置是指定主题的配置文件，在这里放置的配置会覆盖主题目录下的 _config.yml 中的配置，例如：_config.next.yml</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># Deployment</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c">## Docs: https://hexo.io/docs/one-command-deployment</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">deploy</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>参考文档：</p>
 <ol>
@@ -472,7 +472,7 @@
 
 
 
-<script type="text/javascript" src="/blog/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+<script type="text/javascript" src="/blog/js/main.min.64437849d125a2d603b3e71d6de5225d641a32d17168a58106e0b61852079683.js"></script>
 
 
 

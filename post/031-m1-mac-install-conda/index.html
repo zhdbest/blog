@@ -24,7 +24,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.93.1 with theme even" />
+<meta name="generator" content="Hugo 0.94.2 with theme even" />
 
 
 <link rel="canonical" href="https://zhdbest.github.io/blog/post/031-m1-mac-install-conda/" />
@@ -50,7 +50,7 @@
 <meta itemprop="name" content="【Python】M1芯片Mac安装Conda">
 <meta itemprop="description" content="Python这门语言是不保证向下兼容的，也就是说旧版本的库、函数可能在新版本中无法使用，这种机制的利弊都是显而易见的。利是Python每次新版本的技术革新都无需背负沉重的历史包袱，可以放开手脚去干，但带来的弊端就是：Python版本和第三方库、环境等的管理极为麻烦，比如使用Python处理数据分析需要Python3.9以及与3.9配套的相关库，而使用Python进行深度学习却又需要Python3.8以及与3.8配套的相关库。那这是不是意味着我们需要装n个版本的Python以及n多个类库呢？其实大可不必，我们有conda。"><meta itemprop="datePublished" content="2022-03-06T10:05:12+08:00" />
 <meta itemprop="dateModified" content="2022-03-06T10:05:12+08:00" />
-<meta itemprop="wordCount" content="2107">
+<meta itemprop="wordCount" content="2813">
 <meta itemprop="keywords" content="Python,conda," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="【Python】M1芯片Mac安装Conda"/>
 <meta name="twitter:description" content="Python这门语言是不保证向下兼容的，也就是说旧版本的库、函数可能在新版本中无法使用，这种机制的利弊都是显而易见的。利是Python每次新版本的技术革新都无需背负沉重的历史包袱，可以放开手脚去干，但带来的弊端就是：Python版本和第三方库、环境等的管理极为麻烦，比如使用Python处理数据分析需要Python3.9以及与3.9配套的相关库，而使用Python进行深度学习却又需要Python3.8以及与3.8配套的相关库。那这是不是意味着我们需要装n个版本的Python以及n多个类库呢？其实大可不必，我们有conda。"/>
@@ -296,7 +296,72 @@
 </span></span><span class="line"><span class="cl"><span class="c1"># 另外，可以看到，在安装fastapi时，会自动安装其相关的依赖，每一个依赖项都是按照下载渠道的优先级逐级查找并下载的。</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>更多关于<code>conda</code>的使用，可以参考：<a href="https://hongmao.run/cmd/conda/01-common/">conda常用命令</a></p>
+</div><p>我使用了<code>oh_my_zsh</code>，在安装了<code>conda</code>后进入终端会在命令行上方展示当前环境，如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="o">(</span>base<span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># hongmao @ hongmaodeMacBook-Air in ~ [20:04:37]</span>
+</span></span><span class="line"><span class="cl">$ python -V
+</span></span><span class="line"><span class="cl">Python 3.8.11
+</span></span><span class="line"><span class="cl"><span class="o">(</span>base<span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># hongmao @ hongmaodeMacBook-Air in ~ [20:04:40]</span>
+</span></span><span class="line"><span class="cl">$ conda activate py39
+</span></span><span class="line"><span class="cl"><span class="o">(</span>py39<span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># hongmao @ hongmaodeMacBook-Air in ~ [20:04:48]</span>
+</span></span><span class="line"><span class="cl">$ python -V
+</span></span><span class="line"><span class="cl">Python 3.9.7
+</span></span><span class="line"><span class="cl"><span class="o">(</span>py39<span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># hongmao @ hongmaodeMacBook-Air in ~ [20:04:51]</span>
+</span></span><span class="line"><span class="cl">$ conda deactivate
+</span></span><span class="line"><span class="cl"><span class="o">(</span>base<span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># hongmao @ hongmaodeMacBook-Air in ~ [20:05:00]</span>
+</span></span><span class="line"><span class="cl">$ conda deactivate
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># hongmao @ hongmaodeMacBook-Air in ~ [20:05:08]</span>
+</span></span><span class="line"><span class="cl">$
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>可以看到，上方每次有那个当前conda环境信息，有点烦人，这一点可以通过在<code>base</code>环境下执行<code>conda deactivate</code>来解决，但这仅是在当前终端解决，等你打开一个新的终端窗口会发现又出现了<code>(base)</code>。</p>
+<p>如果你不想总是开启<code>base</code>环境，则可以通过命令来设置默认开启或关闭：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># 设置默认关闭自动启用base环境</span>
+</span></span><span class="line"><span class="cl">conda config --set auto_activate_base <span class="nb">false</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 设置默认开启自动启用base环境</span>
+</span></span><span class="line"><span class="cl">conda config --set auto_activate_base <span class="nb">true</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如果设置了默认不开启<code>base</code>环境，当你需要使用特定环境时可以使用<code>conda activate 环境</code>即可，或者使用<code>conda activate</code>命令来启动<code>base</code>环境。</p>
+<p>使用这种方式的弊端就是终端的默认Python环境又变成了默认的<code>2.x</code>版本了。如果既想启动conda中的Python环境，又不想一直在终端看到那个环境信息，<a href="https://conda.io/projects/conda/en/latest/user-guide/configuration/use-condarc.html#change-command-prompt-changeps1">官网</a>也给出了解决方案的：在<code>.condarc</code>文件中添加一行：<code>changeps1: False</code>。这样做就看似两样都得到了，但是conda本身相当一部分工作是做环境管理的，如果我们有较多环境的话，这样就无法快速的知道当前启用的是哪个环境了。如果你想默认打开终端时进入某些特定的环境，可以通过将<code>auto_activate_base</code>置为<code>false</code>，然后在你的<code>.zshrc</code>或<code>.bashrc</code>文件中添加一行启动特定环境的命令：<code>conda activate py39</code>，这样每次打开终端时就可以进入<code>py39</code>这个环境了。</p>
+<p>更多关于<code>conda</code>的使用，可以参考：<a href="https://hongmao.run/cmd/conda/01-common/">conda常用命令</a></p>
 <p>如果需要在PyCharm中使用<code>conda</code>创建的环境的话，可以按下图所示进行操作：</p>
 <p><img src="https://img.hongmao.run/blog/2022/03/image-20220306151835755.png" alt="image-20220306151835755"></p>
 <blockquote>
@@ -339,7 +404,11 @@
           <a href="/blog/tags/conda/">conda</a>
           </div>
       <nav class="post-nav">
-        
+        <a class="prev" href="/blog/post/032-python-string/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">【Python】Python中的字符串</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
         <a class="next" href="/blog/post/030-python-builtin-main/">
             <span class="next-text nav-default">【Python】if __name__ == &#39;__main__&#39;的作用</span>
             <span class="next-text nav-mobile">下一篇</span>

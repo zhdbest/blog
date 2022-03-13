@@ -3,7 +3,49 @@
   
   <url>
     <loc>https://zhdbest.github.io/blog/categories/</loc>
-    <lastmod>2022-03-06T10:05:12+08:00</lastmod>
+    <lastmod>2022-03-13T11:08:05+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhdbest.github.io/blog/post/</loc>
+    <lastmod>2022-03-13T11:08:05+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhdbest.github.io/blog/tags/python/</loc>
+    <lastmod>2022-03-13T11:08:05+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhdbest.github.io/blog/categories/python/</loc>
+    <lastmod>2022-03-13T11:08:05+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhdbest.github.io/blog/tags/</loc>
+    <lastmod>2022-03-13T11:08:05+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhdbest.github.io/blog/post/032-python-string/</loc>
+    <lastmod>2022-03-13T11:08:05+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhdbest.github.io/blog/</loc>
+    <lastmod>2022-03-13T11:08:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -16,42 +58,7 @@
   </url>
   
   <url>
-    <loc>https://zhdbest.github.io/blog/post/</loc>
-    <lastmod>2022-03-06T10:05:12+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhdbest.github.io/blog/tags/python/</loc>
-    <lastmod>2022-03-06T10:05:12+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhdbest.github.io/blog/categories/python/</loc>
-    <lastmod>2022-03-06T10:05:12+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhdbest.github.io/blog/tags/</loc>
-    <lastmod>2022-03-06T10:05:12+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://zhdbest.github.io/blog/post/031-m1-mac-install-conda/</loc>
-    <lastmod>2022-03-06T10:05:12+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhdbest.github.io/blog/</loc>
     <lastmod>2022-03-06T10:05:12+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

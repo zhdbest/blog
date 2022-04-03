@@ -6,7 +6,16 @@
     <description>Recent content on 虹猫的自留地</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 13 Mar 2022 11:08:05 +0800</lastBuildDate><atom:link href="https://zhdbest.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Mar 2022 22:15:39 +0800</lastBuildDate><atom:link href="https://zhdbest.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【Python】实战！为SQL文件中每1000行后添加commit;</title>
+      <link>https://zhdbest.github.io/blog/post/033-python-text-append-line/</link>
+      <pubDate>Tue, 29 Mar 2022 22:15:39 +0800</pubDate>
+      
+      <guid>https://zhdbest.github.io/blog/post/033-python-text-append-line/</guid>
+      <description>&lt;p&gt;这两天遇到一个需求，需要修改5万多条数据。因我司iDb平台限制，超过500行的SQL均需提交给DBA手动执行，于是我使用Excel做好了5万多行SQL，放至文件中交给DBA，结果被告知因为要修改的是Oracle数据库，所以需要每1000行做一次commit，于是就想到了用Python来实现，结果不出所料，20行以内的代码搞定（不包含注释）。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>【Python】Python中的字符串</title>
       <link>https://zhdbest.github.io/blog/post/032-python-string/</link>

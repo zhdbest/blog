@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nginx on 虹猫的自留地</title>
+    <link>https://zhdbest.github.io/blog/tags/nginx/</link>
+    <description>Recent content in Nginx on 虹猫的自留地</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 03 Apr 2022 17:23:15 +0800</lastBuildDate><atom:link href="https://zhdbest.github.io/blog/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【Nginx】CentOS7.4基础版安装Nginx</title>
+      <link>https://zhdbest.github.io/blog/post/034-centos-install-nginx/</link>
+      <pubDate>Sun, 03 Apr 2022 17:23:15 +0800</pubDate>
+      
+      <guid>https://zhdbest.github.io/blog/post/034-centos-install-nginx/</guid>
+      <description>&lt;p&gt;因为我是在家用NAS服务器使用虚拟机来安装的Linux，所以选用的CentOS版本不是最新的，而且是最基础版，也就是最小化安装的那款：CentOS7.4 Minimal。而Nginx选用了当前的最新版本：1.21.6。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

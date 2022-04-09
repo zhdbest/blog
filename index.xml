@@ -6,7 +6,16 @@
     <description>Recent content on 虹猫的自留地</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 03 Apr 2022 17:23:15 +0800</lastBuildDate><atom:link href="https://zhdbest.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Apr 2022 18:53:34 +0800</lastBuildDate><atom:link href="https://zhdbest.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【Nginx】使用Nginx实现正向代理与反向代理</title>
+      <link>https://zhdbest.github.io/blog/post/035-nginx-proxy/</link>
+      <pubDate>Mon, 04 Apr 2022 18:53:34 +0800</pubDate>
+      
+      <guid>https://zhdbest.github.io/blog/post/035-nginx-proxy/</guid>
+      <description>&lt;p&gt;Nginx由于其体积小、性能强而被广泛使用，而其中用其做反向代理服务器是非常常见的。但其实Nginx也是可以用来做正向代理服务器的，本文就记录我用Nginx做正向代理服务器和反向代理服务器的过程。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>【Nginx】CentOS7.4基础版安装Nginx</title>
       <link>https://zhdbest.github.io/blog/post/034-centos-install-nginx/</link>
